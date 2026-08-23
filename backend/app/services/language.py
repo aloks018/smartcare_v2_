@@ -1,0 +1,166 @@
+from __future__ import annotations
+
+import re
+
+
+# ============================================================
+# DEVANAGARI DETECTION
+# ============================================================
+
+DEVANAGARI_PATTERN = re.compile(
+    r"[\u0900-\u097F]"
+)
+
+
+# ============================================================
+# LANGUAGE DETECTION
+# ============================================================
+
+def detect_language(text: str) -> str:
+
+    if not text:
+        return "Unknown"
+
+    text = text.strip()
+
+    # Hindi script
+    if DEVANAGARI_PATTERN.search(text):
+        return "Hindi"
+
+    lower = text.lower()
+
+    hindi_words = {
+        "mujhe",
+        "mujhko",
+        "hai",
+        "hain",
+        "mein",
+        "me",
+        "se",
+        "ka",
+        "ki",
+        "ke",
+        "dard",
+        "bukhar",
+        "khansi",
+        "saans",
+        "takleef",
+        "dikkat",
+        "chahiye",
+        "sarkari",
+        "aspatal",
+        "doctor",
+        "kahan",
+        "paas",
+        "nazdik",
+    }
+
+    tokens = set(
+        re.findall(
+            r"[a-zA-Z]+",
+            lower
+        )
+    )
+
+    matched = tokens.intersection(
+        hindi_words
+    )
+
+    if len(matched) >= 2:
+        return "Hinglish"
+
+    return "English"
+
+
+# ============================================================
+# TEXT NORMALIZATION
+# ============================================================
+
+def normalize_text(text: str) -> str:
+
+    if not text:
+        return ""
+
+    text = text.strip().lower()
+
+    text = re.sub(
+        r"\s+",
+        " ",
+        text
+    )
+
+    replacements = {
+
+        # Fever
+        "bukhar": "fever",
+
+        # Cough
+        "khansi": "cough",
+        "khaansi": "cough",
+
+        # Breathing
+        "saans ki takleef":
+            "breathing difficulty",
+
+        "saans lene mein dikkat":
+            "breathing difficulty",
+
+        "saans lene me dikkat":
+            "breathing difficulty",
+
+        "saans phoolna":
+            "shortness of breath",
+
+        # Pain
+        "sir dard":
+            "headache",
+
+        "seene mein dard":
+            "chest pain",
+
+        "seene me dard":
+            "chest pain",
+
+        "seene ka dard":
+            "chest pain",
+
+        "pet dard":
+            "abdominal pain",
+
+        # Other
+        "ulti":
+            "vomiting",
+
+        "chakkar":
+            "dizziness",
+
+        "jodon ka dard":
+            "joint pain",
+
+        # Healthcare search
+        "aspatal":
+            "hospital",
+
+        "sarkari aspatal":
+            "government hospital",
+
+        "sarkari hospital":
+            "government hospital",
+
+        "private hospital":
+            "private hospital",
+    }
+
+    # Longest phrases first
+    for source, target in sorted(
+        replacements.items(),
+        key=lambda item: len(item[0]),
+        reverse=True,
+    ):
+
+        text = text.replace(
+            source,
+            target
+        )
+
+    return text

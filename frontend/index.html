@@ -1,0 +1,1135 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>SmartCareAI | AI-Powered Healthcare Assistant</title>
+
+  <meta
+    name="description"
+    content="SmartCareAI is a voice-first AI healthcare assistant for symptom understanding, doctor discovery, hospitals, clinics and multilingual healthcare support."
+  />
+
+  <link rel="stylesheet" href="/static/styles.css" />
+</head>
+
+<body>
+
+  <!-- =========================================================
+       TOP ANNOUNCEMENT
+  ========================================================== -->
+  <div class="announcement-bar">
+    <span>●</span>
+    SmartCareAI is now voice-ready for Indian languages
+    <a href="#assistant">Try the AI Assistant →</a>
+  </div>
+
+
+  <!-- =========================================================
+       HEADER
+  ========================================================== -->
+  <header class="topbar">
+
+    <a class="brand" href="/">
+      <span class="brand-mark">
+        <span>+</span>
+      </span>
+
+      <span class="brand-text">
+        <strong>SmartCareAI</strong>
+        <small>AI-powered healthcare</small>
+      </span>
+    </a>
+
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="#assistant">AI Assistant</a>
+      <a href="#services">Services</a>
+      <a href="#search">Find Care</a>
+      <a href="#how-it-works">How It Works</a>
+      <a href="#security">Security</a>
+    </nav>
+
+    <div class="header-actions">
+      <a class="login-link" href="/login">Login</a>
+      <a class="header-cta" href="#assistant">Get Started</a>
+    </div>
+
+  </header>
+
+
+  <main>
+
+    <!-- =======================================================
+         HERO
+    ======================================================== -->
+    <section class="hero-section" id="assistant">
+
+      <div class="hero-content">
+
+        <div class="hero-badge">
+          <span class="pulse-dot"></span>
+          Your intelligent healthcare companion
+        </div>
+
+        <h1>
+          Healthcare that
+          <span>listens to you.</span>
+        </h1>
+
+        <p class="hero-description">
+          Speak naturally about your health concerns in English,
+          Hindi or supported Indian languages. SmartCareAI understands
+          your symptoms and helps you discover the right doctor,
+          hospital or clinic.
+        </p>
+
+        <div class="hero-actions">
+
+          <button
+            class="primary voice-button"
+            id="speakButton"
+            type="button"
+            aria-label="Hold to speak"
+          >
+            <span class="voice-ring" aria-hidden="true"></span>
+            <span class="mic-icon" aria-hidden="true"></span>
+
+            <span>
+              <strong id="speakButtonText">Hold to Speak</strong>
+              <small>Tell us how you feel</small>
+            </span>
+          </button>
+
+          <button
+            class="secondary-button"
+            id="hearButton"
+            type="button"
+          >
+            🔊 Hear Result
+          </button>
+
+        </div>
+
+        <div class="hero-trust">
+
+          <span>
+            ✓ Multilingual
+          </span>
+
+          <span>
+            ✓ AI-assisted
+          </span>
+
+          <span>
+            ✓ Patient-first
+          </span>
+
+        </div>
+
+      </div>
+
+
+      <!-- =====================================================
+           AI ASSISTANT CARD
+      ====================================================== -->
+      <div class="ai-assistant-card">
+
+        <div class="assistant-card-header">
+
+          <div class="assistant-avatar">
+            ✚
+          </div>
+
+          <div>
+            <strong>SmartCare AI</strong>
+            <span>
+              <i class="online-dot"></i>
+              Assistant online
+            </span>
+          </div>
+
+          <button
+            class="card-menu"
+            type="button"
+            aria-label="Assistant options"
+          >
+            ⋯
+          </button>
+
+        </div>
+
+
+        <div class="conversation-preview">
+
+          <div class="ai-message">
+            <span class="message-avatar">AI</span>
+
+            <div class="message-bubble">
+              Hello! 👋
+              <br />
+              Tell me what you're experiencing and I'll help you
+              find the right next step.
+            </div>
+          </div>
+
+
+          <div class="user-message">
+            <div class="message-bubble user-bubble">
+              Mujhe teen din se fever aur khansi hai.
+            </div>
+          </div>
+
+
+          <div class="ai-message">
+
+            <span class="message-avatar">AI</span>
+
+            <div class="message-bubble">
+              I understand. Let me analyze your symptoms and
+              help you find suitable care options.
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <div class="assistant-input-area">
+
+          <textarea
+            id="manualTranscript"
+            rows="2"
+            placeholder="Describe your symptoms..."
+          ></textarea>
+
+          <button
+            class="mini-mic-button"
+            id="assistantMicButton"
+            type="button"
+            aria-label="Start voice input"
+          >
+            🎙
+          </button>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =======================================================
+         QUICK SEARCH
+    ======================================================== -->
+    <section class="quick-search-section">
+
+      <div class="quick-search-content">
+
+        <div>
+          <span class="section-label">
+            FIND HEALTHCARE
+          </span>
+
+          <h2>
+            What kind of care are you looking for?
+          </h2>
+        </div>
+
+        <form
+          class="quick-search-form"
+          id="careSearch"
+        >
+
+          <div class="search-input-wrapper">
+
+            <span>⌕</span>
+
+            <input
+              id="searchInput"
+              type="search"
+              placeholder="Search doctors, hospitals, clinics, diseases..."
+              autocomplete="off"
+            />
+
+          </div>
+
+          <div class="location-wrapper">
+
+            <span>⌖</span>
+
+            <input
+              id="locationInput"
+              type="text"
+              placeholder="Kanpur / Lucknow / Varanasi"
+            />
+
+          </div>
+
+          <button type="submit">
+            Find Care
+          </button>
+
+        </form>
+
+      </div>
+
+    </section>
+
+
+    <!-- =======================================================
+         AI RESULT
+    ======================================================== -->
+    <section class="ai-result-section" aria-live="polite">
+
+      <div class="result-header">
+
+        <div>
+          <span class="section-label">
+            AI HEALTH UNDERSTANDING
+          </span>
+
+          <h2>
+            Your SmartCareAI insight
+          </h2>
+        </div>
+
+        <span class="ai-status">
+          ● AI Ready
+        </span>
+
+      </div>
+
+
+      <div class="results-grid">
+
+        <article class="result-card">
+
+          <div class="result-icon">
+            🌐
+          </div>
+
+          <div>
+            <span>Language</span>
+            <strong id="languageValue">-</strong>
+          </div>
+
+        </article>
+
+
+        <article class="result-card">
+
+          <div class="result-icon">
+            🩺
+          </div>
+
+          <div>
+            <span>Symptoms</span>
+            <strong id="symptomsValue">-</strong>
+          </div>
+
+        </article>
+
+
+        <article class="result-card">
+
+          <div class="result-icon">
+            👨‍⚕️
+          </div>
+
+          <div>
+            <span>Suggested Specialist</span>
+            <strong id="specialtyValue">-</strong>
+          </div>
+
+        </article>
+
+
+        <article class="result-card">
+
+          <div class="result-icon">
+            🤖
+          </div>
+
+          <div>
+            <span>AI Model</span>
+            <strong id="modelValue">-</strong>
+          </div>
+
+        </article>
+
+      </div>
+
+
+      <div
+        class="urgency-card"
+        id="urgencyBlock"
+      >
+
+        <div class="urgency-icon">
+          ✓
+        </div>
+
+        <div>
+
+          <span class="section-label">
+            RECOMMENDED NEXT STEP
+          </span>
+
+          <h3 id="urgencyLabel">
+            Waiting for patient input
+          </h3>
+
+          <p id="urgencyMessage">
+            Speak or type your symptoms to receive a cautious
+            care suggestion.
+          </p>
+
+          <p
+            class="disclaimer"
+            id="disclaimerText"
+          >
+            SmartCareAI provides informational guidance and is
+            not a medical diagnosis system.
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =======================================================
+         SERVICES
+    ======================================================== -->
+    <section
+      class="services-section"
+      id="services"
+    >
+
+      <div class="section-heading">
+
+        <span class="section-label">
+          SMART HEALTHCARE
+        </span>
+
+        <h2>
+          Everything you need to navigate healthcare
+        </h2>
+
+        <p>
+          From understanding symptoms to finding the right
+          healthcare provider, SmartCareAI brings essential
+          healthcare discovery tools together.
+        </p>
+
+      </div>
+
+
+      <div class="service-grid">
+
+        <article class="service-card featured-service">
+
+          <div class="service-icon">
+            🎙
+          </div>
+
+          <span class="service-tag">
+            FEATURED
+          </span>
+
+          <h3>
+            Voice AI Assistant
+          </h3>
+
+          <p>
+            Speak naturally about your symptoms. Our voice-first
+            interface is designed for English, Hindi and
+            Indian-language healthcare interactions.
+          </p>
+
+          <a href="#assistant">
+            Talk to AI →
+          </a>
+
+        </article>
+
+
+        <article class="service-card">
+
+          <div class="service-icon">
+            👨‍⚕️
+          </div>
+
+          <h3>
+            Find a Doctor
+          </h3>
+
+          <p>
+            Discover doctors by specialty, name, disease,
+            location and healthcare requirement.
+          </p>
+
+          <a href="#search">
+            Find doctors →
+          </a>
+
+        </article>
+
+
+        <article class="service-card">
+
+          <div class="service-icon">
+            🏥
+          </div>
+
+          <h3>
+            Hospitals & Clinics
+          </h3>
+
+          <p>
+            Search healthcare facilities and explore available
+            care options around your preferred location.
+          </p>
+
+          <a href="#search">
+            Explore facilities →
+          </a>
+
+        </article>
+
+
+        <article class="service-card">
+
+          <div class="service-icon">
+            🌐
+          </div>
+
+          <h3>
+            Multilingual Support
+          </h3>
+
+          <p>
+            Make healthcare easier to access by communicating
+            in familiar Indian languages.
+          </p>
+
+          <a href="#assistant">
+            Choose language →
+          </a>
+
+        </article>
+
+
+        <article class="service-card">
+
+          <div class="service-icon">
+            📋
+          </div>
+
+          <h3>
+            Health Information
+          </h3>
+
+          <p>
+            Organize your healthcare journey and prepare useful
+            information before speaking with a professional.
+          </p>
+
+          <a href="/profile">
+            My health profile →
+          </a>
+
+        </article>
+
+
+        <article class="service-card">
+
+          <div class="service-icon">
+            🔔
+          </div>
+
+          <h3>
+            Smart Reminders
+          </h3>
+
+          <p>
+            Keep track of important healthcare actions,
+            appointments and follow-ups.
+          </p>
+
+          <a href="/profile">
+            Manage reminders →
+          </a>
+
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- =======================================================
+         HOW IT WORKS
+    ======================================================== -->
+    <section
+      class="how-section"
+      id="how-it-works"
+    >
+
+      <div class="section-heading centered">
+
+        <span class="section-label">
+          SIMPLE HEALTHCARE JOURNEY
+        </span>
+
+        <h2>
+          From your voice to the right care
+        </h2>
+
+        <p>
+          SmartCareAI is designed to reduce the complexity
+          of finding where to start.
+        </p>
+
+      </div>
+
+
+      <div class="steps-container">
+
+        <article class="step-card">
+
+          <div class="step-number">
+            01
+          </div>
+
+          <div class="step-icon">
+            🎙
+          </div>
+
+          <h3>
+            Tell us your concern
+          </h3>
+
+          <p>
+            Speak or type what you are experiencing.
+          </p>
+
+        </article>
+
+
+        <div class="step-line"></div>
+
+
+        <article class="step-card">
+
+          <div class="step-number">
+            02
+          </div>
+
+          <div class="step-icon">
+            🧠
+          </div>
+
+          <h3>
+            AI understands
+          </h3>
+
+          <p>
+            The system extracts language, symptoms and
+            relevant healthcare intent.
+          </p>
+
+        </article>
+
+
+        <div class="step-line"></div>
+
+
+        <article class="step-card">
+
+          <div class="step-number">
+            03
+          </div>
+
+          <div class="step-icon">
+            🔎
+          </div>
+
+          <h3>
+            Discover care
+          </h3>
+
+          <p>
+            Search for suitable doctors, hospitals and clinics.
+          </p>
+
+        </article>
+
+
+        <div class="step-line"></div>
+
+
+        <article class="step-card">
+
+          <div class="step-number">
+            04
+          </div>
+
+          <div class="step-icon">
+            ❤️
+          </div>
+
+          <h3>
+            Take the next step
+          </h3>
+
+          <p>
+            Use the information to decide how to proceed with
+            professional healthcare.
+          </p>
+
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- =======================================================
+         PROVIDER SEARCH
+    ======================================================== -->
+    <section
+      class="providers-section"
+      id="providers"
+    >
+
+      <div class="provider-section-header">
+
+        <div>
+
+          <span class="section-label">
+            CARE DISCOVERY
+          </span>
+
+          <h2>
+            Healthcare providers
+            <span>near your search</span>
+          </h2>
+
+        </div>
+
+        <a href="#search" class="view-all-link">
+          Search all providers →
+        </a>
+
+      </div>
+
+
+      <div
+        class="provider-list"
+        id="providerList"
+      >
+
+        <!-- Provider cards are populated by app.js -->
+
+      </div>
+
+    </section>
+
+
+    <!-- =======================================================
+         TECHNOLOGY
+    ======================================================== -->
+    <section class="technology-section">
+
+      <div class="technology-content">
+
+        <span class="section-label">
+          AI TECHNOLOGY
+        </span>
+
+        <h2>
+          Built for multilingual,
+          voice-first healthcare
+        </h2>
+
+        <p>
+          SmartCareAI uses a modular architecture so speech,
+          language understanding and healthcare intelligence
+          models can evolve independently.
+        </p>
+
+
+        <div class="technology-tags">
+
+          <span>Whisper-ready</span>
+          <span>XLS-R</span>
+          <span>IndicConformer</span>
+          <span>IndicBERT</span>
+          <span>XLM-R</span>
+          <span>IndicTrans</span>
+          <span>Python ML Pipeline</span>
+
+        </div>
+
+      </div>
+
+
+      <div class="technology-visual">
+
+        <div class="ai-orbit">
+
+          <div class="orbit-center">
+            AI
+          </div>
+
+          <span class="orbit-item orbit-1">
+            🎙
+          </span>
+
+          <span class="orbit-item orbit-2">
+            🧠
+          </span>
+
+          <span class="orbit-item orbit-3">
+            🌐
+          </span>
+
+          <span class="orbit-item orbit-4">
+            🏥
+          </span>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =======================================================
+         SECURITY
+    ======================================================== -->
+    <section
+      class="security-section"
+      id="security"
+    >
+
+      <div class="security-heading">
+
+        <span class="section-label">
+          TRUST & SECURITY
+        </span>
+
+        <h2>
+          Your healthcare journey
+          deserves privacy.
+        </h2>
+
+        <p>
+          SmartCareAI is designed with responsible healthcare
+          technology principles and clear communication about
+          the limits of AI-generated information.
+        </p>
+
+      </div>
+
+
+      <div class="security-grid">
+
+        <article class="security-card">
+
+          <div>
+            🔒
+          </div>
+
+          <h3>
+            Privacy First
+          </h3>
+
+          <p>
+            Healthcare information should be handled carefully
+            and responsibly.
+          </p>
+
+        </article>
+
+
+        <article class="security-card">
+
+          <div>
+            🛡
+          </div>
+
+          <h3>
+            Secure Architecture
+          </h3>
+
+          <p>
+            Build authentication, authorization and secure
+            data handling into every application layer.
+          </p>
+
+        </article>
+
+
+        <article class="security-card">
+
+          <div>
+            ⚠
+          </div>
+
+          <h3>
+            AI Transparency
+          </h3>
+
+          <p>
+            AI suggestions are informational and should not
+            replace qualified medical professionals.
+          </p>
+
+        </article>
+
+
+        <article class="security-card">
+
+          <div>
+            🌐
+          </div>
+
+          <h3>
+            Language Accessibility
+          </h3>
+
+          <p>
+            Healthcare discovery should be easier regardless
+            of the language a patient speaks.
+          </p>
+
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- =======================================================
+         DATA SOURCES
+    ======================================================== -->
+    <section class="source-section">
+
+      <div class="source-heading">
+
+        <span class="section-label">
+          HEALTHCARE DATA
+        </span>
+
+        <h2>
+          Built around reliable healthcare discovery
+        </h2>
+
+        <p>
+          Provider discovery can be connected to verified
+          public sources and future healthcare APIs.
+        </p>
+
+      </div>
+
+
+      <div
+        class="source-list"
+        id="sourceList"
+      >
+
+        <!-- Sources populated by app.js -->
+
+      </div>
+
+    </section>
+
+
+    <!-- =======================================================
+         FINAL CTA
+    ======================================================== -->
+    <section class="final-cta">
+
+      <div class="final-cta-content">
+
+        <span class="section-label">
+          START YOUR HEALTH JOURNEY
+        </span>
+
+        <h2>
+          Not sure where to start?
+        </h2>
+
+        <p>
+          Tell SmartCareAI what you are experiencing.
+          We'll help you understand the next step.
+        </p>
+
+        <div class="final-actions">
+
+          <a
+            href="#assistant"
+            class="final-primary-button"
+          >
+            🎙 Talk to SmartCareAI
+          </a>
+
+          <a
+            href="#search"
+            class="final-secondary-button"
+          >
+            Find Healthcare →
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- =========================================================
+       FOOTER
+  ========================================================== -->
+  <footer class="site-footer">
+
+    <div class="footer-main">
+
+      <div class="footer-brand">
+
+        <a class="brand" href="/">
+
+          <span class="brand-mark">
+            +
+          </span>
+
+          <span class="brand-text">
+            <strong>SmartCareAI</strong>
+            <small>AI-powered healthcare</small>
+          </span>
+
+        </a>
+
+        <p>
+          Making healthcare discovery more accessible through
+          voice, AI and intelligent care search.
+        </p>
+
+      </div>
+
+
+      <div class="footer-column">
+
+        <h4>Platform</h4>
+
+        <a href="#assistant">
+          AI Assistant
+        </a>
+
+        <a href="#search">
+          Find Care
+        </a>
+
+        <a href="#providers">
+          Providers
+        </a>
+
+        <a href="#how-it-works">
+          How It Works
+        </a>
+
+      </div>
+
+
+      <div class="footer-column">
+
+        <h4>For Patients</h4>
+
+        <a href="/login">
+          Login
+        </a>
+
+        <a href="/profile">
+          My Profile
+        </a>
+
+        <a href="#services">
+          Healthcare Services
+        </a>
+
+        <a href="#security">
+          Privacy & Security
+        </a>
+
+      </div>
+
+
+      <div class="footer-column">
+
+        <h4>Technology</h4>
+
+        <a href="#assistant">
+          Voice AI
+        </a>
+
+        <a href="#services">
+          AI Healthcare
+        </a>
+
+        <a href="#services">
+          Multilingual Support
+        </a>
+
+        <a href="#security">
+          Responsible AI
+        </a>
+
+      </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+      <span>
+        © 2026 SmartCareAI. All rights reserved.
+      </span>
+
+      <span>
+        SmartCareAI is not a substitute for professional medical advice.
+      </span>
+
+    </div>
+
+  </footer>
+
+
+  <!-- =========================================================
+       MOBILE VOICE BUTTON
+  ========================================================== -->
+  <button
+    class="floating-voice-button"
+    id="floatingVoiceButton"
+    type="button"
+    aria-label="Start SmartCareAI voice assistant"
+  >
+    🎙
+  </button>
+
+
+  <!-- =========================================================
+       APPLICATION SCRIPT
+  ========================================================== -->
+  <script
+    src="/static/app.js"
+    type="module"
+  ></script>
+
+</body>
+</html>

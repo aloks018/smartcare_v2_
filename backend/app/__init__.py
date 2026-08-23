@@ -1,0 +1,2 @@
+"""SmartCareAI backend package."""
+
