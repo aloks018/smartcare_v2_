@@ -15,6 +15,7 @@ EMERGENCY_PATTERNS = (
     "severe chest pain",
 
     "chest pain and difficulty breathing",
+    "chest pain and breathing difficulty",
 
     "cannot breathe",
 
@@ -59,7 +60,8 @@ def assess_urgency(
 
 
     # Emergency
-    if any(
+    combined_breathing_chest = "chest pain" in lower and "breathing difficulty" in lower
+    if combined_breathing_chest or any(
         pattern in lower
         for pattern in EMERGENCY_PATTERNS
     ):

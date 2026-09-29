@@ -94,6 +94,29 @@ class SearchResponse(BaseModel):
 
 
 # ============================================================
+# MEDICAL NAVIGATION CATALOG
+# ============================================================
+
+class MedicalSpecialtyMatch(BaseModel):
+    specialty_id: str
+    specialty_name: str
+    parent_category: str
+    description: str
+    when_to_consult: str
+    related_subspecialties: list[str] = Field(default_factory=list)
+    matching_symptoms: list[str] = Field(default_factory=list)
+    matching_conditions: list[str] = Field(default_factory=list)
+    matching_keywords: list[str] = Field(default_factory=list)
+    relevance: int = Field(ge=0, le=100)
+
+
+class MedicalSearchResponse(BaseModel):
+    query: str
+    total: int
+    results: list[MedicalSpecialtyMatch] = Field(default_factory=list)
+
+
+# ============================================================
 # VOICE ANALYSIS REQUEST
 # ============================================================
 
@@ -147,6 +170,10 @@ class VoiceAnalysisResponse(BaseModel):
 
     why_this_recommendation: list[str]
 
+    medical_matches: list[MedicalSpecialtyMatch] = Field(
+        default_factory=list
+    )
+
     model_stack: dict[str, str]
 
     assessment: TriageAssessment
@@ -156,6 +183,9 @@ class VoiceAnalysisResponse(BaseModel):
     providers: list[Provider]
 
     spoken_response: str
+
+    confidence: Optional[float] = Field(default=None, ge=0.0, le=1.0)
+    model_source: Optional[str] = None
 
     disclaimer: str
 

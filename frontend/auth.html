@@ -1,0 +1,535 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+
+  <meta
+    name="description"
+    content="SmartCare AI patient authentication"
+  />
+
+  <title>SmartCare AI | Patient Account</title>
+
+  <link rel="stylesheet" href="/static/styles.css" />
+
+  <style>
+    .auth-page {
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      padding: 40px 20px;
+      background:
+        radial-gradient(
+          circle at top left,
+          rgba(40, 180, 170, 0.12),
+          transparent 35%
+        ),
+        #f7f8f6;
+    }
+
+    .auth-shell {
+      width: min(100%, 460px);
+    }
+
+    .auth-card {
+      background: #ffffff;
+      border-radius: 24px;
+      padding: 36px;
+      box-shadow: 0 20px 60px rgba(20, 30, 40, 0.10);
+    }
+
+    .auth-brand {
+      text-align: center;
+      margin-bottom: 28px;
+    }
+
+    .auth-brand h1 {
+      margin: 10px 0 8px;
+    }
+
+    .auth-brand p {
+      margin: 0;
+      opacity: 0.7;
+    }
+
+    .auth-tabs {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+      padding: 5px;
+      margin-bottom: 25px;
+      border-radius: 12px;
+      background: #f0f2f1;
+    }
+
+    .auth-tab {
+      border: 0;
+      padding: 11px;
+      border-radius: 9px;
+      cursor: pointer;
+      background: transparent;
+      font: inherit;
+    }
+
+    .auth-tab.active {
+      background: white;
+      box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+    }
+
+    .auth-form {
+      display: none;
+    }
+
+    .auth-form.active {
+      display: block;
+    }
+
+    .auth-field {
+      margin-bottom: 17px;
+    }
+
+    .auth-field label {
+      display: block;
+      margin-bottom: 7px;
+      font-weight: 600;
+    }
+
+    .auth-field input {
+      width: 100%;
+      box-sizing: border-box;
+      padding: 13px 14px;
+      border: 1px solid #d9dedb;
+      border-radius: 10px;
+      font: inherit;
+      outline: none;
+    }
+
+    .auth-field input:focus {
+      border-color: #159b91;
+    }
+
+    .auth-submit {
+      width: 100%;
+      margin-top: 8px;
+      border: 0;
+      cursor: pointer;
+    }
+
+    .auth-message {
+      min-height: 22px;
+      margin: 14px 0 0;
+      font-size: 14px;
+      text-align: center;
+    }
+
+    .auth-message.error {
+      color: #c0392b;
+    }
+
+    .auth-message.success {
+      color: #17805f;
+    }
+
+    .auth-back {
+      display: block;
+      margin-top: 22px;
+      text-align: center;
+      text-decoration: none;
+    }
+
+    .account-panel {
+      display: none;
+    }
+
+    .account-panel.active {
+      display: block;
+    }
+
+    .account-info {
+      padding: 18px;
+      border-radius: 14px;
+      background: #f5f7f6;
+      margin-bottom: 18px;
+    }
+
+    .account-info strong {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    .logout-button {
+      width: 100%;
+      cursor: pointer;
+    }
+
+    .auth-page {
+      padding: 28px 20px;
+      color: #132c3f;
+      background: #f6f9fb;
+    }
+
+    .auth-shell {
+      width: min(100%, 960px);
+    }
+
+    .auth-card {
+      display: grid;
+      grid-template-columns: .8fr 1.2fr;
+      gap: 38px;
+      padding: 42px;
+      border: 1px solid #e1e9ed;
+      border-radius: 18px;
+      box-shadow: 0 16px 36px rgba(19, 44, 63, .07);
+    }
+
+    .auth-brand {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin: 0;
+      padding: 28px;
+      border-radius: 14px;
+      text-align: left;
+      background: #e8f7f2;
+    }
+
+    .auth-brand .brand {
+      align-self: flex-start;
+    }
+
+    .auth-brand h1 {
+      margin: 56px 0 10px;
+      font-family: "Manrope", sans-serif;
+      font-size: 30px;
+      line-height: 1.15;
+    }
+
+    .auth-brand p {
+      max-width: 250px;
+      color: #496275;
+      line-height: 1.6;
+    }
+
+    #authForms,
+    .account-panel,
+    .auth-message,
+    .auth-card > .auth-back {
+      grid-column: 2;
+    }
+
+    #authForms {
+      align-self: center;
+    }
+
+    .auth-tabs {
+      background: #f1f5f6;
+    }
+
+    .auth-tab.active {
+      color: #167c70;
+    }
+
+    .auth-field input {
+      border-color: #e1e9ed;
+      border-radius: 9px;
+      background: #fbfcfd;
+    }
+
+    .auth-field input:focus {
+      border-color: #167c70;
+      box-shadow: 0 0 0 3px rgba(22, 124, 112, .1);
+    }
+
+    @media (max-width: 720px) {
+      .auth-card {
+        display: block;
+        padding: 18px;
+      }
+
+      .auth-brand {
+        margin-bottom: 22px;
+        padding: 22px;
+      }
+
+      .auth-brand h1 {
+        margin-top: 30px;
+      }
+
+      #authForms,
+      .account-panel,
+      .auth-message,
+      .auth-card > .auth-back {
+        margin-right: 4px;
+        margin-left: 4px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <main class="auth-page">
+
+    <div class="auth-shell">
+
+      <section class="auth-card">
+
+        <div class="auth-brand">
+
+          <a
+            class="brand"
+            href="/"
+            aria-label="SmartCare AI home"
+          >
+            <span class="brand-mark" aria-hidden="true">
+              <i></i>
+              <i></i>
+              <i></i>
+            </span>
+
+            <span>
+              SmartCare <b>AI</b>
+            </span>
+          </a>
+
+          <h1>Your SmartCare account</h1>
+
+          <p>
+            Sign in to continue your personal care journey.
+          </p>
+
+        </div>
+
+
+        <!-- AUTH FORMS -->
+
+        <div id="authForms">
+
+          <div class="auth-tabs">
+
+            <button
+              class="auth-tab active"
+              id="loginTab"
+              type="button"
+            >
+              Login
+            </button>
+
+            <button
+              class="auth-tab"
+              id="registerTab"
+              type="button"
+            >
+              Create account
+            </button>
+
+          </div>
+
+
+          <!-- LOGIN -->
+
+          <form
+            id="loginForm"
+            class="auth-form active"
+          >
+
+            <div class="auth-field">
+
+              <label for="loginEmail">
+                Email
+              </label>
+
+              <input
+                id="loginEmail"
+                type="email"
+                required
+                autocomplete="email"
+                placeholder="you@example.com"
+              />
+
+            </div>
+
+
+            <div class="auth-field">
+
+              <label for="loginPassword">
+                Password
+              </label>
+
+              <input
+                id="loginPassword"
+                type="password"
+                required
+                autocomplete="current-password"
+                placeholder="Your password"
+              />
+
+            </div>
+
+
+            <button
+              class="button button-primary auth-submit"
+              type="submit"
+            >
+              Login
+            </button>
+
+          </form>
+
+
+          <!-- REGISTER -->
+
+          <form
+            id="registerForm"
+            class="auth-form"
+          >
+
+            <div class="auth-field">
+
+              <label for="registerName">
+                Full name
+              </label>
+
+              <input
+                id="registerName"
+                type="text"
+                required
+                minlength="2"
+                maxlength="150"
+                autocomplete="name"
+                placeholder="Your full name"
+              />
+
+            </div>
+
+
+            <div class="auth-field">
+
+              <label for="registerEmail">
+                Email
+              </label>
+
+              <input
+                id="registerEmail"
+                type="email"
+                required
+                autocomplete="email"
+                placeholder="you@example.com"
+              />
+
+            </div>
+
+
+            <div class="auth-field">
+
+              <label for="registerPhone">
+                Phone
+              </label>
+
+              <input
+                id="registerPhone"
+                type="tel"
+                autocomplete="tel"
+                placeholder="9876543210"
+              />
+
+            </div>
+
+
+            <div class="auth-field">
+
+              <label for="registerPassword">
+                Password
+              </label>
+
+              <input
+                id="registerPassword"
+                type="password"
+                required
+                minlength="8"
+                autocomplete="new-password"
+                placeholder="Minimum 8 characters"
+              />
+
+            </div>
+
+
+            <button
+              class="button button-primary auth-submit"
+              type="submit"
+            >
+              Create account
+            </button>
+
+          </form>
+
+        </div>
+
+
+        <!-- ACCOUNT -->
+
+        <div
+          class="account-panel"
+          id="accountPanel"
+        >
+
+          <div class="account-info">
+
+            <strong id="accountName">
+              Patient
+            </strong>
+
+            <span id="accountEmail">
+              email@example.com
+            </span>
+
+          </div>
+
+          <button
+            class="button button-dark logout-button"
+            id="logoutButton"
+            type="button"
+          >
+            Logout
+          </button>
+
+          <a
+            class="auth-back"
+            href="/#profile"
+          >
+            ← Back to SmartCare
+          </a>
+
+        </div>
+
+
+        <p
+          class="auth-message"
+          id="authMessage"
+          aria-live="polite"
+        ></p>
+
+
+        <a
+          class="auth-back"
+          id="homeLink"
+          href="/"
+        >
+          ← Back to SmartCare AI
+        </a>
+
+      </section>
+
+    </div>
+
+  </main>
+
+  <script src="/static/auth.js"></script>
+
+</body>
+</html>

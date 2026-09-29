@@ -1,0 +1,1886 @@
+[
+  {
+    "id": "sym-fever",
+    "name": "fever",
+    "specialty_ids": [
+      "general-medicine"
+    ],
+    "aliases": [
+      "fever"
+    ]
+  },
+  {
+    "id": "sym-fatigue",
+    "name": "fatigue",
+    "specialty_ids": [
+      "general-medicine",
+      "rheumatology"
+    ],
+    "aliases": [
+      "fatigue"
+    ]
+  },
+  {
+    "id": "sym-body-ache",
+    "name": "body ache",
+    "specialty_ids": [
+      "general-medicine"
+    ],
+    "aliases": [
+      "body ache"
+    ]
+  },
+  {
+    "id": "sym-loss-of-appetite",
+    "name": "loss of appetite",
+    "specialty_ids": [
+      "general-medicine"
+    ],
+    "aliases": [
+      "loss of appetite"
+    ]
+  },
+  {
+    "id": "sym-chest-discomfort",
+    "name": "chest discomfort",
+    "specialty_ids": [
+      "cardiology"
+    ],
+    "aliases": [
+      "chest discomfort"
+    ]
+  },
+  {
+    "id": "sym-palpitations",
+    "name": "palpitations",
+    "specialty_ids": [
+      "cardiology"
+    ],
+    "aliases": [
+      "palpitations"
+    ]
+  },
+  {
+    "id": "sym-shortness-of-breath",
+    "name": "shortness of breath",
+    "specialty_ids": [
+      "cardiology"
+    ],
+    "aliases": [
+      "shortness of breath"
+    ]
+  },
+  {
+    "id": "sym-leg-swelling",
+    "name": "leg swelling",
+    "specialty_ids": [
+      "cardiology"
+    ],
+    "aliases": [
+      "leg swelling"
+    ]
+  },
+  {
+    "id": "sym-skin-rash",
+    "name": "skin rash",
+    "specialty_ids": [
+      "dermatology"
+    ],
+    "aliases": [
+      "skin rash"
+    ]
+  },
+  {
+    "id": "sym-itching",
+    "name": "itching",
+    "specialty_ids": [
+      "dermatology"
+    ],
+    "aliases": [
+      "itching"
+    ]
+  },
+  {
+    "id": "sym-acne",
+    "name": "acne",
+    "specialty_ids": [
+      "dermatology"
+    ],
+    "aliases": [
+      "acne"
+    ]
+  },
+  {
+    "id": "sym-hair-loss",
+    "name": "hair loss",
+    "specialty_ids": [
+      "dermatology"
+    ],
+    "aliases": [
+      "hair loss"
+    ]
+  },
+  {
+    "id": "sym-increased-thirst",
+    "name": "increased thirst",
+    "specialty_ids": [
+      "endocrinology"
+    ],
+    "aliases": [
+      "increased thirst"
+    ]
+  },
+  {
+    "id": "sym-weight-change",
+    "name": "weight change",
+    "specialty_ids": [
+      "endocrinology"
+    ],
+    "aliases": [
+      "weight change"
+    ]
+  },
+  {
+    "id": "sym-heat-intolerance",
+    "name": "heat intolerance",
+    "specialty_ids": [
+      "endocrinology"
+    ],
+    "aliases": [
+      "heat intolerance"
+    ]
+  },
+  {
+    "id": "sym-irregular-periods",
+    "name": "irregular periods",
+    "specialty_ids": [
+      "endocrinology",
+      "obstetrics-gynecology"
+    ],
+    "aliases": [
+      "irregular periods"
+    ]
+  },
+  {
+    "id": "sym-abdominal-pain",
+    "name": "abdominal pain",
+    "specialty_ids": [
+      "gastroenterology"
+    ],
+    "aliases": [
+      "abdominal pain"
+    ]
+  },
+  {
+    "id": "sym-heartburn",
+    "name": "heartburn",
+    "specialty_ids": [
+      "gastroenterology"
+    ],
+    "aliases": [
+      "heartburn"
+    ]
+  },
+  {
+    "id": "sym-bloating",
+    "name": "bloating",
+    "specialty_ids": [
+      "gastroenterology"
+    ],
+    "aliases": [
+      "bloating"
+    ]
+  },
+  {
+    "id": "sym-change-in-bowel-habit",
+    "name": "change in bowel habit",
+    "specialty_ids": [
+      "gastroenterology"
+    ],
+    "aliases": [
+      "change in bowel habit"
+    ]
+  },
+  {
+    "id": "sym-headache",
+    "name": "headache",
+    "specialty_ids": [
+      "neurology"
+    ],
+    "aliases": [
+      "headache"
+    ]
+  },
+  {
+    "id": "sym-dizziness",
+    "name": "dizziness",
+    "specialty_ids": [
+      "neurology"
+    ],
+    "aliases": [
+      "dizziness"
+    ]
+  },
+  {
+    "id": "sym-numbness",
+    "name": "numbness",
+    "specialty_ids": [
+      "neurology"
+    ],
+    "aliases": [
+      "numbness"
+    ]
+  },
+  {
+    "id": "sym-tremor",
+    "name": "tremor",
+    "specialty_ids": [
+      "neurology"
+    ],
+    "aliases": [
+      "tremor"
+    ]
+  },
+  {
+    "id": "sym-persistent-cough",
+    "name": "persistent cough",
+    "specialty_ids": [
+      "pulmonology"
+    ],
+    "aliases": [
+      "persistent cough"
+    ]
+  },
+  {
+    "id": "sym-wheezing",
+    "name": "wheezing",
+    "specialty_ids": [
+      "pulmonology"
+    ],
+    "aliases": [
+      "wheezing"
+    ]
+  },
+  {
+    "id": "sym-breathlessness",
+    "name": "breathlessness",
+    "specialty_ids": [
+      "pulmonology"
+    ],
+    "aliases": [
+      "breathlessness"
+    ]
+  },
+  {
+    "id": "sym-snoring",
+    "name": "snoring",
+    "specialty_ids": [
+      "pulmonology"
+    ],
+    "aliases": [
+      "snoring"
+    ]
+  },
+  {
+    "id": "sym-swelling",
+    "name": "swelling",
+    "specialty_ids": [
+      "nephrology"
+    ],
+    "aliases": [
+      "swelling"
+    ]
+  },
+  {
+    "id": "sym-foamy-urine",
+    "name": "foamy urine",
+    "specialty_ids": [
+      "nephrology"
+    ],
+    "aliases": [
+      "foamy urine"
+    ]
+  },
+  {
+    "id": "sym-reduced-urine",
+    "name": "reduced urine",
+    "specialty_ids": [
+      "nephrology"
+    ],
+    "aliases": [
+      "reduced urine"
+    ]
+  },
+  {
+    "id": "sym-flank-discomfort",
+    "name": "flank discomfort",
+    "specialty_ids": [
+      "nephrology"
+    ],
+    "aliases": [
+      "flank discomfort"
+    ]
+  },
+  {
+    "id": "sym-joint-swelling",
+    "name": "joint swelling",
+    "specialty_ids": [
+      "rheumatology"
+    ],
+    "aliases": [
+      "joint swelling"
+    ]
+  },
+  {
+    "id": "sym-morning-stiffness",
+    "name": "morning stiffness",
+    "specialty_ids": [
+      "rheumatology"
+    ],
+    "aliases": [
+      "morning stiffness"
+    ]
+  },
+  {
+    "id": "sym-muscle-pain",
+    "name": "muscle pain",
+    "specialty_ids": [
+      "rheumatology"
+    ],
+    "aliases": [
+      "muscle pain"
+    ]
+  },
+  {
+    "id": "sym-easy-bruising",
+    "name": "easy bruising",
+    "specialty_ids": [
+      "hematology"
+    ],
+    "aliases": [
+      "easy bruising"
+    ]
+  },
+  {
+    "id": "sym-persistent-fatigue",
+    "name": "persistent fatigue",
+    "specialty_ids": [
+      "hematology"
+    ],
+    "aliases": [
+      "persistent fatigue"
+    ]
+  },
+  {
+    "id": "sym-frequent-infections",
+    "name": "frequent infections",
+    "specialty_ids": [
+      "hematology"
+    ],
+    "aliases": [
+      "frequent infections"
+    ]
+  },
+  {
+    "id": "sym-pale-skin",
+    "name": "pale skin",
+    "specialty_ids": [
+      "hematology"
+    ],
+    "aliases": [
+      "pale skin"
+    ]
+  },
+  {
+    "id": "sym-persistent-fever",
+    "name": "persistent fever",
+    "specialty_ids": [
+      "infectious-disease"
+    ],
+    "aliases": [
+      "persistent fever"
+    ]
+  },
+  {
+    "id": "sym-recurrent-infection",
+    "name": "recurrent infection",
+    "specialty_ids": [
+      "infectious-disease"
+    ],
+    "aliases": [
+      "recurrent infection"
+    ]
+  },
+  {
+    "id": "sym-night-sweats",
+    "name": "night sweats",
+    "specialty_ids": [
+      "infectious-disease"
+    ],
+    "aliases": [
+      "night sweats"
+    ]
+  },
+  {
+    "id": "sym-travel-related-illness",
+    "name": "travel-related illness",
+    "specialty_ids": [
+      "infectious-disease"
+    ],
+    "aliases": [
+      "travel-related illness"
+    ]
+  },
+  {
+    "id": "sym-unexplained-weight-loss",
+    "name": "unexplained weight loss",
+    "specialty_ids": [
+      "medical-oncology"
+    ],
+    "aliases": [
+      "unexplained weight loss"
+    ]
+  },
+  {
+    "id": "sym-persistent-lump",
+    "name": "persistent lump",
+    "specialty_ids": [
+      "medical-oncology"
+    ],
+    "aliases": [
+      "persistent lump"
+    ]
+  },
+  {
+    "id": "sym-unusual-bleeding",
+    "name": "unusual bleeding",
+    "specialty_ids": [
+      "medical-oncology"
+    ],
+    "aliases": [
+      "unusual bleeding"
+    ]
+  },
+  {
+    "id": "sym-prolonged-fatigue",
+    "name": "prolonged fatigue",
+    "specialty_ids": [
+      "medical-oncology"
+    ],
+    "aliases": [
+      "prolonged fatigue"
+    ]
+  },
+  {
+    "id": "sym-falls",
+    "name": "falls",
+    "specialty_ids": [
+      "geriatrics"
+    ],
+    "aliases": [
+      "falls"
+    ]
+  },
+  {
+    "id": "sym-memory-change",
+    "name": "memory change",
+    "specialty_ids": [
+      "geriatrics"
+    ],
+    "aliases": [
+      "memory change"
+    ]
+  },
+  {
+    "id": "sym-multiple-medicines",
+    "name": "multiple medicines",
+    "specialty_ids": [
+      "geriatrics"
+    ],
+    "aliases": [
+      "multiple medicines"
+    ]
+  },
+  {
+    "id": "sym-frailty",
+    "name": "frailty",
+    "specialty_ids": [
+      "geriatrics"
+    ],
+    "aliases": [
+      "frailty"
+    ]
+  },
+  {
+    "id": "sym-hives",
+    "name": "hives",
+    "specialty_ids": [
+      "allergy-immunology"
+    ],
+    "aliases": [
+      "hives"
+    ]
+  },
+  {
+    "id": "sym-sneezing",
+    "name": "sneezing",
+    "specialty_ids": [
+      "allergy-immunology"
+    ],
+    "aliases": [
+      "sneezing"
+    ]
+  },
+  {
+    "id": "sym-recurrent-wheeze",
+    "name": "recurrent wheeze",
+    "specialty_ids": [
+      "allergy-immunology"
+    ],
+    "aliases": [
+      "recurrent wheeze"
+    ]
+  },
+  {
+    "id": "sym-food-reaction",
+    "name": "food reaction",
+    "specialty_ids": [
+      "allergy-immunology"
+    ],
+    "aliases": [
+      "food reaction"
+    ]
+  },
+  {
+    "id": "sym-child-fever",
+    "name": "child fever",
+    "specialty_ids": [
+      "pediatrics"
+    ],
+    "aliases": [
+      "child fever"
+    ]
+  },
+  {
+    "id": "sym-feeding-difficulty",
+    "name": "feeding difficulty",
+    "specialty_ids": [
+      "pediatrics"
+    ],
+    "aliases": [
+      "feeding difficulty"
+    ]
+  },
+  {
+    "id": "sym-cough-in-child",
+    "name": "cough in child",
+    "specialty_ids": [
+      "pediatrics"
+    ],
+    "aliases": [
+      "cough in child"
+    ]
+  },
+  {
+    "id": "sym-poor-weight-gain",
+    "name": "poor weight gain",
+    "specialty_ids": [
+      "pediatrics"
+    ],
+    "aliases": [
+      "poor weight gain"
+    ]
+  },
+  {
+    "id": "sym-premature-birth-concern",
+    "name": "premature birth concern",
+    "specialty_ids": [
+      "neonatology"
+    ],
+    "aliases": [
+      "premature birth concern"
+    ]
+  },
+  {
+    "id": "sym-newborn-feeding-problem",
+    "name": "newborn feeding problem",
+    "specialty_ids": [
+      "neonatology"
+    ],
+    "aliases": [
+      "newborn feeding problem"
+    ]
+  },
+  {
+    "id": "sym-newborn-jaundice",
+    "name": "newborn jaundice",
+    "specialty_ids": [
+      "neonatology"
+    ],
+    "aliases": [
+      "newborn jaundice"
+    ]
+  },
+  {
+    "id": "sym-low-birth-weight",
+    "name": "low birth weight",
+    "specialty_ids": [
+      "neonatology"
+    ],
+    "aliases": [
+      "low birth weight"
+    ]
+  },
+  {
+    "id": "sym-child-heart-murmur",
+    "name": "child heart murmur",
+    "specialty_ids": [
+      "pediatric-cardiology"
+    ],
+    "aliases": [
+      "child heart murmur"
+    ]
+  },
+  {
+    "id": "sym-blue-lips",
+    "name": "blue lips",
+    "specialty_ids": [
+      "pediatric-cardiology"
+    ],
+    "aliases": [
+      "blue lips"
+    ]
+  },
+  {
+    "id": "sym-poor-feeding",
+    "name": "poor feeding",
+    "specialty_ids": [
+      "pediatric-cardiology"
+    ],
+    "aliases": [
+      "poor feeding"
+    ]
+  },
+  {
+    "id": "sym-fainting-in-child",
+    "name": "fainting in child",
+    "specialty_ids": [
+      "pediatric-cardiology"
+    ],
+    "aliases": [
+      "fainting in child"
+    ]
+  },
+  {
+    "id": "sym-pelvic-pain",
+    "name": "pelvic pain",
+    "specialty_ids": [
+      "obstetrics-gynecology"
+    ],
+    "aliases": [
+      "pelvic pain"
+    ]
+  },
+  {
+    "id": "sym-abnormal-bleeding",
+    "name": "abnormal bleeding",
+    "specialty_ids": [
+      "obstetrics-gynecology"
+    ],
+    "aliases": [
+      "abnormal bleeding"
+    ]
+  },
+  {
+    "id": "sym-pregnancy-concern",
+    "name": "pregnancy concern",
+    "specialty_ids": [
+      "obstetrics-gynecology"
+    ],
+    "aliases": [
+      "pregnancy concern"
+    ]
+  },
+  {
+    "id": "sym-difficulty-conceiving",
+    "name": "difficulty conceiving",
+    "specialty_ids": [
+      "reproductive-medicine"
+    ],
+    "aliases": [
+      "difficulty conceiving"
+    ]
+  },
+  {
+    "id": "sym-irregular-ovulation",
+    "name": "irregular ovulation",
+    "specialty_ids": [
+      "reproductive-medicine"
+    ],
+    "aliases": [
+      "irregular ovulation"
+    ]
+  },
+  {
+    "id": "sym-recurrent-pregnancy-loss",
+    "name": "recurrent pregnancy loss",
+    "specialty_ids": [
+      "reproductive-medicine"
+    ],
+    "aliases": [
+      "recurrent pregnancy loss"
+    ]
+  },
+  {
+    "id": "sym-fertility-concern",
+    "name": "fertility concern",
+    "specialty_ids": [
+      "reproductive-medicine"
+    ],
+    "aliases": [
+      "fertility concern"
+    ]
+  },
+  {
+    "id": "sym-high-risk-pregnancy",
+    "name": "high-risk pregnancy",
+    "specialty_ids": [
+      "maternal-fetal-medicine"
+    ],
+    "aliases": [
+      "high-risk pregnancy"
+    ]
+  },
+  {
+    "id": "sym-pregnancy-hypertension",
+    "name": "pregnancy hypertension",
+    "specialty_ids": [
+      "maternal-fetal-medicine"
+    ],
+    "aliases": [
+      "pregnancy hypertension"
+    ]
+  },
+  {
+    "id": "sym-gestational-diabetes",
+    "name": "gestational diabetes",
+    "specialty_ids": [
+      "maternal-fetal-medicine"
+    ],
+    "aliases": [
+      "gestational diabetes"
+    ]
+  },
+  {
+    "id": "sym-fetal-growth-concern",
+    "name": "fetal growth concern",
+    "specialty_ids": [
+      "maternal-fetal-medicine"
+    ],
+    "aliases": [
+      "fetal growth concern"
+    ]
+  },
+  {
+    "id": "sym-joint-pain",
+    "name": "joint pain",
+    "specialty_ids": [
+      "orthopedics"
+    ],
+    "aliases": [
+      "joint pain"
+    ]
+  },
+  {
+    "id": "sym-back-pain",
+    "name": "back pain",
+    "specialty_ids": [
+      "orthopedics",
+      "pain-medicine"
+    ],
+    "aliases": [
+      "back pain"
+    ]
+  },
+  {
+    "id": "sym-bone-injury",
+    "name": "bone injury",
+    "specialty_ids": [
+      "orthopedics"
+    ],
+    "aliases": [
+      "bone injury"
+    ]
+  },
+  {
+    "id": "sym-limited-movement",
+    "name": "limited movement",
+    "specialty_ids": [
+      "orthopedics"
+    ],
+    "aliases": [
+      "limited movement"
+    ]
+  },
+  {
+    "id": "sym-exercise-related-pain",
+    "name": "exercise-related pain",
+    "specialty_ids": [
+      "sports-medicine"
+    ],
+    "aliases": [
+      "exercise-related pain"
+    ]
+  },
+  {
+    "id": "sym-sprain",
+    "name": "sprain",
+    "specialty_ids": [
+      "sports-medicine"
+    ],
+    "aliases": [
+      "sprain"
+    ]
+  },
+  {
+    "id": "sym-overuse-injury",
+    "name": "overuse injury",
+    "specialty_ids": [
+      "sports-medicine"
+    ],
+    "aliases": [
+      "overuse injury"
+    ]
+  },
+  {
+    "id": "sym-reduced-performance",
+    "name": "reduced performance",
+    "specialty_ids": [
+      "sports-medicine"
+    ],
+    "aliases": [
+      "reduced performance"
+    ]
+  },
+  {
+    "id": "sym-weakness",
+    "name": "weakness",
+    "specialty_ids": [
+      "physical-medicine-rehabilitation"
+    ],
+    "aliases": [
+      "weakness"
+    ]
+  },
+  {
+    "id": "sym-mobility-limitation",
+    "name": "mobility limitation",
+    "specialty_ids": [
+      "physical-medicine-rehabilitation"
+    ],
+    "aliases": [
+      "mobility limitation"
+    ]
+  },
+  {
+    "id": "sym-chronic-pain",
+    "name": "chronic pain",
+    "specialty_ids": [
+      "physical-medicine-rehabilitation",
+      "pain-medicine"
+    ],
+    "aliases": [
+      "chronic pain"
+    ]
+  },
+  {
+    "id": "sym-recovery-after-injury",
+    "name": "recovery after injury",
+    "specialty_ids": [
+      "physical-medicine-rehabilitation"
+    ],
+    "aliases": [
+      "recovery after injury"
+    ]
+  },
+  {
+    "id": "sym-nerve-pain",
+    "name": "nerve pain",
+    "specialty_ids": [
+      "pain-medicine"
+    ],
+    "aliases": [
+      "nerve pain"
+    ]
+  },
+  {
+    "id": "sym-pain-affecting-sleep",
+    "name": "pain affecting sleep",
+    "specialty_ids": [
+      "pain-medicine"
+    ],
+    "aliases": [
+      "pain affecting sleep"
+    ]
+  },
+  {
+    "id": "sym-abdominal-lump",
+    "name": "abdominal lump",
+    "specialty_ids": [
+      "general-surgery"
+    ],
+    "aliases": [
+      "abdominal lump"
+    ]
+  },
+  {
+    "id": "sym-persistent-hernia-discomfort",
+    "name": "persistent hernia discomfort",
+    "specialty_ids": [
+      "general-surgery"
+    ],
+    "aliases": [
+      "persistent hernia discomfort"
+    ]
+  },
+  {
+    "id": "sym-gallbladder-pain",
+    "name": "gallbladder pain",
+    "specialty_ids": [
+      "general-surgery"
+    ],
+    "aliases": [
+      "gallbladder pain"
+    ]
+  },
+  {
+    "id": "sym-surgical-wound-concern",
+    "name": "surgical wound concern",
+    "specialty_ids": [
+      "general-surgery"
+    ],
+    "aliases": [
+      "surgical wound concern"
+    ]
+  },
+  {
+    "id": "sym-heart-surgery-referral",
+    "name": "heart surgery referral",
+    "specialty_ids": [
+      "cardiothoracic-surgery"
+    ],
+    "aliases": [
+      "heart surgery referral"
+    ]
+  },
+  {
+    "id": "sym-chest-surgical-concern",
+    "name": "chest surgical concern",
+    "specialty_ids": [
+      "cardiothoracic-surgery"
+    ],
+    "aliases": [
+      "chest surgical concern"
+    ]
+  },
+  {
+    "id": "sym-aortic-condition",
+    "name": "aortic condition",
+    "specialty_ids": [
+      "cardiothoracic-surgery"
+    ],
+    "aliases": [
+      "aortic condition"
+    ]
+  },
+  {
+    "id": "sym-lung-surgery-referral",
+    "name": "lung surgery referral",
+    "specialty_ids": [
+      "cardiothoracic-surgery"
+    ],
+    "aliases": [
+      "lung surgery referral"
+    ]
+  },
+  {
+    "id": "sym-nerve-compression",
+    "name": "nerve compression",
+    "specialty_ids": [
+      "neurosurgery"
+    ],
+    "aliases": [
+      "nerve compression"
+    ]
+  },
+  {
+    "id": "sym-progressive-weakness",
+    "name": "progressive weakness",
+    "specialty_ids": [
+      "neurosurgery"
+    ],
+    "aliases": [
+      "progressive weakness"
+    ]
+  },
+  {
+    "id": "sym-spinal-pain-with-weakness",
+    "name": "spinal pain with weakness",
+    "specialty_ids": [
+      "neurosurgery"
+    ],
+    "aliases": [
+      "spinal pain with weakness"
+    ]
+  },
+  {
+    "id": "sym-brain-surgery-referral",
+    "name": "brain surgery referral",
+    "specialty_ids": [
+      "neurosurgery"
+    ],
+    "aliases": [
+      "brain surgery referral"
+    ]
+  },
+  {
+    "id": "sym-complex-wound",
+    "name": "complex wound",
+    "specialty_ids": [
+      "plastic-reconstructive-surgery"
+    ],
+    "aliases": [
+      "complex wound"
+    ]
+  },
+  {
+    "id": "sym-scar-concern",
+    "name": "scar concern",
+    "specialty_ids": [
+      "plastic-reconstructive-surgery"
+    ],
+    "aliases": [
+      "scar concern"
+    ]
+  },
+  {
+    "id": "sym-burn-injury",
+    "name": "burn injury",
+    "specialty_ids": [
+      "plastic-reconstructive-surgery"
+    ],
+    "aliases": [
+      "burn injury"
+    ]
+  },
+  {
+    "id": "sym-reconstruction-referral",
+    "name": "reconstruction referral",
+    "specialty_ids": [
+      "plastic-reconstructive-surgery"
+    ],
+    "aliases": [
+      "reconstruction referral"
+    ]
+  },
+  {
+    "id": "sym-painful-urination",
+    "name": "painful urination",
+    "specialty_ids": [
+      "urology"
+    ],
+    "aliases": [
+      "painful urination"
+    ]
+  },
+  {
+    "id": "sym-blood-in-urine",
+    "name": "blood in urine",
+    "specialty_ids": [
+      "urology"
+    ],
+    "aliases": [
+      "blood in urine"
+    ]
+  },
+  {
+    "id": "sym-urinary-frequency",
+    "name": "urinary frequency",
+    "specialty_ids": [
+      "urology"
+    ],
+    "aliases": [
+      "urinary frequency"
+    ]
+  },
+  {
+    "id": "sym-flank-pain",
+    "name": "flank pain",
+    "specialty_ids": [
+      "urology"
+    ],
+    "aliases": [
+      "flank pain"
+    ]
+  },
+  {
+    "id": "sym-blurred-vision",
+    "name": "blurred vision",
+    "specialty_ids": [
+      "ophthalmology"
+    ],
+    "aliases": [
+      "blurred vision"
+    ]
+  },
+  {
+    "id": "sym-eye-redness",
+    "name": "eye redness",
+    "specialty_ids": [
+      "ophthalmology"
+    ],
+    "aliases": [
+      "eye redness"
+    ]
+  },
+  {
+    "id": "sym-eye-pain",
+    "name": "eye pain",
+    "specialty_ids": [
+      "ophthalmology"
+    ],
+    "aliases": [
+      "eye pain"
+    ]
+  },
+  {
+    "id": "sym-floaters",
+    "name": "floaters",
+    "specialty_ids": [
+      "ophthalmology"
+    ],
+    "aliases": [
+      "floaters"
+    ]
+  },
+  {
+    "id": "sym-ear-pain",
+    "name": "ear pain",
+    "specialty_ids": [
+      "otolaryngology"
+    ],
+    "aliases": [
+      "ear pain"
+    ]
+  },
+  {
+    "id": "sym-hearing-change",
+    "name": "hearing change",
+    "specialty_ids": [
+      "otolaryngology"
+    ],
+    "aliases": [
+      "hearing change"
+    ]
+  },
+  {
+    "id": "sym-sore-throat",
+    "name": "sore throat",
+    "specialty_ids": [
+      "otolaryngology"
+    ],
+    "aliases": [
+      "sore throat"
+    ]
+  },
+  {
+    "id": "sym-nasal-blockage",
+    "name": "nasal blockage",
+    "specialty_ids": [
+      "otolaryngology"
+    ],
+    "aliases": [
+      "nasal blockage"
+    ]
+  },
+  {
+    "id": "sym-toothache",
+    "name": "toothache",
+    "specialty_ids": [
+      "dentistry"
+    ],
+    "aliases": [
+      "toothache"
+    ]
+  },
+  {
+    "id": "sym-gum-bleeding",
+    "name": "gum bleeding",
+    "specialty_ids": [
+      "dentistry"
+    ],
+    "aliases": [
+      "gum bleeding"
+    ]
+  },
+  {
+    "id": "sym-jaw-pain",
+    "name": "jaw pain",
+    "specialty_ids": [
+      "dentistry"
+    ],
+    "aliases": [
+      "jaw pain"
+    ]
+  },
+  {
+    "id": "sym-tooth-sensitivity",
+    "name": "tooth sensitivity",
+    "specialty_ids": [
+      "dentistry"
+    ],
+    "aliases": [
+      "tooth sensitivity"
+    ]
+  },
+  {
+    "id": "sym-persistent-low-mood",
+    "name": "persistent low mood",
+    "specialty_ids": [
+      "psychiatry"
+    ],
+    "aliases": [
+      "persistent low mood"
+    ]
+  },
+  {
+    "id": "sym-anxiety",
+    "name": "anxiety",
+    "specialty_ids": [
+      "psychiatry"
+    ],
+    "aliases": [
+      "anxiety"
+    ]
+  },
+  {
+    "id": "sym-sleep-change",
+    "name": "sleep change",
+    "specialty_ids": [
+      "psychiatry"
+    ],
+    "aliases": [
+      "sleep change"
+    ]
+  },
+  {
+    "id": "sym-loss-of-interest",
+    "name": "loss of interest",
+    "specialty_ids": [
+      "psychiatry"
+    ],
+    "aliases": [
+      "loss of interest"
+    ]
+  },
+  {
+    "id": "sym-stress",
+    "name": "stress",
+    "specialty_ids": [
+      "clinical-psychology"
+    ],
+    "aliases": [
+      "stress"
+    ]
+  },
+  {
+    "id": "sym-panic-symptoms",
+    "name": "panic symptoms",
+    "specialty_ids": [
+      "clinical-psychology"
+    ],
+    "aliases": [
+      "panic symptoms"
+    ]
+  },
+  {
+    "id": "sym-difficulty-coping",
+    "name": "difficulty coping",
+    "specialty_ids": [
+      "clinical-psychology"
+    ],
+    "aliases": [
+      "difficulty coping"
+    ]
+  },
+  {
+    "id": "sym-relationship-distress",
+    "name": "relationship distress",
+    "specialty_ids": [
+      "clinical-psychology"
+    ],
+    "aliases": [
+      "relationship distress"
+    ]
+  },
+  {
+    "id": "sym-loud-snoring",
+    "name": "loud snoring",
+    "specialty_ids": [
+      "sleep-medicine"
+    ],
+    "aliases": [
+      "loud snoring"
+    ]
+  },
+  {
+    "id": "sym-daytime-sleepiness",
+    "name": "daytime sleepiness",
+    "specialty_ids": [
+      "sleep-medicine"
+    ],
+    "aliases": [
+      "daytime sleepiness"
+    ]
+  },
+  {
+    "id": "sym-insomnia",
+    "name": "insomnia",
+    "specialty_ids": [
+      "sleep-medicine"
+    ],
+    "aliases": [
+      "insomnia"
+    ]
+  },
+  {
+    "id": "sym-restless-sleep",
+    "name": "restless sleep",
+    "specialty_ids": [
+      "sleep-medicine"
+    ],
+    "aliases": [
+      "restless sleep"
+    ]
+  },
+  {
+    "id": "sym-imaging-referral",
+    "name": "imaging referral",
+    "specialty_ids": [
+      "radiology"
+    ],
+    "aliases": [
+      "imaging referral"
+    ]
+  },
+  {
+    "id": "sym-unexplained-pain-imaging",
+    "name": "unexplained pain imaging",
+    "specialty_ids": [
+      "radiology"
+    ],
+    "aliases": [
+      "unexplained pain imaging"
+    ]
+  },
+  {
+    "id": "sym-screening-imaging",
+    "name": "screening imaging",
+    "specialty_ids": [
+      "radiology"
+    ],
+    "aliases": [
+      "screening imaging"
+    ]
+  },
+  {
+    "id": "sym-injury-imaging",
+    "name": "injury imaging",
+    "specialty_ids": [
+      "radiology"
+    ],
+    "aliases": [
+      "injury imaging"
+    ]
+  },
+  {
+    "id": "sym-abnormal-lab-result",
+    "name": "abnormal lab result",
+    "specialty_ids": [
+      "pathology"
+    ],
+    "aliases": [
+      "abnormal lab result"
+    ]
+  },
+  {
+    "id": "sym-biopsy-referral",
+    "name": "biopsy referral",
+    "specialty_ids": [
+      "pathology"
+    ],
+    "aliases": [
+      "biopsy referral"
+    ]
+  },
+  {
+    "id": "sym-blood-test-concern",
+    "name": "blood test concern",
+    "specialty_ids": [
+      "pathology"
+    ],
+    "aliases": [
+      "blood test concern"
+    ]
+  },
+  {
+    "id": "sym-tissue-sample-review",
+    "name": "tissue sample review",
+    "specialty_ids": [
+      "pathology"
+    ],
+    "aliases": [
+      "tissue sample review"
+    ]
+  },
+  {
+    "id": "sym-severe-chest-pain",
+    "name": "severe chest pain",
+    "specialty_ids": [
+      "emergency-medicine"
+    ],
+    "aliases": [
+      "severe chest pain"
+    ]
+  },
+  {
+    "id": "sym-sudden-weakness",
+    "name": "sudden weakness",
+    "specialty_ids": [
+      "emergency-medicine"
+    ],
+    "aliases": [
+      "sudden weakness"
+    ]
+  },
+  {
+    "id": "sym-trouble-breathing",
+    "name": "trouble breathing",
+    "specialty_ids": [
+      "emergency-medicine"
+    ],
+    "aliases": [
+      "trouble breathing"
+    ]
+  },
+  {
+    "id": "sym-heavy-bleeding",
+    "name": "heavy bleeding",
+    "specialty_ids": [
+      "emergency-medicine"
+    ],
+    "aliases": [
+      "heavy bleeding"
+    ]
+  },
+  {
+    "id": "sym-organ-support-need",
+    "name": "organ support need",
+    "specialty_ids": [
+      "critical-care"
+    ],
+    "aliases": [
+      "organ support need"
+    ]
+  },
+  {
+    "id": "sym-severe-infection",
+    "name": "severe infection",
+    "specialty_ids": [
+      "critical-care"
+    ],
+    "aliases": [
+      "severe infection"
+    ]
+  },
+  {
+    "id": "sym-critical-illness",
+    "name": "critical illness",
+    "specialty_ids": [
+      "critical-care"
+    ],
+    "aliases": [
+      "critical illness"
+    ]
+  },
+  {
+    "id": "sym-ventilator-care",
+    "name": "ventilator care",
+    "specialty_ids": [
+      "critical-care"
+    ],
+    "aliases": [
+      "ventilator care"
+    ]
+  },
+  {
+    "id": "sym-surgery-preparation",
+    "name": "surgery preparation",
+    "specialty_ids": [
+      "anesthesiology"
+    ],
+    "aliases": [
+      "surgery preparation"
+    ]
+  },
+  {
+    "id": "sym-anesthesia-concern",
+    "name": "anesthesia concern",
+    "specialty_ids": [
+      "anesthesiology"
+    ],
+    "aliases": [
+      "anesthesia concern"
+    ]
+  },
+  {
+    "id": "sym-postoperative-pain",
+    "name": "postoperative pain",
+    "specialty_ids": [
+      "anesthesiology"
+    ],
+    "aliases": [
+      "postoperative pain"
+    ]
+  },
+  {
+    "id": "sym-airway-concern",
+    "name": "airway concern",
+    "specialty_ids": [
+      "anesthesiology"
+    ],
+    "aliases": [
+      "airway concern"
+    ]
+  },
+  {
+    "id": "sym-common-illness",
+    "name": "common illness",
+    "specialty_ids": [
+      "family-medicine"
+    ],
+    "aliases": [
+      "common illness"
+    ]
+  },
+  {
+    "id": "sym-preventive-care",
+    "name": "preventive care",
+    "specialty_ids": [
+      "family-medicine"
+    ],
+    "aliases": [
+      "preventive care"
+    ]
+  },
+  {
+    "id": "sym-chronic-condition-follow-up",
+    "name": "chronic condition follow-up",
+    "specialty_ids": [
+      "family-medicine"
+    ],
+    "aliases": [
+      "chronic condition follow-up"
+    ]
+  },
+  {
+    "id": "sym-family-health-concern",
+    "name": "family health concern",
+    "specialty_ids": [
+      "family-medicine"
+    ],
+    "aliases": [
+      "family health concern"
+    ]
+  },
+  {
+    "id": "sym-vaccination-question",
+    "name": "vaccination question",
+    "specialty_ids": [
+      "public-health-preventive-medicine"
+    ],
+    "aliases": [
+      "vaccination question"
+    ]
+  },
+  {
+    "id": "sym-screening-need",
+    "name": "screening need",
+    "specialty_ids": [
+      "public-health-preventive-medicine"
+    ],
+    "aliases": [
+      "screening need"
+    ]
+  },
+  {
+    "id": "sym-workplace-health-concern",
+    "name": "workplace health concern",
+    "specialty_ids": [
+      "public-health-preventive-medicine"
+    ],
+    "aliases": [
+      "workplace health concern"
+    ]
+  },
+  {
+    "id": "sym-travel-prevention-need",
+    "name": "travel prevention need",
+    "specialty_ids": [
+      "public-health-preventive-medicine"
+    ],
+    "aliases": [
+      "travel prevention need"
+    ]
+  },
+  {
+    "id": "sym-diet-concern",
+    "name": "diet concern",
+    "specialty_ids": [
+      "nutrition-dietetics"
+    ],
+    "aliases": [
+      "diet concern"
+    ]
+  },
+  {
+    "id": "sym-unintended-weight-change",
+    "name": "unintended weight change",
+    "specialty_ids": [
+      "nutrition-dietetics"
+    ],
+    "aliases": [
+      "unintended weight change"
+    ]
+  },
+  {
+    "id": "sym-poor-appetite",
+    "name": "poor appetite",
+    "specialty_ids": [
+      "nutrition-dietetics"
+    ],
+    "aliases": [
+      "poor appetite"
+    ]
+  },
+  {
+    "id": "sym-food-intolerance-question",
+    "name": "food intolerance question",
+    "specialty_ids": [
+      "nutrition-dietetics"
+    ],
+    "aliases": [
+      "food intolerance question"
+    ]
+  },
+  {
+    "id": "sym-muscle-weakness",
+    "name": "muscle weakness",
+    "specialty_ids": [
+      "physiotherapy"
+    ],
+    "aliases": [
+      "muscle weakness"
+    ]
+  },
+  {
+    "id": "sym-stiffness",
+    "name": "stiffness",
+    "specialty_ids": [
+      "physiotherapy"
+    ],
+    "aliases": [
+      "stiffness"
+    ]
+  },
+  {
+    "id": "sym-movement-pain",
+    "name": "movement pain",
+    "specialty_ids": [
+      "physiotherapy"
+    ],
+    "aliases": [
+      "movement pain"
+    ]
+  },
+  {
+    "id": "sym-balance-difficulty",
+    "name": "balance difficulty",
+    "specialty_ids": [
+      "physiotherapy"
+    ],
+    "aliases": [
+      "balance difficulty"
+    ]
+  },
+  {
+    "id": "sym-difficulty-with-daily-activities",
+    "name": "difficulty with daily activities",
+    "specialty_ids": [
+      "occupational-therapy"
+    ],
+    "aliases": [
+      "difficulty with daily activities"
+    ]
+  },
+  {
+    "id": "sym-hand-function-problem",
+    "name": "hand function problem",
+    "specialty_ids": [
+      "occupational-therapy"
+    ],
+    "aliases": [
+      "hand function problem"
+    ]
+  },
+  {
+    "id": "sym-sensory-difficulty",
+    "name": "sensory difficulty",
+    "specialty_ids": [
+      "occupational-therapy"
+    ],
+    "aliases": [
+      "sensory difficulty"
+    ]
+  },
+  {
+    "id": "sym-work-related-limitation",
+    "name": "work-related limitation",
+    "specialty_ids": [
+      "occupational-therapy"
+    ],
+    "aliases": [
+      "work-related limitation"
+    ]
+  },
+  {
+    "id": "sym-speech-delay",
+    "name": "speech delay",
+    "specialty_ids": [
+      "speech-language-therapy"
+    ],
+    "aliases": [
+      "speech delay"
+    ]
+  },
+  {
+    "id": "sym-voice-change",
+    "name": "voice change",
+    "specialty_ids": [
+      "speech-language-therapy"
+    ],
+    "aliases": [
+      "voice change"
+    ]
+  },
+  {
+    "id": "sym-swallowing-difficulty",
+    "name": "swallowing difficulty",
+    "specialty_ids": [
+      "speech-language-therapy"
+    ],
+    "aliases": [
+      "swallowing difficulty"
+    ]
+  },
+  {
+    "id": "sym-communication-difficulty",
+    "name": "communication difficulty",
+    "specialty_ids": [
+      "speech-language-therapy"
+    ],
+    "aliases": [
+      "communication difficulty"
+    ]
+  },
+  {
+    "id": "sym-hearing-difficulty",
+    "name": "hearing difficulty",
+    "specialty_ids": [
+      "audiology"
+    ],
+    "aliases": [
+      "hearing difficulty"
+    ]
+  },
+  {
+    "id": "sym-ringing-in-ears",
+    "name": "ringing in ears",
+    "specialty_ids": [
+      "audiology"
+    ],
+    "aliases": [
+      "ringing in ears"
+    ]
+  },
+  {
+    "id": "sym-balance-concern",
+    "name": "balance concern",
+    "specialty_ids": [
+      "audiology"
+    ],
+    "aliases": [
+      "balance concern"
+    ]
+  },
+  {
+    "id": "sym-hearing-aid-question",
+    "name": "hearing aid question",
+    "specialty_ids": [
+      "audiology"
+    ],
+    "aliases": [
+      "hearing aid question"
+    ]
+  },
+  {
+    "id": "sym-serious-illness-symptoms",
+    "name": "serious illness symptoms",
+    "specialty_ids": [
+      "palliative-medicine"
+    ],
+    "aliases": [
+      "serious illness symptoms"
+    ]
+  },
+  {
+    "id": "sym-complex-pain",
+    "name": "complex pain",
+    "specialty_ids": [
+      "palliative-medicine"
+    ],
+    "aliases": [
+      "complex pain"
+    ]
+  },
+  {
+    "id": "sym-breathlessness-in-serious-illness",
+    "name": "breathlessness in serious illness",
+    "specialty_ids": [
+      "palliative-medicine"
+    ],
+    "aliases": [
+      "breathlessness in serious illness"
+    ]
+  },
+  {
+    "id": "sym-caregiver-strain",
+    "name": "caregiver strain",
+    "specialty_ids": [
+      "palliative-medicine"
+    ],
+    "aliases": [
+      "caregiver strain"
+    ]
+  }
+]

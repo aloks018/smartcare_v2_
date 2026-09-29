@@ -1,0 +1,1475 @@
+[
+  {
+    "id": "trt-clinical-assessment",
+    "name": "clinical assessment",
+    "specialty_ids": [
+      "general-medicine"
+    ],
+    "description": "A service commonly coordinated within 1 care area(s)."
+  },
+  {
+    "id": "trt-health-screening",
+    "name": "health screening",
+    "specialty_ids": [
+      "general-medicine",
+      "public-health-preventive-medicine"
+    ],
+    "description": "A service commonly coordinated within 2 care area(s)."
+  },
+  {
+    "id": "trt-medication-review",
+    "name": "medication review",
+    "specialty_ids": [
+      "general-medicine",
+      "geriatrics",
+      "psychiatry"
+    ],
+    "description": "A service commonly coordinated within 3 care area(s)."
+  },
+  {
+    "id": "trt-referral-coordination",
+    "name": "referral coordination",
+    "specialty_ids": [
+      "general-medicine"
+    ],
+    "description": "A service commonly coordinated within 1 care area(s)."
+  },
+  {
+    "id": "trt-ecg",
+    "name": "ECG",
+    "specialty_ids": [
+      "cardiology"
+    ],
+    "description": "A service commonly coordinated within 1 care area(s)."
+  },
+  {
+    "id": "trt-echocardiography",
+    "name": "echocardiography",
+    "specialty_ids": [
+      "cardiology"
+    ],
+    "description": "A service commonly coordinated within 1 care area(s)."
+  },
+  {
+    "id": "trt-cardiac-risk-assessment",
+    "name": "cardiac risk assessment",
+    "specialty_ids": [
+      "cardiology"
+    ],
+    "description": "A service commonly coordinated within 1 care area(s)."
+  },
+  {
+    "id": "trt-heart-rhythm-monitoring",
+    "name": "heart rhythm monitoring",
+    "specialty_ids": [
+      "cardiology"
+    ],
+    "description": "A service commonly coordinated within 1 care area(s)."
+  },
+  {
+    "id": "trt-skin-examination",
+    "name": "skin examination",
+    "specialty_ids": [
+      "dermatology"
+    ],
+    "description": "A service commonly coordinated within 1 care area(s)."
+  },
+  {
+    "id": "trt-dermoscopy",
+    "name": "dermoscopy",
+    "specialty_ids": [
+      "dermatology"
+    ],
+    "description": "A service commonly coordinated within 1 care area(s)."
+  },
+  {
+    "id": "trt-topical-treatment-planning",
+    "name": "topical treatment planning",
+    "specialty_ids": [
+      "dermatology"
+    ],
+    "description": "A service commonly coordinated within 1 care area(s)."
+  },
+  {
+    "id": "trt-allergy-patch-testing",
+    "name": "allergy patch testing",
+    "specialty_ids": [
+      "dermatology"
+    ],
+    "description": "A service commonly coordinated within 1 care area(s)."
+  },
+  {
+    "id": "trt-blood-sugar-review",
+    "name": "blood sugar review",
+    "specialty_ids": [
+      "endocrinology"
+    ],
+    "description": "A service commonly coordinated within 1 care area(s)."
+  },
+  {
+    "id": "trt-thyroid-testing",
+    "name": "thyroid testing",
+    "specialty_ids": [
+      "endocrinology"
+    ],
+    "description": "A service commonly coordinated within 1 care area(s)."
+  },
+  {
+    "id": "trt-hormone-evaluation",
+    "name": "hormone evaluation",
+    "specialty_ids": [
+      "endocrinology"
+    ],
+    "description": "A service commonly coordinated within 1 care area(s)."
+  },
+  {
+    "id": "trt-bone-health-assessment",
+    "name": "bone health assessment",
+    "specialty_ids": [
+      "endocrinology"
+    ],
+    "description": "A service commonly coordinated within 1 care area(s)."
+  },
+  {
+    "id": "trt-digestive-evaluation",
+    "name": "digestive evaluation",
+    "specialty_ids": [
+      "gastroenterology"
+    ],
+    "description": "A service commonly coordinated within 1 care area(s)."
+  },
+  {
+    "id": "trt-endoscopy-planning",
+    "name": "endoscopy planning",
+    "specialty_ids": [
+      "gastroenterology"
+    ],
+    "description": "A service commonly coordinated within 1 care area(s)."
+  },
+  {
+    "id": "trt-liver-assessment",
+    "name": "liver assessment",
+    "specialty_ids": [
+      "gastroenterology"
+    ],
+    "description": "A service commonly coordinated within 1 care area(s)."
+  },
+  {
+    "id": "trt-nutrition-related-care",
+    "name": "nutrition-related care",
+    "specialty_ids": [
+      "gastroenterology"
+    ],
+    "description": "A service commonly coordinated within 1 care area(s)."
+  },
+  {
+    "id": "trt-neurological-examination",
+    "name": "neurological examination",
+    "specialty_ids": [
+      "neurology"
+    ],
+    "description": "A service commonly coordinated within 1 care area(s)."
+  },
+  {
+    "id": "trt-nerve-testing",
+    "name": "nerve testing",
+    "specialty_ids": [
+      "neurology"
+    ],
+    "description": "A service commonly coordinated within 1 care area(s)."
+  },
+  {
+    "id": "trt-headache-evaluation",
+    "name": "headache evaluation",
+    "specialty_ids": [
+      "neurology"
+    ],
+    "description": "A service commonly coordinated within 1 care area(s)."
+  },
+  {
+    "id": "trt-stroke-rehabilitation-planning",
+    "name": "stroke rehabilitation planning",
+    "specialty_ids": [
+      "neurology"
+    ],
+    "description": "A service commonly coordinated within 1 care area(s)."
+  },
+  {
+    "id": "trt-lung-function-testing",
+    "name": "lung function testing",
+    "specialty_ids": [
+      "pulmonology"
+    ],
+    "description": "A service commonly coordinated within 1 care area(s)."
+  },
+  {
+    "id": "trt-inhaler-review",
+    "name": "inhaler review",
+    "specialty_ids": [
+      "pulmonology"
+    ],
+    "description": "A service commonly coordinated within 1 care area(s)."
+  },
+  {
+    "id": "trt-sleep-study-planning",
+    "name": "sleep study planning",
+    "specialty_ids": [
+      "pulmonology",
+      "sleep-medicine"
+    ],
+    "description": "A service commonly coordinated within 2 care area(s)."
+  },
+  {
+    "id": "trt-respiratory-assessment",
+    "name": "respiratory assessment",
+    "specialty_ids": [
+      "pulmonology"
+    ],
+    "description": "A service commonly coordinated within 1 care area(s)."
+  },
+  {
+    "id": "trt-kidney-function-review",
+    "name": "kidney function review",
+    "specialty_ids": [
+      "nephrology"
+    ],
+    "description": "A service commonly coordinated within 1 care area(s)."
+  },
+  {
+    "id": "trt-urine-testing",
+    "name": "urine testing",
+    "specialty_ids": [
+      "nephrology"
+    ],
+    "description": "A service commonly coordinated within 1 care area(s)."
+  },
+  {
+    "id": "trt-dialysis-planning",
+    "name": "dialysis planning",
+    "specialty_ids": [
+      "nephrology"
+    ],
+    "description": "A service commonly coordinated within 1 care area(s)."
+  },
+  {
+    "id": "trt-blood-pressure-management",
+    "name": "blood pressure management",
+    "specialty_ids": [
+      "nephrology"
+    ],
+    "description": "A service commonly coordinated within 1 care area(s)."
+  },
+  {
+    "id": "trt-autoimmune-evaluation",
+    "name": "autoimmune evaluation",
+    "specialty_ids": [
+      "rheumatology"
+    ],
+    "description": "A service commonly coordinated within 1 care area(s)."
+  },
+  {
+    "id": "trt-joint-inflammation-management",
+    "name": "joint inflammation management",
+    "specialty_ids": [
+      "rheumatology"
+    ],
+    "description": "A service commonly coordinated within 1 care area(s)."
+  },
+  {
+    "id": "trt-infusion-planning",
+    "name": "infusion planning",
+    "specialty_ids": [
+      "rheumatology"
+    ],
+    "description": "A service commonly coordinated within 1 care area(s)."
+  },
+  {
+    "id": "trt-bone-health-review",
+    "name": "bone health review",
+    "specialty_ids": [
+      "rheumatology"
+    ],
+    "description": "A service commonly coordinated within 1 care area(s)."
+  },
+  {
+    "id": "trt-blood-count-interpretation",
+    "name": "blood count interpretation",
+    "specialty_ids": [
+      "hematology"
+    ],
+    "description": "A service commonly coordinated within 1 care area(s)."
+  },
+  {
+    "id": "trt-iron-assessment",
+    "name": "iron assessment",
+    "specialty_ids": [
+      "hematology"
+    ],
+    "description": "A service commonly coordinated within 1 care area(s)."
+  },
+  {
+    "id": "trt-clotting-evaluation",
+    "name": "clotting evaluation",
+    "specialty_ids": [
+      "hematology"
+    ],
+    "description": "A service commonly coordinated within 1 care area(s)."
+  },
+  {
+    "id": "trt-bone-marrow-assessment-planning",
+    "name": "bone marrow assessment planning",
+    "specialty_ids": [
+      "hematology"
+    ],
+    "description": "A service commonly coordinated within 1 care area(s)."
+  },
+  {
+    "id": "trt-infection-evaluation",
+    "name": "infection evaluation",
+    "specialty_ids": [
+      "infectious-disease"
+    ],
+    "description": "A service commonly coordinated within 1 care area(s)."
+  },
+  {
+    "id": "trt-antimicrobial-review",
+    "name": "antimicrobial review",
+    "specialty_ids": [
+      "infectious-disease"
+    ],
+    "description": "A service commonly coordinated within 1 care area(s)."
+  },
+  {
+    "id": "trt-travel-health-counseling",
+    "name": "travel health counseling",
+    "specialty_ids": [
+      "infectious-disease"
+    ],
+    "description": "A service commonly coordinated within 1 care area(s)."
+  },
+  {
+    "id": "trt-vaccination-planning",
+    "name": "vaccination planning",
+    "specialty_ids": [
+      "infectious-disease",
+      "public-health-preventive-medicine"
+    ],
+    "description": "A service commonly coordinated within 2 care area(s)."
+  },
+  {
+    "id": "trt-treatment-planning",
+    "name": "treatment planning",
+    "specialty_ids": [
+      "medical-oncology"
+    ],
+    "description": "A service commonly coordinated within 1 care area(s)."
+  },
+  {
+    "id": "trt-systemic-therapy-counseling",
+    "name": "systemic therapy counseling",
+    "specialty_ids": [
+      "medical-oncology"
+    ],
+    "description": "A service commonly coordinated within 1 care area(s)."
+  },
+  {
+    "id": "trt-symptom-support",
+    "name": "symptom support",
+    "specialty_ids": [
+      "medical-oncology",
+      "palliative-medicine"
+    ],
+    "description": "A service commonly coordinated within 2 care area(s)."
+  },
+  {
+    "id": "trt-survivorship-planning",
+    "name": "survivorship planning",
+    "specialty_ids": [
+      "medical-oncology"
+    ],
+    "description": "A service commonly coordinated within 1 care area(s)."
+  },
+  {
+    "id": "trt-comprehensive-geriatric-assessment",
+    "name": "comprehensive geriatric assessment",
+    "specialty_ids": [
+      "geriatrics"
+    ],
+    "description": "A service commonly coordinated within 1 care area(s)."
+  },
+  {
+    "id": "trt-fall-risk-review",
+    "name": "fall-risk review",
+    "specialty_ids": [
+      "geriatrics"
+    ],
+    "description": "A service commonly coordinated within 1 care area(s)."
+  },
+  {
+    "id": "trt-care-planning",
+    "name": "care planning",
+    "specialty_ids": [
+      "geriatrics",
+      "palliative-medicine"
+    ],
+    "description": "A service commonly coordinated within 2 care area(s)."
+  },
+  {
+    "id": "trt-allergy-testing",
+    "name": "allergy testing",
+    "specialty_ids": [
+      "allergy-immunology"
+    ],
+    "description": "A service commonly coordinated within 1 care area(s)."
+  },
+  {
+    "id": "trt-trigger-assessment",
+    "name": "trigger assessment",
+    "specialty_ids": [
+      "allergy-immunology"
+    ],
+    "description": "A service commonly coordinated within 1 care area(s)."
+  },
+  {
+    "id": "trt-immunotherapy-planning",
+    "name": "immunotherapy planning",
+    "specialty_ids": [
+      "allergy-immunology"
+    ],
+    "description": "A service commonly coordinated within 1 care area(s)."
+  },
+  {
+    "id": "trt-immune-review",
+    "name": "immune review",
+    "specialty_ids": [
+      "allergy-immunology"
+    ],
+    "description": "A service commonly coordinated within 1 care area(s)."
+  },
+  {
+    "id": "trt-child-health-assessment",
+    "name": "child health assessment",
+    "specialty_ids": [
+      "pediatrics"
+    ],
+    "description": "A service commonly coordinated within 1 care area(s)."
+  },
+  {
+    "id": "trt-growth-monitoring",
+    "name": "growth monitoring",
+    "specialty_ids": [
+      "pediatrics"
+    ],
+    "description": "A service commonly coordinated within 1 care area(s)."
+  },
+  {
+    "id": "trt-vaccination-counseling",
+    "name": "vaccination counseling",
+    "specialty_ids": [
+      "pediatrics",
+      "family-medicine"
+    ],
+    "description": "A service commonly coordinated within 2 care area(s)."
+  },
+  {
+    "id": "trt-development-review",
+    "name": "development review",
+    "specialty_ids": [
+      "pediatrics"
+    ],
+    "description": "A service commonly coordinated within 1 care area(s)."
+  },
+  {
+    "id": "trt-newborn-assessment",
+    "name": "newborn assessment",
+    "specialty_ids": [
+      "neonatology"
+    ],
+    "description": "A service commonly coordinated within 1 care area(s)."
+  },
+  {
+    "id": "trt-nicu-care",
+    "name": "NICU care",
+    "specialty_ids": [
+      "neonatology"
+    ],
+    "description": "A service commonly coordinated within 1 care area(s)."
+  },
+  {
+    "id": "trt-feeding-support",
+    "name": "feeding support",
+    "specialty_ids": [
+      "neonatology"
+    ],
+    "description": "A service commonly coordinated within 1 care area(s)."
+  },
+  {
+    "id": "trt-newborn-follow-up",
+    "name": "newborn follow-up",
+    "specialty_ids": [
+      "neonatology"
+    ],
+    "description": "A service commonly coordinated within 1 care area(s)."
+  },
+  {
+    "id": "trt-pediatric-echocardiography",
+    "name": "pediatric echocardiography",
+    "specialty_ids": [
+      "pediatric-cardiology"
+    ],
+    "description": "A service commonly coordinated within 1 care area(s)."
+  },
+  {
+    "id": "trt-heart-rhythm-assessment",
+    "name": "heart rhythm assessment",
+    "specialty_ids": [
+      "pediatric-cardiology"
+    ],
+    "description": "A service commonly coordinated within 1 care area(s)."
+  },
+  {
+    "id": "trt-congenital-heart-follow-up",
+    "name": "congenital heart follow-up",
+    "specialty_ids": [
+      "pediatric-cardiology"
+    ],
+    "description": "A service commonly coordinated within 1 care area(s)."
+  },
+  {
+    "id": "trt-activity-guidance",
+    "name": "activity guidance",
+    "specialty_ids": [
+      "pediatric-cardiology"
+    ],
+    "description": "A service commonly coordinated within 1 care area(s)."
+  },
+  {
+    "id": "trt-gynecological-examination",
+    "name": "gynecological examination",
+    "specialty_ids": [
+      "obstetrics-gynecology"
+    ],
+    "description": "A service commonly coordinated within 1 care area(s)."
+  },
+  {
+    "id": "trt-prenatal-care",
+    "name": "prenatal care",
+    "specialty_ids": [
+      "obstetrics-gynecology"
+    ],
+    "description": "A service commonly coordinated within 1 care area(s)."
+  },
+  {
+    "id": "trt-menstrual-health-assessment",
+    "name": "menstrual health assessment",
+    "specialty_ids": [
+      "obstetrics-gynecology"
+    ],
+    "description": "A service commonly coordinated within 1 care area(s)."
+  },
+  {
+    "id": "trt-contraception-counseling",
+    "name": "contraception counseling",
+    "specialty_ids": [
+      "obstetrics-gynecology"
+    ],
+    "description": "A service commonly coordinated within 1 care area(s)."
+  },
+  {
+    "id": "trt-fertility-evaluation",
+    "name": "fertility evaluation",
+    "specialty_ids": [
+      "reproductive-medicine"
+    ],
+    "description": "A service commonly coordinated within 1 care area(s)."
+  },
+  {
+    "id": "trt-ovulation-tracking",
+    "name": "ovulation tracking",
+    "specialty_ids": [
+      "reproductive-medicine"
+    ],
+    "description": "A service commonly coordinated within 1 care area(s)."
+  },
+  {
+    "id": "trt-assisted-reproduction-counseling",
+    "name": "assisted reproduction counseling",
+    "specialty_ids": [
+      "reproductive-medicine"
+    ],
+    "description": "A service commonly coordinated within 1 care area(s)."
+  },
+  {
+    "id": "trt-preconception-planning",
+    "name": "preconception planning",
+    "specialty_ids": [
+      "reproductive-medicine"
+    ],
+    "description": "A service commonly coordinated within 1 care area(s)."
+  },
+  {
+    "id": "trt-high-risk-prenatal-assessment",
+    "name": "high-risk prenatal assessment",
+    "specialty_ids": [
+      "maternal-fetal-medicine"
+    ],
+    "description": "A service commonly coordinated within 1 care area(s)."
+  },
+  {
+    "id": "trt-fetal-ultrasound-planning",
+    "name": "fetal ultrasound planning",
+    "specialty_ids": [
+      "maternal-fetal-medicine"
+    ],
+    "description": "A service commonly coordinated within 1 care area(s)."
+  },
+  {
+    "id": "trt-maternal-health-monitoring",
+    "name": "maternal health monitoring",
+    "specialty_ids": [
+      "maternal-fetal-medicine"
+    ],
+    "description": "A service commonly coordinated within 1 care area(s)."
+  },
+  {
+    "id": "trt-delivery-planning",
+    "name": "delivery planning",
+    "specialty_ids": [
+      "maternal-fetal-medicine"
+    ],
+    "description": "A service commonly coordinated within 1 care area(s)."
+  },
+  {
+    "id": "trt-orthopedic-examination",
+    "name": "orthopedic examination",
+    "specialty_ids": [
+      "orthopedics"
+    ],
+    "description": "A service commonly coordinated within 1 care area(s)."
+  },
+  {
+    "id": "trt-fracture-care",
+    "name": "fracture care",
+    "specialty_ids": [
+      "orthopedics"
+    ],
+    "description": "A service commonly coordinated within 1 care area(s)."
+  },
+  {
+    "id": "trt-joint-replacement-assessment",
+    "name": "joint replacement assessment",
+    "specialty_ids": [
+      "orthopedics"
+    ],
+    "description": "A service commonly coordinated within 1 care area(s)."
+  },
+  {
+    "id": "trt-mobility-planning",
+    "name": "mobility planning",
+    "specialty_ids": [
+      "orthopedics"
+    ],
+    "description": "A service commonly coordinated within 1 care area(s)."
+  },
+  {
+    "id": "trt-injury-assessment",
+    "name": "injury assessment",
+    "specialty_ids": [
+      "sports-medicine"
+    ],
+    "description": "A service commonly coordinated within 1 care area(s)."
+  },
+  {
+    "id": "trt-return-to-sport-planning",
+    "name": "return-to-sport planning",
+    "specialty_ids": [
+      "sports-medicine"
+    ],
+    "description": "A service commonly coordinated within 1 care area(s)."
+  },
+  {
+    "id": "trt-exercise-prescription",
+    "name": "exercise prescription",
+    "specialty_ids": [
+      "sports-medicine"
+    ],
+    "description": "A service commonly coordinated within 1 care area(s)."
+  },
+  {
+    "id": "trt-injury-prevention",
+    "name": "injury prevention",
+    "specialty_ids": [
+      "sports-medicine"
+    ],
+    "description": "A service commonly coordinated within 1 care area(s)."
+  },
+  {
+    "id": "trt-rehabilitation-assessment",
+    "name": "rehabilitation assessment",
+    "specialty_ids": [
+      "physical-medicine-rehabilitation"
+    ],
+    "description": "A service commonly coordinated within 1 care area(s)."
+  },
+  {
+    "id": "trt-assistive-device-planning",
+    "name": "assistive-device planning",
+    "specialty_ids": [
+      "physical-medicine-rehabilitation"
+    ],
+    "description": "A service commonly coordinated within 1 care area(s)."
+  },
+  {
+    "id": "trt-functional-recovery-plan",
+    "name": "functional recovery plan",
+    "specialty_ids": [
+      "physical-medicine-rehabilitation"
+    ],
+    "description": "A service commonly coordinated within 1 care area(s)."
+  },
+  {
+    "id": "trt-spasticity-management",
+    "name": "spasticity management",
+    "specialty_ids": [
+      "physical-medicine-rehabilitation"
+    ],
+    "description": "A service commonly coordinated within 1 care area(s)."
+  },
+  {
+    "id": "trt-pain-assessment",
+    "name": "pain assessment",
+    "specialty_ids": [
+      "pain-medicine"
+    ],
+    "description": "A service commonly coordinated within 1 care area(s)."
+  },
+  {
+    "id": "trt-multimodal-pain-plan",
+    "name": "multimodal pain plan",
+    "specialty_ids": [
+      "pain-medicine"
+    ],
+    "description": "A service commonly coordinated within 1 care area(s)."
+  },
+  {
+    "id": "trt-procedure-counseling",
+    "name": "procedure counseling",
+    "specialty_ids": [
+      "pain-medicine"
+    ],
+    "description": "A service commonly coordinated within 1 care area(s)."
+  },
+  {
+    "id": "trt-sleep-and-function-review",
+    "name": "sleep and function review",
+    "specialty_ids": [
+      "pain-medicine"
+    ],
+    "description": "A service commonly coordinated within 1 care area(s)."
+  },
+  {
+    "id": "trt-surgical-consultation",
+    "name": "surgical consultation",
+    "specialty_ids": [
+      "general-surgery"
+    ],
+    "description": "A service commonly coordinated within 1 care area(s)."
+  },
+  {
+    "id": "trt-preoperative-assessment",
+    "name": "preoperative assessment",
+    "specialty_ids": [
+      "general-surgery"
+    ],
+    "description": "A service commonly coordinated within 1 care area(s)."
+  },
+  {
+    "id": "trt-postoperative-follow-up",
+    "name": "postoperative follow-up",
+    "specialty_ids": [
+      "general-surgery",
+      "neurosurgery"
+    ],
+    "description": "A service commonly coordinated within 2 care area(s)."
+  },
+  {
+    "id": "trt-wound-care-planning",
+    "name": "wound care planning",
+    "specialty_ids": [
+      "general-surgery"
+    ],
+    "description": "A service commonly coordinated within 1 care area(s)."
+  },
+  {
+    "id": "trt-surgical-cardiac-assessment",
+    "name": "surgical cardiac assessment",
+    "specialty_ids": [
+      "cardiothoracic-surgery"
+    ],
+    "description": "A service commonly coordinated within 1 care area(s)."
+  },
+  {
+    "id": "trt-valve-surgery-planning",
+    "name": "valve surgery planning",
+    "specialty_ids": [
+      "cardiothoracic-surgery"
+    ],
+    "description": "A service commonly coordinated within 1 care area(s)."
+  },
+  {
+    "id": "trt-bypass-surgery-counseling",
+    "name": "bypass surgery counseling",
+    "specialty_ids": [
+      "cardiothoracic-surgery"
+    ],
+    "description": "A service commonly coordinated within 1 care area(s)."
+  },
+  {
+    "id": "trt-thoracic-surgery-review",
+    "name": "thoracic surgery review",
+    "specialty_ids": [
+      "cardiothoracic-surgery"
+    ],
+    "description": "A service commonly coordinated within 1 care area(s)."
+  },
+  {
+    "id": "trt-neurosurgical-assessment",
+    "name": "neurosurgical assessment",
+    "specialty_ids": [
+      "neurosurgery"
+    ],
+    "description": "A service commonly coordinated within 1 care area(s)."
+  },
+  {
+    "id": "trt-spine-surgery-planning",
+    "name": "spine surgery planning",
+    "specialty_ids": [
+      "neurosurgery"
+    ],
+    "description": "A service commonly coordinated within 1 care area(s)."
+  },
+  {
+    "id": "trt-brain-imaging-review",
+    "name": "brain imaging review",
+    "specialty_ids": [
+      "neurosurgery"
+    ],
+    "description": "A service commonly coordinated within 1 care area(s)."
+  },
+  {
+    "id": "trt-wound-reconstruction",
+    "name": "wound reconstruction",
+    "specialty_ids": [
+      "plastic-reconstructive-surgery"
+    ],
+    "description": "A service commonly coordinated within 1 care area(s)."
+  },
+  {
+    "id": "trt-scar-management",
+    "name": "scar management",
+    "specialty_ids": [
+      "plastic-reconstructive-surgery"
+    ],
+    "description": "A service commonly coordinated within 1 care area(s)."
+  },
+  {
+    "id": "trt-burn-care-planning",
+    "name": "burn care planning",
+    "specialty_ids": [
+      "plastic-reconstructive-surgery"
+    ],
+    "description": "A service commonly coordinated within 1 care area(s)."
+  },
+  {
+    "id": "trt-reconstructive-consultation",
+    "name": "reconstructive consultation",
+    "specialty_ids": [
+      "plastic-reconstructive-surgery"
+    ],
+    "description": "A service commonly coordinated within 1 care area(s)."
+  },
+  {
+    "id": "trt-urine-evaluation",
+    "name": "urine evaluation",
+    "specialty_ids": [
+      "urology"
+    ],
+    "description": "A service commonly coordinated within 1 care area(s)."
+  },
+  {
+    "id": "trt-stone-assessment",
+    "name": "stone assessment",
+    "specialty_ids": [
+      "urology"
+    ],
+    "description": "A service commonly coordinated within 1 care area(s)."
+  },
+  {
+    "id": "trt-prostate-review",
+    "name": "prostate review",
+    "specialty_ids": [
+      "urology"
+    ],
+    "description": "A service commonly coordinated within 1 care area(s)."
+  },
+  {
+    "id": "trt-bladder-function-testing",
+    "name": "bladder function testing",
+    "specialty_ids": [
+      "urology"
+    ],
+    "description": "A service commonly coordinated within 1 care area(s)."
+  },
+  {
+    "id": "trt-eye-examination",
+    "name": "eye examination",
+    "specialty_ids": [
+      "ophthalmology"
+    ],
+    "description": "A service commonly coordinated within 1 care area(s)."
+  },
+  {
+    "id": "trt-vision-testing",
+    "name": "vision testing",
+    "specialty_ids": [
+      "ophthalmology"
+    ],
+    "description": "A service commonly coordinated within 1 care area(s)."
+  },
+  {
+    "id": "trt-retinal-assessment",
+    "name": "retinal assessment",
+    "specialty_ids": [
+      "ophthalmology"
+    ],
+    "description": "A service commonly coordinated within 1 care area(s)."
+  },
+  {
+    "id": "trt-cataract-counseling",
+    "name": "cataract counseling",
+    "specialty_ids": [
+      "ophthalmology"
+    ],
+    "description": "A service commonly coordinated within 1 care area(s)."
+  },
+  {
+    "id": "trt-ear-examination",
+    "name": "ear examination",
+    "specialty_ids": [
+      "otolaryngology"
+    ],
+    "description": "A service commonly coordinated within 1 care area(s)."
+  },
+  {
+    "id": "trt-hearing-evaluation",
+    "name": "hearing evaluation",
+    "specialty_ids": [
+      "otolaryngology"
+    ],
+    "description": "A service commonly coordinated within 1 care area(s)."
+  },
+  {
+    "id": "trt-sinus-assessment",
+    "name": "sinus assessment",
+    "specialty_ids": [
+      "otolaryngology"
+    ],
+    "description": "A service commonly coordinated within 1 care area(s)."
+  },
+  {
+    "id": "trt-voice-assessment",
+    "name": "voice assessment",
+    "specialty_ids": [
+      "otolaryngology"
+    ],
+    "description": "A service commonly coordinated within 1 care area(s)."
+  },
+  {
+    "id": "trt-dental-examination",
+    "name": "dental examination",
+    "specialty_ids": [
+      "dentistry"
+    ],
+    "description": "A service commonly coordinated within 1 care area(s)."
+  },
+  {
+    "id": "trt-oral-hygiene-planning",
+    "name": "oral hygiene planning",
+    "specialty_ids": [
+      "dentistry"
+    ],
+    "description": "A service commonly coordinated within 1 care area(s)."
+  },
+  {
+    "id": "trt-restorative-care-planning",
+    "name": "restorative care planning",
+    "specialty_ids": [
+      "dentistry"
+    ],
+    "description": "A service commonly coordinated within 1 care area(s)."
+  },
+  {
+    "id": "trt-jaw-assessment",
+    "name": "jaw assessment",
+    "specialty_ids": [
+      "dentistry"
+    ],
+    "description": "A service commonly coordinated within 1 care area(s)."
+  },
+  {
+    "id": "trt-mental-health-assessment",
+    "name": "mental health assessment",
+    "specialty_ids": [
+      "psychiatry"
+    ],
+    "description": "A service commonly coordinated within 1 care area(s)."
+  },
+  {
+    "id": "trt-therapy-coordination",
+    "name": "therapy coordination",
+    "specialty_ids": [
+      "psychiatry"
+    ],
+    "description": "A service commonly coordinated within 1 care area(s)."
+  },
+  {
+    "id": "trt-sleep-review",
+    "name": "sleep review",
+    "specialty_ids": [
+      "psychiatry"
+    ],
+    "description": "A service commonly coordinated within 1 care area(s)."
+  },
+  {
+    "id": "trt-psychological-assessment",
+    "name": "psychological assessment",
+    "specialty_ids": [
+      "clinical-psychology"
+    ],
+    "description": "A service commonly coordinated within 1 care area(s)."
+  },
+  {
+    "id": "trt-talk-therapy",
+    "name": "talk therapy",
+    "specialty_ids": [
+      "clinical-psychology"
+    ],
+    "description": "A service commonly coordinated within 1 care area(s)."
+  },
+  {
+    "id": "trt-coping-skills-plan",
+    "name": "coping skills plan",
+    "specialty_ids": [
+      "clinical-psychology"
+    ],
+    "description": "A service commonly coordinated within 1 care area(s)."
+  },
+  {
+    "id": "trt-behavioral-support",
+    "name": "behavioral support",
+    "specialty_ids": [
+      "clinical-psychology"
+    ],
+    "description": "A service commonly coordinated within 1 care area(s)."
+  },
+  {
+    "id": "trt-sleep-assessment",
+    "name": "sleep assessment",
+    "specialty_ids": [
+      "sleep-medicine"
+    ],
+    "description": "A service commonly coordinated within 1 care area(s)."
+  },
+  {
+    "id": "trt-sleep-hygiene-coaching",
+    "name": "sleep hygiene coaching",
+    "specialty_ids": [
+      "sleep-medicine"
+    ],
+    "description": "A service commonly coordinated within 1 care area(s)."
+  },
+  {
+    "id": "trt-device-therapy-review",
+    "name": "device therapy review",
+    "specialty_ids": [
+      "sleep-medicine"
+    ],
+    "description": "A service commonly coordinated within 1 care area(s)."
+  },
+  {
+    "id": "trt-x-ray-interpretation",
+    "name": "X-ray interpretation",
+    "specialty_ids": [
+      "radiology"
+    ],
+    "description": "A service commonly coordinated within 1 care area(s)."
+  },
+  {
+    "id": "trt-ultrasound",
+    "name": "ultrasound",
+    "specialty_ids": [
+      "radiology"
+    ],
+    "description": "A service commonly coordinated within 1 care area(s)."
+  },
+  {
+    "id": "trt-ct-planning",
+    "name": "CT planning",
+    "specialty_ids": [
+      "radiology"
+    ],
+    "description": "A service commonly coordinated within 1 care area(s)."
+  },
+  {
+    "id": "trt-mri-planning",
+    "name": "MRI planning",
+    "specialty_ids": [
+      "radiology"
+    ],
+    "description": "A service commonly coordinated within 1 care area(s)."
+  },
+  {
+    "id": "trt-laboratory-testing",
+    "name": "laboratory testing",
+    "specialty_ids": [
+      "pathology"
+    ],
+    "description": "A service commonly coordinated within 1 care area(s)."
+  },
+  {
+    "id": "trt-tissue-analysis",
+    "name": "tissue analysis",
+    "specialty_ids": [
+      "pathology"
+    ],
+    "description": "A service commonly coordinated within 1 care area(s)."
+  },
+  {
+    "id": "trt-blood-testing",
+    "name": "blood testing",
+    "specialty_ids": [
+      "pathology"
+    ],
+    "description": "A service commonly coordinated within 1 care area(s)."
+  },
+  {
+    "id": "trt-diagnostic-interpretation",
+    "name": "diagnostic interpretation",
+    "specialty_ids": [
+      "pathology"
+    ],
+    "description": "A service commonly coordinated within 1 care area(s)."
+  },
+  {
+    "id": "trt-emergency-assessment",
+    "name": "emergency assessment",
+    "specialty_ids": [
+      "emergency-medicine"
+    ],
+    "description": "A service commonly coordinated within 1 care area(s)."
+  },
+  {
+    "id": "trt-stabilization",
+    "name": "stabilization",
+    "specialty_ids": [
+      "emergency-medicine"
+    ],
+    "description": "A service commonly coordinated within 1 care area(s)."
+  },
+  {
+    "id": "trt-urgent-imaging",
+    "name": "urgent imaging",
+    "specialty_ids": [
+      "emergency-medicine"
+    ],
+    "description": "A service commonly coordinated within 1 care area(s)."
+  },
+  {
+    "id": "trt-rapid-referral",
+    "name": "rapid referral",
+    "specialty_ids": [
+      "emergency-medicine"
+    ],
+    "description": "A service commonly coordinated within 1 care area(s)."
+  },
+  {
+    "id": "trt-icu-assessment",
+    "name": "ICU assessment",
+    "specialty_ids": [
+      "critical-care"
+    ],
+    "description": "A service commonly coordinated within 1 care area(s)."
+  },
+  {
+    "id": "trt-organ-support",
+    "name": "organ support",
+    "specialty_ids": [
+      "critical-care"
+    ],
+    "description": "A service commonly coordinated within 1 care area(s)."
+  },
+  {
+    "id": "trt-critical-monitoring",
+    "name": "critical monitoring",
+    "specialty_ids": [
+      "critical-care"
+    ],
+    "description": "A service commonly coordinated within 1 care area(s)."
+  },
+  {
+    "id": "trt-family-care-planning",
+    "name": "family care planning",
+    "specialty_ids": [
+      "critical-care"
+    ],
+    "description": "A service commonly coordinated within 1 care area(s)."
+  },
+  {
+    "id": "trt-pre-anesthesia-evaluation",
+    "name": "pre-anesthesia evaluation",
+    "specialty_ids": [
+      "anesthesiology"
+    ],
+    "description": "A service commonly coordinated within 1 care area(s)."
+  },
+  {
+    "id": "trt-anesthesia-planning",
+    "name": "anesthesia planning",
+    "specialty_ids": [
+      "anesthesiology"
+    ],
+    "description": "A service commonly coordinated within 1 care area(s)."
+  },
+  {
+    "id": "trt-perioperative-monitoring",
+    "name": "perioperative monitoring",
+    "specialty_ids": [
+      "anesthesiology"
+    ],
+    "description": "A service commonly coordinated within 1 care area(s)."
+  },
+  {
+    "id": "trt-acute-pain-plan",
+    "name": "acute pain plan",
+    "specialty_ids": [
+      "anesthesiology"
+    ],
+    "description": "A service commonly coordinated within 1 care area(s)."
+  },
+  {
+    "id": "trt-family-health-assessment",
+    "name": "family health assessment",
+    "specialty_ids": [
+      "family-medicine"
+    ],
+    "description": "A service commonly coordinated within 1 care area(s)."
+  },
+  {
+    "id": "trt-chronic-disease-review",
+    "name": "chronic disease review",
+    "specialty_ids": [
+      "family-medicine"
+    ],
+    "description": "A service commonly coordinated within 1 care area(s)."
+  },
+  {
+    "id": "trt-preventive-screening",
+    "name": "preventive screening",
+    "specialty_ids": [
+      "family-medicine"
+    ],
+    "description": "A service commonly coordinated within 1 care area(s)."
+  },
+  {
+    "id": "trt-preventive-counseling",
+    "name": "preventive counseling",
+    "specialty_ids": [
+      "public-health-preventive-medicine"
+    ],
+    "description": "A service commonly coordinated within 1 care area(s)."
+  },
+  {
+    "id": "trt-risk-assessment",
+    "name": "risk assessment",
+    "specialty_ids": [
+      "public-health-preventive-medicine"
+    ],
+    "description": "A service commonly coordinated within 1 care area(s)."
+  },
+  {
+    "id": "trt-nutrition-assessment",
+    "name": "nutrition assessment",
+    "specialty_ids": [
+      "nutrition-dietetics"
+    ],
+    "description": "A service commonly coordinated within 1 care area(s)."
+  },
+  {
+    "id": "trt-meal-planning",
+    "name": "meal planning",
+    "specialty_ids": [
+      "nutrition-dietetics"
+    ],
+    "description": "A service commonly coordinated within 1 care area(s)."
+  },
+  {
+    "id": "trt-weight-management-plan",
+    "name": "weight management plan",
+    "specialty_ids": [
+      "nutrition-dietetics"
+    ],
+    "description": "A service commonly coordinated within 1 care area(s)."
+  },
+  {
+    "id": "trt-therapeutic-diet-counseling",
+    "name": "therapeutic diet counseling",
+    "specialty_ids": [
+      "nutrition-dietetics"
+    ],
+    "description": "A service commonly coordinated within 1 care area(s)."
+  },
+  {
+    "id": "trt-movement-assessment",
+    "name": "movement assessment",
+    "specialty_ids": [
+      "physiotherapy"
+    ],
+    "description": "A service commonly coordinated within 1 care area(s)."
+  },
+  {
+    "id": "trt-exercise-therapy",
+    "name": "exercise therapy",
+    "specialty_ids": [
+      "physiotherapy"
+    ],
+    "description": "A service commonly coordinated within 1 care area(s)."
+  },
+  {
+    "id": "trt-manual-therapy",
+    "name": "manual therapy",
+    "specialty_ids": [
+      "physiotherapy"
+    ],
+    "description": "A service commonly coordinated within 1 care area(s)."
+  },
+  {
+    "id": "trt-balance-training",
+    "name": "balance training",
+    "specialty_ids": [
+      "physiotherapy"
+    ],
+    "description": "A service commonly coordinated within 1 care area(s)."
+  },
+  {
+    "id": "trt-daily-living-assessment",
+    "name": "daily living assessment",
+    "specialty_ids": [
+      "occupational-therapy"
+    ],
+    "description": "A service commonly coordinated within 1 care area(s)."
+  },
+  {
+    "id": "trt-adaptive-equipment-planning",
+    "name": "adaptive equipment planning",
+    "specialty_ids": [
+      "occupational-therapy"
+    ],
+    "description": "A service commonly coordinated within 1 care area(s)."
+  },
+  {
+    "id": "trt-hand-function-training",
+    "name": "hand function training",
+    "specialty_ids": [
+      "occupational-therapy"
+    ],
+    "description": "A service commonly coordinated within 1 care area(s)."
+  },
+  {
+    "id": "trt-workplace-adaptation",
+    "name": "workplace adaptation",
+    "specialty_ids": [
+      "occupational-therapy"
+    ],
+    "description": "A service commonly coordinated within 1 care area(s)."
+  },
+  {
+    "id": "trt-communication-assessment",
+    "name": "communication assessment",
+    "specialty_ids": [
+      "speech-language-therapy"
+    ],
+    "description": "A service commonly coordinated within 1 care area(s)."
+  },
+  {
+    "id": "trt-speech-therapy",
+    "name": "speech therapy",
+    "specialty_ids": [
+      "speech-language-therapy"
+    ],
+    "description": "A service commonly coordinated within 1 care area(s)."
+  },
+  {
+    "id": "trt-voice-therapy",
+    "name": "voice therapy",
+    "specialty_ids": [
+      "speech-language-therapy"
+    ],
+    "description": "A service commonly coordinated within 1 care area(s)."
+  },
+  {
+    "id": "trt-swallowing-assessment",
+    "name": "swallowing assessment",
+    "specialty_ids": [
+      "speech-language-therapy"
+    ],
+    "description": "A service commonly coordinated within 1 care area(s)."
+  },
+  {
+    "id": "trt-hearing-test",
+    "name": "hearing test",
+    "specialty_ids": [
+      "audiology"
+    ],
+    "description": "A service commonly coordinated within 1 care area(s)."
+  },
+  {
+    "id": "trt-hearing-aid-assessment",
+    "name": "hearing aid assessment",
+    "specialty_ids": [
+      "audiology"
+    ],
+    "description": "A service commonly coordinated within 1 care area(s)."
+  },
+  {
+    "id": "trt-balance-testing",
+    "name": "balance testing",
+    "specialty_ids": [
+      "audiology"
+    ],
+    "description": "A service commonly coordinated within 1 care area(s)."
+  },
+  {
+    "id": "trt-hearing-protection-counseling",
+    "name": "hearing protection counseling",
+    "specialty_ids": [
+      "audiology"
+    ],
+    "description": "A service commonly coordinated within 1 care area(s)."
+  },
+  {
+    "id": "trt-family-support",
+    "name": "family support",
+    "specialty_ids": [
+      "palliative-medicine"
+    ],
+    "description": "A service commonly coordinated within 1 care area(s)."
+  },
+  {
+    "id": "trt-quality-of-life-assessment",
+    "name": "quality-of-life assessment",
+    "specialty_ids": [
+      "palliative-medicine"
+    ],
+    "description": "A service commonly coordinated within 1 care area(s)."
+  }
+]

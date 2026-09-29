@@ -1,0 +1,70 @@
+text,intent
+"fever since yesterday",fever
+"I have high fever",fever
+"मुझे बुखार है",fever
+"मुझे कल से बुखार है",fever
+"bukhar aur body pain hai",fever
+"cold and runny nose",cold
+"I have a bad cold",cold
+"जुकाम हो रहा है",cold
+"naak beh rahi hai",cold
+"dry cough for three days",cough
+"I am coughing a lot",cough
+"मुझे खांसी है",cough
+"khansi nahi ruk rahi",cough
+"severe headache",headache
+"my head hurts badly",headache
+"मेरे सिर में दर्द है",headache
+"sir dard ho raha hai",headache
+"stomach pain after eating",stomach
+"my stomach hurts",stomach
+"पेट में दर्द है",stomach
+"pet dard aur gas",stomach
+"vomiting since morning",vomiting
+"I am vomiting",vomiting
+"मुझे उल्टी हो रही है",vomiting
+"ulti aa rahi hai",vomiting
+"loose motion",diarrhea
+"I have diarrhea",diarrhea
+"दस्त हो रहे हैं",diarrhea
+"pet kharab aur dast",diarrhea
+"chest pain and pressure",chest_pain
+"pain in the chest",chest_pain
+"सीने में दर्द है",chest_pain
+"seene mein pressure hai",chest_pain
+"difficulty breathing",breathing
+"I cannot breathe properly",breathing
+"सांस लेने में दिक्कत है",breathing
+"saans phool rahi hai",breathing
+"heart is racing",palpitations
+"I feel my heartbeat is very fast",palpitations
+"दिल बहुत तेज धड़क रहा है",palpitations
+"dil tez dhadak raha hai",palpitations
+"high blood pressure reading",blood_pressure
+"my bp is high",blood_pressure
+"मेरा बीपी बढ़ा हुआ है",blood_pressure
+"bp high aa raha hai",blood_pressure
+"I am pregnant and have pain",pregnancy_pain
+"pregnancy with abdominal pain",pregnancy_pain
+"मैं pregnant हूं और पेट में दर्द है",pregnancy_pain
+"pregnancy mein dard ho raha hai",pregnancy_pain
+"pregnancy checkup",pregnancy
+"I need a pregnancy consultation",pregnancy
+"गर्भावस्था की जांच चाहिए",pregnancy
+"pregnancy doctor chahiye",pregnancy
+"my child has fever",child_fever
+"baby has fever",child_fever
+"बच्चे को बुखार है",child_fever
+"mere bacche ko bukhar hai",child_fever
+"my child is coughing",child_cough
+"baby is coughing",child_cough
+"बच्चे को खांसी है",child_cough
+"mere bacche ko khansi hai",child_cough
+"skin rash and itching",skin
+"itchy skin",skin
+"त्वचा पर दाने और खुजली है",skin
+"skin par rash hai",skin
+"knee joint pain",joint_pain
+"my joints hurt",joint_pain
+"घुटने में दर्द है",joint_pain
+"joints mein pain hai",joint_pain

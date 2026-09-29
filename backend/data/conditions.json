@@ -1,0 +1,1447 @@
+[
+  {
+    "id": "cond-viral-illness",
+    "name": "viral illness",
+    "specialty_ids": [
+      "general-medicine"
+    ],
+    "description": "A health topic associated with 1 care area(s)."
+  },
+  {
+    "id": "cond-hypertension",
+    "name": "hypertension",
+    "specialty_ids": [
+      "general-medicine",
+      "cardiology",
+      "family-medicine"
+    ],
+    "description": "A health topic associated with 3 care area(s)."
+  },
+  {
+    "id": "cond-diabetes-screening",
+    "name": "diabetes screening",
+    "specialty_ids": [
+      "general-medicine"
+    ],
+    "description": "A health topic associated with 1 care area(s)."
+  },
+  {
+    "id": "cond-anemia",
+    "name": "anemia",
+    "specialty_ids": [
+      "general-medicine",
+      "hematology"
+    ],
+    "description": "A health topic associated with 2 care area(s)."
+  },
+  {
+    "id": "cond-coronary-artery-disease",
+    "name": "coronary artery disease",
+    "specialty_ids": [
+      "cardiology"
+    ],
+    "description": "A health topic associated with 1 care area(s)."
+  },
+  {
+    "id": "cond-heart-failure",
+    "name": "heart failure",
+    "specialty_ids": [
+      "cardiology"
+    ],
+    "description": "A health topic associated with 1 care area(s)."
+  },
+  {
+    "id": "cond-arrhythmia",
+    "name": "arrhythmia",
+    "specialty_ids": [
+      "cardiology"
+    ],
+    "description": "A health topic associated with 1 care area(s)."
+  },
+  {
+    "id": "cond-eczema",
+    "name": "eczema",
+    "specialty_ids": [
+      "dermatology"
+    ],
+    "description": "A health topic associated with 1 care area(s)."
+  },
+  {
+    "id": "cond-psoriasis",
+    "name": "psoriasis",
+    "specialty_ids": [
+      "dermatology"
+    ],
+    "description": "A health topic associated with 1 care area(s)."
+  },
+  {
+    "id": "cond-fungal-infection",
+    "name": "fungal infection",
+    "specialty_ids": [
+      "dermatology"
+    ],
+    "description": "A health topic associated with 1 care area(s)."
+  },
+  {
+    "id": "cond-acne",
+    "name": "acne",
+    "specialty_ids": [
+      "dermatology"
+    ],
+    "description": "A health topic associated with 1 care area(s)."
+  },
+  {
+    "id": "cond-diabetes",
+    "name": "diabetes",
+    "specialty_ids": [
+      "endocrinology",
+      "family-medicine"
+    ],
+    "description": "A health topic associated with 2 care area(s)."
+  },
+  {
+    "id": "cond-thyroid-disorder",
+    "name": "thyroid disorder",
+    "specialty_ids": [
+      "endocrinology"
+    ],
+    "description": "A health topic associated with 1 care area(s)."
+  },
+  {
+    "id": "cond-osteoporosis",
+    "name": "osteoporosis",
+    "specialty_ids": [
+      "endocrinology",
+      "geriatrics"
+    ],
+    "description": "A health topic associated with 2 care area(s)."
+  },
+  {
+    "id": "cond-pcos",
+    "name": "PCOS",
+    "specialty_ids": [
+      "endocrinology"
+    ],
+    "description": "A health topic associated with 1 care area(s)."
+  },
+  {
+    "id": "cond-acid-reflux",
+    "name": "acid reflux",
+    "specialty_ids": [
+      "gastroenterology"
+    ],
+    "description": "A health topic associated with 1 care area(s)."
+  },
+  {
+    "id": "cond-irritable-bowel-syndrome",
+    "name": "irritable bowel syndrome",
+    "specialty_ids": [
+      "gastroenterology"
+    ],
+    "description": "A health topic associated with 1 care area(s)."
+  },
+  {
+    "id": "cond-fatty-liver-disease",
+    "name": "fatty liver disease",
+    "specialty_ids": [
+      "gastroenterology"
+    ],
+    "description": "A health topic associated with 1 care area(s)."
+  },
+  {
+    "id": "cond-hepatitis",
+    "name": "hepatitis",
+    "specialty_ids": [
+      "gastroenterology"
+    ],
+    "description": "A health topic associated with 1 care area(s)."
+  },
+  {
+    "id": "cond-migraine",
+    "name": "migraine",
+    "specialty_ids": [
+      "neurology"
+    ],
+    "description": "A health topic associated with 1 care area(s)."
+  },
+  {
+    "id": "cond-epilepsy",
+    "name": "epilepsy",
+    "specialty_ids": [
+      "neurology"
+    ],
+    "description": "A health topic associated with 1 care area(s)."
+  },
+  {
+    "id": "cond-stroke-follow-up",
+    "name": "stroke follow-up",
+    "specialty_ids": [
+      "neurology"
+    ],
+    "description": "A health topic associated with 1 care area(s)."
+  },
+  {
+    "id": "cond-neuropathy",
+    "name": "neuropathy",
+    "specialty_ids": [
+      "neurology"
+    ],
+    "description": "A health topic associated with 1 care area(s)."
+  },
+  {
+    "id": "cond-asthma",
+    "name": "asthma",
+    "specialty_ids": [
+      "pulmonology"
+    ],
+    "description": "A health topic associated with 1 care area(s)."
+  },
+  {
+    "id": "cond-copd",
+    "name": "COPD",
+    "specialty_ids": [
+      "pulmonology"
+    ],
+    "description": "A health topic associated with 1 care area(s)."
+  },
+  {
+    "id": "cond-pneumonia-follow-up",
+    "name": "pneumonia follow-up",
+    "specialty_ids": [
+      "pulmonology"
+    ],
+    "description": "A health topic associated with 1 care area(s)."
+  },
+  {
+    "id": "cond-sleep-apnea",
+    "name": "sleep apnea",
+    "specialty_ids": [
+      "pulmonology",
+      "sleep-medicine"
+    ],
+    "description": "A health topic associated with 2 care area(s)."
+  },
+  {
+    "id": "cond-chronic-kidney-disease",
+    "name": "chronic kidney disease",
+    "specialty_ids": [
+      "nephrology"
+    ],
+    "description": "A health topic associated with 1 care area(s)."
+  },
+  {
+    "id": "cond-kidney-stones",
+    "name": "kidney stones",
+    "specialty_ids": [
+      "nephrology"
+    ],
+    "description": "A health topic associated with 1 care area(s)."
+  },
+  {
+    "id": "cond-proteinuria",
+    "name": "proteinuria",
+    "specialty_ids": [
+      "nephrology"
+    ],
+    "description": "A health topic associated with 1 care area(s)."
+  },
+  {
+    "id": "cond-electrolyte-disorder",
+    "name": "electrolyte disorder",
+    "specialty_ids": [
+      "nephrology"
+    ],
+    "description": "A health topic associated with 1 care area(s)."
+  },
+  {
+    "id": "cond-rheumatoid-arthritis",
+    "name": "rheumatoid arthritis",
+    "specialty_ids": [
+      "rheumatology"
+    ],
+    "description": "A health topic associated with 1 care area(s)."
+  },
+  {
+    "id": "cond-lupus",
+    "name": "lupus",
+    "specialty_ids": [
+      "rheumatology"
+    ],
+    "description": "A health topic associated with 1 care area(s)."
+  },
+  {
+    "id": "cond-gout",
+    "name": "gout",
+    "specialty_ids": [
+      "rheumatology"
+    ],
+    "description": "A health topic associated with 1 care area(s)."
+  },
+  {
+    "id": "cond-vasculitis",
+    "name": "vasculitis",
+    "specialty_ids": [
+      "rheumatology"
+    ],
+    "description": "A health topic associated with 1 care area(s)."
+  },
+  {
+    "id": "cond-bleeding-disorder",
+    "name": "bleeding disorder",
+    "specialty_ids": [
+      "hematology"
+    ],
+    "description": "A health topic associated with 1 care area(s)."
+  },
+  {
+    "id": "cond-clotting-disorder",
+    "name": "clotting disorder",
+    "specialty_ids": [
+      "hematology"
+    ],
+    "description": "A health topic associated with 1 care area(s)."
+  },
+  {
+    "id": "cond-blood-cell-disorder",
+    "name": "blood cell disorder",
+    "specialty_ids": [
+      "hematology"
+    ],
+    "description": "A health topic associated with 1 care area(s)."
+  },
+  {
+    "id": "cond-tuberculosis",
+    "name": "tuberculosis",
+    "specialty_ids": [
+      "infectious-disease"
+    ],
+    "description": "A health topic associated with 1 care area(s)."
+  },
+  {
+    "id": "cond-dengue-follow-up",
+    "name": "dengue follow-up",
+    "specialty_ids": [
+      "infectious-disease"
+    ],
+    "description": "A health topic associated with 1 care area(s)."
+  },
+  {
+    "id": "cond-urinary-infection",
+    "name": "urinary infection",
+    "specialty_ids": [
+      "infectious-disease",
+      "urology"
+    ],
+    "description": "A health topic associated with 2 care area(s)."
+  },
+  {
+    "id": "cond-viral-infection",
+    "name": "viral infection",
+    "specialty_ids": [
+      "infectious-disease"
+    ],
+    "description": "A health topic associated with 1 care area(s)."
+  },
+  {
+    "id": "cond-solid-tumor-care",
+    "name": "solid tumor care",
+    "specialty_ids": [
+      "medical-oncology"
+    ],
+    "description": "A health topic associated with 1 care area(s)."
+  },
+  {
+    "id": "cond-cancer-treatment-planning",
+    "name": "cancer treatment planning",
+    "specialty_ids": [
+      "medical-oncology"
+    ],
+    "description": "A health topic associated with 1 care area(s)."
+  },
+  {
+    "id": "cond-cancer-surveillance",
+    "name": "cancer surveillance",
+    "specialty_ids": [
+      "medical-oncology"
+    ],
+    "description": "A health topic associated with 1 care area(s)."
+  },
+  {
+    "id": "cond-treatment-side-effects",
+    "name": "treatment side effects",
+    "specialty_ids": [
+      "medical-oncology"
+    ],
+    "description": "A health topic associated with 1 care area(s)."
+  },
+  {
+    "id": "cond-frailty-syndrome",
+    "name": "frailty syndrome",
+    "specialty_ids": [
+      "geriatrics"
+    ],
+    "description": "A health topic associated with 1 care area(s)."
+  },
+  {
+    "id": "cond-dementia-care",
+    "name": "dementia care",
+    "specialty_ids": [
+      "geriatrics"
+    ],
+    "description": "A health topic associated with 1 care area(s)."
+  },
+  {
+    "id": "cond-polypharmacy",
+    "name": "polypharmacy",
+    "specialty_ids": [
+      "geriatrics"
+    ],
+    "description": "A health topic associated with 1 care area(s)."
+  },
+  {
+    "id": "cond-allergic-rhinitis",
+    "name": "allergic rhinitis",
+    "specialty_ids": [
+      "allergy-immunology"
+    ],
+    "description": "A health topic associated with 1 care area(s)."
+  },
+  {
+    "id": "cond-urticaria",
+    "name": "urticaria",
+    "specialty_ids": [
+      "allergy-immunology"
+    ],
+    "description": "A health topic associated with 1 care area(s)."
+  },
+  {
+    "id": "cond-food-allergy",
+    "name": "food allergy",
+    "specialty_ids": [
+      "allergy-immunology"
+    ],
+    "description": "A health topic associated with 1 care area(s)."
+  },
+  {
+    "id": "cond-immune-deficiency-evaluation",
+    "name": "immune deficiency evaluation",
+    "specialty_ids": [
+      "allergy-immunology"
+    ],
+    "description": "A health topic associated with 1 care area(s)."
+  },
+  {
+    "id": "cond-common-childhood-illness",
+    "name": "common childhood illness",
+    "specialty_ids": [
+      "pediatrics"
+    ],
+    "description": "A health topic associated with 1 care area(s)."
+  },
+  {
+    "id": "cond-growth-concern",
+    "name": "growth concern",
+    "specialty_ids": [
+      "pediatrics"
+    ],
+    "description": "A health topic associated with 1 care area(s)."
+  },
+  {
+    "id": "cond-childhood-asthma",
+    "name": "childhood asthma",
+    "specialty_ids": [
+      "pediatrics"
+    ],
+    "description": "A health topic associated with 1 care area(s)."
+  },
+  {
+    "id": "cond-developmental-concern",
+    "name": "developmental concern",
+    "specialty_ids": [
+      "pediatrics"
+    ],
+    "description": "A health topic associated with 1 care area(s)."
+  },
+  {
+    "id": "cond-prematurity",
+    "name": "prematurity",
+    "specialty_ids": [
+      "neonatology"
+    ],
+    "description": "A health topic associated with 1 care area(s)."
+  },
+  {
+    "id": "cond-neonatal-jaundice",
+    "name": "neonatal jaundice",
+    "specialty_ids": [
+      "neonatology"
+    ],
+    "description": "A health topic associated with 1 care area(s)."
+  },
+  {
+    "id": "cond-newborn-infection",
+    "name": "newborn infection",
+    "specialty_ids": [
+      "neonatology"
+    ],
+    "description": "A health topic associated with 1 care area(s)."
+  },
+  {
+    "id": "cond-respiratory-distress-in-newborn",
+    "name": "respiratory distress in newborn",
+    "specialty_ids": [
+      "neonatology"
+    ],
+    "description": "A health topic associated with 1 care area(s)."
+  },
+  {
+    "id": "cond-congenital-heart-disease",
+    "name": "congenital heart disease",
+    "specialty_ids": [
+      "pediatric-cardiology"
+    ],
+    "description": "A health topic associated with 1 care area(s)."
+  },
+  {
+    "id": "cond-heart-murmur",
+    "name": "heart murmur",
+    "specialty_ids": [
+      "pediatric-cardiology"
+    ],
+    "description": "A health topic associated with 1 care area(s)."
+  },
+  {
+    "id": "cond-pediatric-arrhythmia",
+    "name": "pediatric arrhythmia",
+    "specialty_ids": [
+      "pediatric-cardiology"
+    ],
+    "description": "A health topic associated with 1 care area(s)."
+  },
+  {
+    "id": "cond-kawasaki-disease-follow-up",
+    "name": "Kawasaki disease follow-up",
+    "specialty_ids": [
+      "pediatric-cardiology"
+    ],
+    "description": "A health topic associated with 1 care area(s)."
+  },
+  {
+    "id": "cond-menstrual-disorder",
+    "name": "menstrual disorder",
+    "specialty_ids": [
+      "obstetrics-gynecology"
+    ],
+    "description": "A health topic associated with 1 care area(s)."
+  },
+  {
+    "id": "cond-uterine-fibroids",
+    "name": "uterine fibroids",
+    "specialty_ids": [
+      "obstetrics-gynecology"
+    ],
+    "description": "A health topic associated with 1 care area(s)."
+  },
+  {
+    "id": "cond-endometriosis",
+    "name": "endometriosis",
+    "specialty_ids": [
+      "obstetrics-gynecology"
+    ],
+    "description": "A health topic associated with 1 care area(s)."
+  },
+  {
+    "id": "cond-pregnancy-care",
+    "name": "pregnancy care",
+    "specialty_ids": [
+      "obstetrics-gynecology"
+    ],
+    "description": "A health topic associated with 1 care area(s)."
+  },
+  {
+    "id": "cond-infertility",
+    "name": "infertility",
+    "specialty_ids": [
+      "reproductive-medicine"
+    ],
+    "description": "A health topic associated with 1 care area(s)."
+  },
+  {
+    "id": "cond-ovulatory-disorder",
+    "name": "ovulatory disorder",
+    "specialty_ids": [
+      "reproductive-medicine"
+    ],
+    "description": "A health topic associated with 1 care area(s)."
+  },
+  {
+    "id": "cond-male-factor-infertility",
+    "name": "male factor infertility",
+    "specialty_ids": [
+      "reproductive-medicine"
+    ],
+    "description": "A health topic associated with 1 care area(s)."
+  },
+  {
+    "id": "cond-recurrent-miscarriage-evaluation",
+    "name": "recurrent miscarriage evaluation",
+    "specialty_ids": [
+      "reproductive-medicine"
+    ],
+    "description": "A health topic associated with 1 care area(s)."
+  },
+  {
+    "id": "cond-high-risk-pregnancy",
+    "name": "high-risk pregnancy",
+    "specialty_ids": [
+      "maternal-fetal-medicine"
+    ],
+    "description": "A health topic associated with 1 care area(s)."
+  },
+  {
+    "id": "cond-preeclampsia",
+    "name": "preeclampsia",
+    "specialty_ids": [
+      "maternal-fetal-medicine"
+    ],
+    "description": "A health topic associated with 1 care area(s)."
+  },
+  {
+    "id": "cond-gestational-diabetes",
+    "name": "gestational diabetes",
+    "specialty_ids": [
+      "maternal-fetal-medicine"
+    ],
+    "description": "A health topic associated with 1 care area(s)."
+  },
+  {
+    "id": "cond-multiple-pregnancy",
+    "name": "multiple pregnancy",
+    "specialty_ids": [
+      "maternal-fetal-medicine"
+    ],
+    "description": "A health topic associated with 1 care area(s)."
+  },
+  {
+    "id": "cond-osteoarthritis",
+    "name": "osteoarthritis",
+    "specialty_ids": [
+      "orthopedics"
+    ],
+    "description": "A health topic associated with 1 care area(s)."
+  },
+  {
+    "id": "cond-fracture",
+    "name": "fracture",
+    "specialty_ids": [
+      "orthopedics"
+    ],
+    "description": "A health topic associated with 1 care area(s)."
+  },
+  {
+    "id": "cond-sports-injury",
+    "name": "sports injury",
+    "specialty_ids": [
+      "orthopedics",
+      "physiotherapy"
+    ],
+    "description": "A health topic associated with 2 care area(s)."
+  },
+  {
+    "id": "cond-spinal-degeneration",
+    "name": "spinal degeneration",
+    "specialty_ids": [
+      "orthopedics"
+    ],
+    "description": "A health topic associated with 1 care area(s)."
+  },
+  {
+    "id": "cond-tendon-injury",
+    "name": "tendon injury",
+    "specialty_ids": [
+      "sports-medicine"
+    ],
+    "description": "A health topic associated with 1 care area(s)."
+  },
+  {
+    "id": "cond-ligament-injury",
+    "name": "ligament injury",
+    "specialty_ids": [
+      "sports-medicine"
+    ],
+    "description": "A health topic associated with 1 care area(s)."
+  },
+  {
+    "id": "cond-stress-fracture",
+    "name": "stress fracture",
+    "specialty_ids": [
+      "sports-medicine"
+    ],
+    "description": "A health topic associated with 1 care area(s)."
+  },
+  {
+    "id": "cond-runner-s-knee",
+    "name": "runner\u2019s knee",
+    "specialty_ids": [
+      "sports-medicine"
+    ],
+    "description": "A health topic associated with 1 care area(s)."
+  },
+  {
+    "id": "cond-stroke-rehabilitation",
+    "name": "stroke rehabilitation",
+    "specialty_ids": [
+      "physical-medicine-rehabilitation"
+    ],
+    "description": "A health topic associated with 1 care area(s)."
+  },
+  {
+    "id": "cond-spinal-injury",
+    "name": "spinal injury",
+    "specialty_ids": [
+      "physical-medicine-rehabilitation"
+    ],
+    "description": "A health topic associated with 1 care area(s)."
+  },
+  {
+    "id": "cond-chronic-pain",
+    "name": "chronic pain",
+    "specialty_ids": [
+      "physical-medicine-rehabilitation"
+    ],
+    "description": "A health topic associated with 1 care area(s)."
+  },
+  {
+    "id": "cond-functional-limitation",
+    "name": "functional limitation",
+    "specialty_ids": [
+      "physical-medicine-rehabilitation",
+      "occupational-therapy"
+    ],
+    "description": "A health topic associated with 2 care area(s)."
+  },
+  {
+    "id": "cond-chronic-pain-syndrome",
+    "name": "chronic pain syndrome",
+    "specialty_ids": [
+      "pain-medicine"
+    ],
+    "description": "A health topic associated with 1 care area(s)."
+  },
+  {
+    "id": "cond-neuropathic-pain",
+    "name": "neuropathic pain",
+    "specialty_ids": [
+      "pain-medicine"
+    ],
+    "description": "A health topic associated with 1 care area(s)."
+  },
+  {
+    "id": "cond-complex-regional-pain",
+    "name": "complex regional pain",
+    "specialty_ids": [
+      "pain-medicine"
+    ],
+    "description": "A health topic associated with 1 care area(s)."
+  },
+  {
+    "id": "cond-cancer-pain-support",
+    "name": "cancer pain support",
+    "specialty_ids": [
+      "pain-medicine"
+    ],
+    "description": "A health topic associated with 1 care area(s)."
+  },
+  {
+    "id": "cond-hernia",
+    "name": "hernia",
+    "specialty_ids": [
+      "general-surgery"
+    ],
+    "description": "A health topic associated with 1 care area(s)."
+  },
+  {
+    "id": "cond-gallstones",
+    "name": "gallstones",
+    "specialty_ids": [
+      "general-surgery"
+    ],
+    "description": "A health topic associated with 1 care area(s)."
+  },
+  {
+    "id": "cond-appendicitis-evaluation",
+    "name": "appendicitis evaluation",
+    "specialty_ids": [
+      "general-surgery"
+    ],
+    "description": "A health topic associated with 1 care area(s)."
+  },
+  {
+    "id": "cond-soft-tissue-lump",
+    "name": "soft tissue lump",
+    "specialty_ids": [
+      "general-surgery"
+    ],
+    "description": "A health topic associated with 1 care area(s)."
+  },
+  {
+    "id": "cond-coronary-artery-disease-surgery",
+    "name": "coronary artery disease surgery",
+    "specialty_ids": [
+      "cardiothoracic-surgery"
+    ],
+    "description": "A health topic associated with 1 care area(s)."
+  },
+  {
+    "id": "cond-valve-disease",
+    "name": "valve disease",
+    "specialty_ids": [
+      "cardiothoracic-surgery"
+    ],
+    "description": "A health topic associated with 1 care area(s)."
+  },
+  {
+    "id": "cond-aortic-aneurysm",
+    "name": "aortic aneurysm",
+    "specialty_ids": [
+      "cardiothoracic-surgery"
+    ],
+    "description": "A health topic associated with 1 care area(s)."
+  },
+  {
+    "id": "cond-thoracic-tumor",
+    "name": "thoracic tumor",
+    "specialty_ids": [
+      "cardiothoracic-surgery"
+    ],
+    "description": "A health topic associated with 1 care area(s)."
+  },
+  {
+    "id": "cond-brain-tumor",
+    "name": "brain tumor",
+    "specialty_ids": [
+      "neurosurgery"
+    ],
+    "description": "A health topic associated with 1 care area(s)."
+  },
+  {
+    "id": "cond-spinal-disc-disease",
+    "name": "spinal disc disease",
+    "specialty_ids": [
+      "neurosurgery"
+    ],
+    "description": "A health topic associated with 1 care area(s)."
+  },
+  {
+    "id": "cond-hydrocephalus",
+    "name": "hydrocephalus",
+    "specialty_ids": [
+      "neurosurgery"
+    ],
+    "description": "A health topic associated with 1 care area(s)."
+  },
+  {
+    "id": "cond-nerve-compression",
+    "name": "nerve compression",
+    "specialty_ids": [
+      "neurosurgery"
+    ],
+    "description": "A health topic associated with 1 care area(s)."
+  },
+  {
+    "id": "cond-burn-injury",
+    "name": "burn injury",
+    "specialty_ids": [
+      "plastic-reconstructive-surgery"
+    ],
+    "description": "A health topic associated with 1 care area(s)."
+  },
+  {
+    "id": "cond-complex-wound",
+    "name": "complex wound",
+    "specialty_ids": [
+      "plastic-reconstructive-surgery"
+    ],
+    "description": "A health topic associated with 1 care area(s)."
+  },
+  {
+    "id": "cond-scar-contracture",
+    "name": "scar contracture",
+    "specialty_ids": [
+      "plastic-reconstructive-surgery"
+    ],
+    "description": "A health topic associated with 1 care area(s)."
+  },
+  {
+    "id": "cond-congenital-difference",
+    "name": "congenital difference",
+    "specialty_ids": [
+      "plastic-reconstructive-surgery"
+    ],
+    "description": "A health topic associated with 1 care area(s)."
+  },
+  {
+    "id": "cond-urinary-tract-stone",
+    "name": "urinary tract stone",
+    "specialty_ids": [
+      "urology"
+    ],
+    "description": "A health topic associated with 1 care area(s)."
+  },
+  {
+    "id": "cond-prostate-enlargement",
+    "name": "prostate enlargement",
+    "specialty_ids": [
+      "urology"
+    ],
+    "description": "A health topic associated with 1 care area(s)."
+  },
+  {
+    "id": "cond-incontinence",
+    "name": "incontinence",
+    "specialty_ids": [
+      "urology"
+    ],
+    "description": "A health topic associated with 1 care area(s)."
+  },
+  {
+    "id": "cond-cataract",
+    "name": "cataract",
+    "specialty_ids": [
+      "ophthalmology"
+    ],
+    "description": "A health topic associated with 1 care area(s)."
+  },
+  {
+    "id": "cond-glaucoma",
+    "name": "glaucoma",
+    "specialty_ids": [
+      "ophthalmology"
+    ],
+    "description": "A health topic associated with 1 care area(s)."
+  },
+  {
+    "id": "cond-dry-eye",
+    "name": "dry eye",
+    "specialty_ids": [
+      "ophthalmology"
+    ],
+    "description": "A health topic associated with 1 care area(s)."
+  },
+  {
+    "id": "cond-retinal-disorder",
+    "name": "retinal disorder",
+    "specialty_ids": [
+      "ophthalmology"
+    ],
+    "description": "A health topic associated with 1 care area(s)."
+  },
+  {
+    "id": "cond-sinusitis",
+    "name": "sinusitis",
+    "specialty_ids": [
+      "otolaryngology"
+    ],
+    "description": "A health topic associated with 1 care area(s)."
+  },
+  {
+    "id": "cond-tonsil-disorder",
+    "name": "tonsil disorder",
+    "specialty_ids": [
+      "otolaryngology"
+    ],
+    "description": "A health topic associated with 1 care area(s)."
+  },
+  {
+    "id": "cond-ear-infection",
+    "name": "ear infection",
+    "specialty_ids": [
+      "otolaryngology"
+    ],
+    "description": "A health topic associated with 1 care area(s)."
+  },
+  {
+    "id": "cond-voice-disorder",
+    "name": "voice disorder",
+    "specialty_ids": [
+      "otolaryngology",
+      "speech-language-therapy"
+    ],
+    "description": "A health topic associated with 2 care area(s)."
+  },
+  {
+    "id": "cond-dental-caries",
+    "name": "dental caries",
+    "specialty_ids": [
+      "dentistry"
+    ],
+    "description": "A health topic associated with 1 care area(s)."
+  },
+  {
+    "id": "cond-gum-disease",
+    "name": "gum disease",
+    "specialty_ids": [
+      "dentistry"
+    ],
+    "description": "A health topic associated with 1 care area(s)."
+  },
+  {
+    "id": "cond-tooth-infection",
+    "name": "tooth infection",
+    "specialty_ids": [
+      "dentistry"
+    ],
+    "description": "A health topic associated with 1 care area(s)."
+  },
+  {
+    "id": "cond-jaw-joint-disorder",
+    "name": "jaw joint disorder",
+    "specialty_ids": [
+      "dentistry"
+    ],
+    "description": "A health topic associated with 1 care area(s)."
+  },
+  {
+    "id": "cond-depression",
+    "name": "depression",
+    "specialty_ids": [
+      "psychiatry",
+      "clinical-psychology"
+    ],
+    "description": "A health topic associated with 2 care area(s)."
+  },
+  {
+    "id": "cond-anxiety-disorder",
+    "name": "anxiety disorder",
+    "specialty_ids": [
+      "psychiatry",
+      "clinical-psychology"
+    ],
+    "description": "A health topic associated with 2 care area(s)."
+  },
+  {
+    "id": "cond-bipolar-disorder",
+    "name": "bipolar disorder",
+    "specialty_ids": [
+      "psychiatry"
+    ],
+    "description": "A health topic associated with 1 care area(s)."
+  },
+  {
+    "id": "cond-substance-use-disorder",
+    "name": "substance use disorder",
+    "specialty_ids": [
+      "psychiatry"
+    ],
+    "description": "A health topic associated with 1 care area(s)."
+  },
+  {
+    "id": "cond-trauma-related-stress",
+    "name": "trauma-related stress",
+    "specialty_ids": [
+      "clinical-psychology"
+    ],
+    "description": "A health topic associated with 1 care area(s)."
+  },
+  {
+    "id": "cond-behavioral-concern",
+    "name": "behavioral concern",
+    "specialty_ids": [
+      "clinical-psychology"
+    ],
+    "description": "A health topic associated with 1 care area(s)."
+  },
+  {
+    "id": "cond-insomnia",
+    "name": "insomnia",
+    "specialty_ids": [
+      "sleep-medicine"
+    ],
+    "description": "A health topic associated with 1 care area(s)."
+  },
+  {
+    "id": "cond-restless-legs-syndrome",
+    "name": "restless legs syndrome",
+    "specialty_ids": [
+      "sleep-medicine"
+    ],
+    "description": "A health topic associated with 1 care area(s)."
+  },
+  {
+    "id": "cond-circadian-rhythm-disorder",
+    "name": "circadian rhythm disorder",
+    "specialty_ids": [
+      "sleep-medicine"
+    ],
+    "description": "A health topic associated with 1 care area(s)."
+  },
+  {
+    "id": "cond-imaging-abnormality",
+    "name": "imaging abnormality",
+    "specialty_ids": [
+      "radiology"
+    ],
+    "description": "A health topic associated with 1 care area(s)."
+  },
+  {
+    "id": "cond-fracture-evaluation",
+    "name": "fracture evaluation",
+    "specialty_ids": [
+      "radiology"
+    ],
+    "description": "A health topic associated with 1 care area(s)."
+  },
+  {
+    "id": "cond-tumor-imaging",
+    "name": "tumor imaging",
+    "specialty_ids": [
+      "radiology"
+    ],
+    "description": "A health topic associated with 1 care area(s)."
+  },
+  {
+    "id": "cond-vascular-imaging",
+    "name": "vascular imaging",
+    "specialty_ids": [
+      "radiology"
+    ],
+    "description": "A health topic associated with 1 care area(s)."
+  },
+  {
+    "id": "cond-abnormal-blood-count",
+    "name": "abnormal blood count",
+    "specialty_ids": [
+      "pathology"
+    ],
+    "description": "A health topic associated with 1 care area(s)."
+  },
+  {
+    "id": "cond-biopsy-finding",
+    "name": "biopsy finding",
+    "specialty_ids": [
+      "pathology"
+    ],
+    "description": "A health topic associated with 1 care area(s)."
+  },
+  {
+    "id": "cond-infection-testing",
+    "name": "infection testing",
+    "specialty_ids": [
+      "pathology"
+    ],
+    "description": "A health topic associated with 1 care area(s)."
+  },
+  {
+    "id": "cond-tumor-pathology",
+    "name": "tumor pathology",
+    "specialty_ids": [
+      "pathology"
+    ],
+    "description": "A health topic associated with 1 care area(s)."
+  },
+  {
+    "id": "cond-acute-injury",
+    "name": "acute injury",
+    "specialty_ids": [
+      "emergency-medicine"
+    ],
+    "description": "A health topic associated with 1 care area(s)."
+  },
+  {
+    "id": "cond-severe-infection",
+    "name": "severe infection",
+    "specialty_ids": [
+      "emergency-medicine"
+    ],
+    "description": "A health topic associated with 1 care area(s)."
+  },
+  {
+    "id": "cond-allergic-emergency",
+    "name": "allergic emergency",
+    "specialty_ids": [
+      "emergency-medicine"
+    ],
+    "description": "A health topic associated with 1 care area(s)."
+  },
+  {
+    "id": "cond-stroke-warning",
+    "name": "stroke warning",
+    "specialty_ids": [
+      "emergency-medicine"
+    ],
+    "description": "A health topic associated with 1 care area(s)."
+  },
+  {
+    "id": "cond-sepsis",
+    "name": "sepsis",
+    "specialty_ids": [
+      "critical-care"
+    ],
+    "description": "A health topic associated with 1 care area(s)."
+  },
+  {
+    "id": "cond-respiratory-failure",
+    "name": "respiratory failure",
+    "specialty_ids": [
+      "critical-care"
+    ],
+    "description": "A health topic associated with 1 care area(s)."
+  },
+  {
+    "id": "cond-multi-organ-failure",
+    "name": "multi-organ failure",
+    "specialty_ids": [
+      "critical-care"
+    ],
+    "description": "A health topic associated with 1 care area(s)."
+  },
+  {
+    "id": "cond-shock",
+    "name": "shock",
+    "specialty_ids": [
+      "critical-care"
+    ],
+    "description": "A health topic associated with 1 care area(s)."
+  },
+  {
+    "id": "cond-perioperative-risk",
+    "name": "perioperative risk",
+    "specialty_ids": [
+      "anesthesiology"
+    ],
+    "description": "A health topic associated with 1 care area(s)."
+  },
+  {
+    "id": "cond-anesthesia-reaction-history",
+    "name": "anesthesia reaction history",
+    "specialty_ids": [
+      "anesthesiology"
+    ],
+    "description": "A health topic associated with 1 care area(s)."
+  },
+  {
+    "id": "cond-postoperative-nausea",
+    "name": "postoperative nausea",
+    "specialty_ids": [
+      "anesthesiology"
+    ],
+    "description": "A health topic associated with 1 care area(s)."
+  },
+  {
+    "id": "cond-acute-pain",
+    "name": "acute pain",
+    "specialty_ids": [
+      "anesthesiology"
+    ],
+    "description": "A health topic associated with 1 care area(s)."
+  },
+  {
+    "id": "cond-common-infection",
+    "name": "common infection",
+    "specialty_ids": [
+      "family-medicine"
+    ],
+    "description": "A health topic associated with 1 care area(s)."
+  },
+  {
+    "id": "cond-preventive-health-need",
+    "name": "preventive health need",
+    "specialty_ids": [
+      "family-medicine"
+    ],
+    "description": "A health topic associated with 1 care area(s)."
+  },
+  {
+    "id": "cond-vaccine-preventable-illness",
+    "name": "vaccine-preventable illness",
+    "specialty_ids": [
+      "public-health-preventive-medicine"
+    ],
+    "description": "A health topic associated with 1 care area(s)."
+  },
+  {
+    "id": "cond-occupational-health-risk",
+    "name": "occupational health risk",
+    "specialty_ids": [
+      "public-health-preventive-medicine"
+    ],
+    "description": "A health topic associated with 1 care area(s)."
+  },
+  {
+    "id": "cond-screening-need",
+    "name": "screening need",
+    "specialty_ids": [
+      "public-health-preventive-medicine"
+    ],
+    "description": "A health topic associated with 1 care area(s)."
+  },
+  {
+    "id": "cond-community-health-concern",
+    "name": "community health concern",
+    "specialty_ids": [
+      "public-health-preventive-medicine"
+    ],
+    "description": "A health topic associated with 1 care area(s)."
+  },
+  {
+    "id": "cond-nutrition-deficiency",
+    "name": "nutrition deficiency",
+    "specialty_ids": [
+      "nutrition-dietetics"
+    ],
+    "description": "A health topic associated with 1 care area(s)."
+  },
+  {
+    "id": "cond-obesity",
+    "name": "obesity",
+    "specialty_ids": [
+      "nutrition-dietetics"
+    ],
+    "description": "A health topic associated with 1 care area(s)."
+  },
+  {
+    "id": "cond-diabetes-nutrition-care",
+    "name": "diabetes nutrition care",
+    "specialty_ids": [
+      "nutrition-dietetics"
+    ],
+    "description": "A health topic associated with 1 care area(s)."
+  },
+  {
+    "id": "cond-malnutrition-risk",
+    "name": "malnutrition risk",
+    "specialty_ids": [
+      "nutrition-dietetics"
+    ],
+    "description": "A health topic associated with 1 care area(s)."
+  },
+  {
+    "id": "cond-back-pain",
+    "name": "back pain",
+    "specialty_ids": [
+      "physiotherapy"
+    ],
+    "description": "A health topic associated with 1 care area(s)."
+  },
+  {
+    "id": "cond-postoperative-recovery",
+    "name": "postoperative recovery",
+    "specialty_ids": [
+      "physiotherapy"
+    ],
+    "description": "A health topic associated with 1 care area(s)."
+  },
+  {
+    "id": "cond-stroke-recovery",
+    "name": "stroke recovery",
+    "specialty_ids": [
+      "physiotherapy",
+      "occupational-therapy"
+    ],
+    "description": "A health topic associated with 2 care area(s)."
+  },
+  {
+    "id": "cond-developmental-disability-support",
+    "name": "developmental disability support",
+    "specialty_ids": [
+      "occupational-therapy"
+    ],
+    "description": "A health topic associated with 1 care area(s)."
+  },
+  {
+    "id": "cond-hand-injury-recovery",
+    "name": "hand injury recovery",
+    "specialty_ids": [
+      "occupational-therapy"
+    ],
+    "description": "A health topic associated with 1 care area(s)."
+  },
+  {
+    "id": "cond-language-delay",
+    "name": "language delay",
+    "specialty_ids": [
+      "speech-language-therapy"
+    ],
+    "description": "A health topic associated with 1 care area(s)."
+  },
+  {
+    "id": "cond-stuttering",
+    "name": "stuttering",
+    "specialty_ids": [
+      "speech-language-therapy"
+    ],
+    "description": "A health topic associated with 1 care area(s)."
+  },
+  {
+    "id": "cond-dysphagia",
+    "name": "dysphagia",
+    "specialty_ids": [
+      "speech-language-therapy"
+    ],
+    "description": "A health topic associated with 1 care area(s)."
+  },
+  {
+    "id": "cond-hearing-loss",
+    "name": "hearing loss",
+    "specialty_ids": [
+      "audiology"
+    ],
+    "description": "A health topic associated with 1 care area(s)."
+  },
+  {
+    "id": "cond-tinnitus",
+    "name": "tinnitus",
+    "specialty_ids": [
+      "audiology"
+    ],
+    "description": "A health topic associated with 1 care area(s)."
+  },
+  {
+    "id": "cond-vestibular-disorder",
+    "name": "vestibular disorder",
+    "specialty_ids": [
+      "audiology"
+    ],
+    "description": "A health topic associated with 1 care area(s)."
+  },
+  {
+    "id": "cond-noise-related-hearing-loss",
+    "name": "noise-related hearing loss",
+    "specialty_ids": [
+      "audiology"
+    ],
+    "description": "A health topic associated with 1 care area(s)."
+  },
+  {
+    "id": "cond-advanced-illness-support",
+    "name": "advanced illness support",
+    "specialty_ids": [
+      "palliative-medicine"
+    ],
+    "description": "A health topic associated with 1 care area(s)."
+  },
+  {
+    "id": "cond-cancer-symptom-support",
+    "name": "cancer symptom support",
+    "specialty_ids": [
+      "palliative-medicine"
+    ],
+    "description": "A health topic associated with 1 care area(s)."
+  },
+  {
+    "id": "cond-complex-symptom-burden",
+    "name": "complex symptom burden",
+    "specialty_ids": [
+      "palliative-medicine"
+    ],
+    "description": "A health topic associated with 1 care area(s)."
+  },
+  {
+    "id": "cond-goals-of-care-planning",
+    "name": "goals of care planning",
+    "specialty_ids": [
+      "palliative-medicine"
+    ],
+    "description": "A health topic associated with 1 care area(s)."
+  }
+]

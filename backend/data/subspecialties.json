@@ -1,0 +1,1154 @@
+[
+  {
+    "id": "sub-general-medicine-internal-medicine",
+    "specialty_id": "general-medicine",
+    "name": "Internal Medicine",
+    "description": "A focused area within General Medicine."
+  },
+  {
+    "id": "sub-general-medicine-preventive-medicine",
+    "specialty_id": "general-medicine",
+    "name": "Preventive Medicine",
+    "description": "A focused area within General Medicine."
+  },
+  {
+    "id": "sub-general-medicine-chronic-disease-care",
+    "specialty_id": "general-medicine",
+    "name": "Chronic Disease Care",
+    "description": "A focused area within General Medicine."
+  },
+  {
+    "id": "sub-general-medicine-primary-care",
+    "specialty_id": "general-medicine",
+    "name": "Primary Care",
+    "description": "A focused area within General Medicine."
+  },
+  {
+    "id": "sub-cardiology-interventional-cardiology",
+    "specialty_id": "cardiology",
+    "name": "Interventional Cardiology",
+    "description": "A focused area within Cardiology."
+  },
+  {
+    "id": "sub-cardiology-heart-failure-care",
+    "specialty_id": "cardiology",
+    "name": "Heart Failure Care",
+    "description": "A focused area within Cardiology."
+  },
+  {
+    "id": "sub-cardiology-cardiac-imaging",
+    "specialty_id": "cardiology",
+    "name": "Cardiac Imaging",
+    "description": "A focused area within Cardiology."
+  },
+  {
+    "id": "sub-cardiology-electrophysiology",
+    "specialty_id": "cardiology",
+    "name": "Electrophysiology",
+    "description": "A focused area within Cardiology."
+  },
+  {
+    "id": "sub-dermatology-medical-dermatology",
+    "specialty_id": "dermatology",
+    "name": "Medical Dermatology",
+    "description": "A focused area within Dermatology."
+  },
+  {
+    "id": "sub-dermatology-pediatric-dermatology",
+    "specialty_id": "dermatology",
+    "name": "Pediatric Dermatology",
+    "description": "A focused area within Dermatology."
+  },
+  {
+    "id": "sub-dermatology-dermatopathology",
+    "specialty_id": "dermatology",
+    "name": "Dermatopathology",
+    "description": "A focused area within Dermatology."
+  },
+  {
+    "id": "sub-dermatology-cosmetic-dermatology",
+    "specialty_id": "dermatology",
+    "name": "Cosmetic Dermatology",
+    "description": "A focused area within Dermatology."
+  },
+  {
+    "id": "sub-endocrinology-diabetology",
+    "specialty_id": "endocrinology",
+    "name": "Diabetology",
+    "description": "A focused area within Endocrinology."
+  },
+  {
+    "id": "sub-endocrinology-thyroid-care",
+    "specialty_id": "endocrinology",
+    "name": "Thyroid Care",
+    "description": "A focused area within Endocrinology."
+  },
+  {
+    "id": "sub-endocrinology-metabolic-medicine",
+    "specialty_id": "endocrinology",
+    "name": "Metabolic Medicine",
+    "description": "A focused area within Endocrinology."
+  },
+  {
+    "id": "sub-endocrinology-reproductive-endocrinology",
+    "specialty_id": "endocrinology",
+    "name": "Reproductive Endocrinology",
+    "description": "A focused area within Endocrinology."
+  },
+  {
+    "id": "sub-gastroenterology-hepatology",
+    "specialty_id": "gastroenterology",
+    "name": "Hepatology",
+    "description": "A focused area within Gastroenterology."
+  },
+  {
+    "id": "sub-gastroenterology-inflammatory-bowel-disease",
+    "specialty_id": "gastroenterology",
+    "name": "Inflammatory Bowel Disease",
+    "description": "A focused area within Gastroenterology."
+  },
+  {
+    "id": "sub-gastroenterology-pancreatic-care",
+    "specialty_id": "gastroenterology",
+    "name": "Pancreatic Care",
+    "description": "A focused area within Gastroenterology."
+  },
+  {
+    "id": "sub-gastroenterology-therapeutic-endoscopy",
+    "specialty_id": "gastroenterology",
+    "name": "Therapeutic Endoscopy",
+    "description": "A focused area within Gastroenterology."
+  },
+  {
+    "id": "sub-neurology-headache-medicine",
+    "specialty_id": "neurology",
+    "name": "Headache Medicine",
+    "description": "A focused area within Neurology."
+  },
+  {
+    "id": "sub-neurology-epilepsy-care",
+    "specialty_id": "neurology",
+    "name": "Epilepsy Care",
+    "description": "A focused area within Neurology."
+  },
+  {
+    "id": "sub-neurology-movement-disorders",
+    "specialty_id": "neurology",
+    "name": "Movement Disorders",
+    "description": "A focused area within Neurology."
+  },
+  {
+    "id": "sub-neurology-neuroimmunology",
+    "specialty_id": "neurology",
+    "name": "Neuroimmunology",
+    "description": "A focused area within Neurology."
+  },
+  {
+    "id": "sub-pulmonology-sleep-respiratory-care",
+    "specialty_id": "pulmonology",
+    "name": "Sleep Respiratory Care",
+    "description": "A focused area within Pulmonology."
+  },
+  {
+    "id": "sub-pulmonology-interventional-pulmonology",
+    "specialty_id": "pulmonology",
+    "name": "Interventional Pulmonology",
+    "description": "A focused area within Pulmonology."
+  },
+  {
+    "id": "sub-pulmonology-asthma-care",
+    "specialty_id": "pulmonology",
+    "name": "Asthma Care",
+    "description": "A focused area within Pulmonology."
+  },
+  {
+    "id": "sub-pulmonology-critical-respiratory-care",
+    "specialty_id": "pulmonology",
+    "name": "Critical Respiratory Care",
+    "description": "A focused area within Pulmonology."
+  },
+  {
+    "id": "sub-nephrology-dialysis-medicine",
+    "specialty_id": "nephrology",
+    "name": "Dialysis Medicine",
+    "description": "A focused area within Nephrology."
+  },
+  {
+    "id": "sub-nephrology-glomerular-disease",
+    "specialty_id": "nephrology",
+    "name": "Glomerular Disease",
+    "description": "A focused area within Nephrology."
+  },
+  {
+    "id": "sub-nephrology-kidney-transplant-care",
+    "specialty_id": "nephrology",
+    "name": "Kidney Transplant Care",
+    "description": "A focused area within Nephrology."
+  },
+  {
+    "id": "sub-nephrology-hypertension-and-kidney-care",
+    "specialty_id": "nephrology",
+    "name": "Hypertension and Kidney Care",
+    "description": "A focused area within Nephrology."
+  },
+  {
+    "id": "sub-rheumatology-autoimmune-disease-care",
+    "specialty_id": "rheumatology",
+    "name": "Autoimmune Disease Care",
+    "description": "A focused area within Rheumatology."
+  },
+  {
+    "id": "sub-rheumatology-inflammatory-arthritis",
+    "specialty_id": "rheumatology",
+    "name": "Inflammatory Arthritis",
+    "description": "A focused area within Rheumatology."
+  },
+  {
+    "id": "sub-rheumatology-connective-tissue-disease",
+    "specialty_id": "rheumatology",
+    "name": "Connective Tissue Disease",
+    "description": "A focused area within Rheumatology."
+  },
+  {
+    "id": "sub-rheumatology-pediatric-rheumatology",
+    "specialty_id": "rheumatology",
+    "name": "Pediatric Rheumatology",
+    "description": "A focused area within Rheumatology."
+  },
+  {
+    "id": "sub-hematology-benign-hematology",
+    "specialty_id": "hematology",
+    "name": "Benign Hematology",
+    "description": "A focused area within Hematology."
+  },
+  {
+    "id": "sub-hematology-coagulation-care",
+    "specialty_id": "hematology",
+    "name": "Coagulation Care",
+    "description": "A focused area within Hematology."
+  },
+  {
+    "id": "sub-hematology-transfusion-medicine",
+    "specialty_id": "hematology",
+    "name": "Transfusion Medicine",
+    "description": "A focused area within Hematology."
+  },
+  {
+    "id": "sub-hematology-hematologic-malignancy-care",
+    "specialty_id": "hematology",
+    "name": "Hematologic Malignancy Care",
+    "description": "A focused area within Hematology."
+  },
+  {
+    "id": "sub-infectious-disease-travel-medicine",
+    "specialty_id": "infectious-disease",
+    "name": "Travel Medicine",
+    "description": "A focused area within Infectious Disease."
+  },
+  {
+    "id": "sub-infectious-disease-antimicrobial-stewardship",
+    "specialty_id": "infectious-disease",
+    "name": "Antimicrobial Stewardship",
+    "description": "A focused area within Infectious Disease."
+  },
+  {
+    "id": "sub-infectious-disease-hiv-medicine",
+    "specialty_id": "infectious-disease",
+    "name": "HIV Medicine",
+    "description": "A focused area within Infectious Disease."
+  },
+  {
+    "id": "sub-infectious-disease-tropical-medicine",
+    "specialty_id": "infectious-disease",
+    "name": "Tropical Medicine",
+    "description": "A focused area within Infectious Disease."
+  },
+  {
+    "id": "sub-medical-oncology-breast-oncology",
+    "specialty_id": "medical-oncology",
+    "name": "Breast Oncology",
+    "description": "A focused area within Medical Oncology."
+  },
+  {
+    "id": "sub-medical-oncology-gastrointestinal-oncology",
+    "specialty_id": "medical-oncology",
+    "name": "Gastrointestinal Oncology",
+    "description": "A focused area within Medical Oncology."
+  },
+  {
+    "id": "sub-medical-oncology-thoracic-oncology",
+    "specialty_id": "medical-oncology",
+    "name": "Thoracic Oncology",
+    "description": "A focused area within Medical Oncology."
+  },
+  {
+    "id": "sub-medical-oncology-geriatric-oncology",
+    "specialty_id": "medical-oncology",
+    "name": "Geriatric Oncology",
+    "description": "A focused area within Medical Oncology."
+  },
+  {
+    "id": "sub-geriatrics-cognitive-geriatrics",
+    "specialty_id": "geriatrics",
+    "name": "Cognitive Geriatrics",
+    "description": "A focused area within Geriatric Medicine."
+  },
+  {
+    "id": "sub-geriatrics-falls-prevention",
+    "specialty_id": "geriatrics",
+    "name": "Falls Prevention",
+    "description": "A focused area within Geriatric Medicine."
+  },
+  {
+    "id": "sub-geriatrics-geriatric-rehabilitation",
+    "specialty_id": "geriatrics",
+    "name": "Geriatric Rehabilitation",
+    "description": "A focused area within Geriatric Medicine."
+  },
+  {
+    "id": "sub-geriatrics-long-term-care",
+    "specialty_id": "geriatrics",
+    "name": "Long-term Care",
+    "description": "A focused area within Geriatric Medicine."
+  },
+  {
+    "id": "sub-allergy-immunology-food-allergy-care",
+    "specialty_id": "allergy-immunology",
+    "name": "Food Allergy Care",
+    "description": "A focused area within Allergy and Immunology."
+  },
+  {
+    "id": "sub-allergy-immunology-allergic-asthma",
+    "specialty_id": "allergy-immunology",
+    "name": "Allergic Asthma",
+    "description": "A focused area within Allergy and Immunology."
+  },
+  {
+    "id": "sub-allergy-immunology-drug-allergy-care",
+    "specialty_id": "allergy-immunology",
+    "name": "Drug Allergy Care",
+    "description": "A focused area within Allergy and Immunology."
+  },
+  {
+    "id": "sub-allergy-immunology-clinical-immunology",
+    "specialty_id": "allergy-immunology",
+    "name": "Clinical Immunology",
+    "description": "A focused area within Allergy and Immunology."
+  },
+  {
+    "id": "sub-pediatrics-developmental-pediatrics",
+    "specialty_id": "pediatrics",
+    "name": "Developmental Pediatrics",
+    "description": "A focused area within Pediatrics."
+  },
+  {
+    "id": "sub-pediatrics-adolescent-medicine",
+    "specialty_id": "pediatrics",
+    "name": "Adolescent Medicine",
+    "description": "A focused area within Pediatrics."
+  },
+  {
+    "id": "sub-pediatrics-pediatric-emergency-care",
+    "specialty_id": "pediatrics",
+    "name": "Pediatric Emergency Care",
+    "description": "A focused area within Pediatrics."
+  },
+  {
+    "id": "sub-pediatrics-pediatric-nutrition",
+    "specialty_id": "pediatrics",
+    "name": "Pediatric Nutrition",
+    "description": "A focused area within Pediatrics."
+  },
+  {
+    "id": "sub-neonatology-neonatal-intensive-care",
+    "specialty_id": "neonatology",
+    "name": "Neonatal Intensive Care",
+    "description": "A focused area within Neonatology."
+  },
+  {
+    "id": "sub-neonatology-high-risk-newborn-follow-up",
+    "specialty_id": "neonatology",
+    "name": "High-risk Newborn Follow-up",
+    "description": "A focused area within Neonatology."
+  },
+  {
+    "id": "sub-neonatology-neonatal-nutrition",
+    "specialty_id": "neonatology",
+    "name": "Neonatal Nutrition",
+    "description": "A focused area within Neonatology."
+  },
+  {
+    "id": "sub-neonatology-neonatal-transport",
+    "specialty_id": "neonatology",
+    "name": "Neonatal Transport",
+    "description": "A focused area within Neonatology."
+  },
+  {
+    "id": "sub-pediatric-cardiology-congenital-heart-care",
+    "specialty_id": "pediatric-cardiology",
+    "name": "Congenital Heart Care",
+    "description": "A focused area within Pediatric Cardiology."
+  },
+  {
+    "id": "sub-pediatric-cardiology-pediatric-electrophysiology",
+    "specialty_id": "pediatric-cardiology",
+    "name": "Pediatric Electrophysiology",
+    "description": "A focused area within Pediatric Cardiology."
+  },
+  {
+    "id": "sub-pediatric-cardiology-fetal-cardiology",
+    "specialty_id": "pediatric-cardiology",
+    "name": "Fetal Cardiology",
+    "description": "A focused area within Pediatric Cardiology."
+  },
+  {
+    "id": "sub-pediatric-cardiology-pediatric-heart-failure",
+    "specialty_id": "pediatric-cardiology",
+    "name": "Pediatric Heart Failure",
+    "description": "A focused area within Pediatric Cardiology."
+  },
+  {
+    "id": "sub-obstetrics-gynecology-high-risk-obstetrics",
+    "specialty_id": "obstetrics-gynecology",
+    "name": "High-risk Obstetrics",
+    "description": "A focused area within Obstetrics and Gynecology."
+  },
+  {
+    "id": "sub-obstetrics-gynecology-gynecologic-surgery",
+    "specialty_id": "obstetrics-gynecology",
+    "name": "Gynecologic Surgery",
+    "description": "A focused area within Obstetrics and Gynecology."
+  },
+  {
+    "id": "sub-obstetrics-gynecology-menstrual-health",
+    "specialty_id": "obstetrics-gynecology",
+    "name": "Menstrual Health",
+    "description": "A focused area within Obstetrics and Gynecology."
+  },
+  {
+    "id": "sub-obstetrics-gynecology-menopause-care",
+    "specialty_id": "obstetrics-gynecology",
+    "name": "Menopause Care",
+    "description": "A focused area within Obstetrics and Gynecology."
+  },
+  {
+    "id": "sub-reproductive-medicine-ivf-medicine",
+    "specialty_id": "reproductive-medicine",
+    "name": "IVF Medicine",
+    "description": "A focused area within Reproductive Medicine."
+  },
+  {
+    "id": "sub-reproductive-medicine-andrology",
+    "specialty_id": "reproductive-medicine",
+    "name": "Andrology",
+    "description": "A focused area within Reproductive Medicine."
+  },
+  {
+    "id": "sub-reproductive-medicine-fertility-preservation",
+    "specialty_id": "reproductive-medicine",
+    "name": "Fertility Preservation",
+    "description": "A focused area within Reproductive Medicine."
+  },
+  {
+    "id": "sub-reproductive-medicine-recurrent-pregnancy-loss-care",
+    "specialty_id": "reproductive-medicine",
+    "name": "Recurrent Pregnancy Loss Care",
+    "description": "A focused area within Reproductive Medicine."
+  },
+  {
+    "id": "sub-maternal-fetal-medicine-fetal-imaging",
+    "specialty_id": "maternal-fetal-medicine",
+    "name": "Fetal Imaging",
+    "description": "A focused area within Maternal-Fetal Medicine."
+  },
+  {
+    "id": "sub-maternal-fetal-medicine-obstetric-medicine",
+    "specialty_id": "maternal-fetal-medicine",
+    "name": "Obstetric Medicine",
+    "description": "A focused area within Maternal-Fetal Medicine."
+  },
+  {
+    "id": "sub-maternal-fetal-medicine-multiple-pregnancy-care",
+    "specialty_id": "maternal-fetal-medicine",
+    "name": "Multiple Pregnancy Care",
+    "description": "A focused area within Maternal-Fetal Medicine."
+  },
+  {
+    "id": "sub-maternal-fetal-medicine-genetic-counseling-in-pregnancy",
+    "specialty_id": "maternal-fetal-medicine",
+    "name": "Genetic Counseling in Pregnancy",
+    "description": "A focused area within Maternal-Fetal Medicine."
+  },
+  {
+    "id": "sub-orthopedics-joint-replacement",
+    "specialty_id": "orthopedics",
+    "name": "Joint Replacement",
+    "description": "A focused area within Orthopedics."
+  },
+  {
+    "id": "sub-orthopedics-spine-surgery",
+    "specialty_id": "orthopedics",
+    "name": "Spine Surgery",
+    "description": "A focused area within Orthopedics."
+  },
+  {
+    "id": "sub-orthopedics-trauma-orthopedics",
+    "specialty_id": "orthopedics",
+    "name": "Trauma Orthopedics",
+    "description": "A focused area within Orthopedics."
+  },
+  {
+    "id": "sub-orthopedics-hand-and-upper-limb-care",
+    "specialty_id": "orthopedics",
+    "name": "Hand and Upper Limb Care",
+    "description": "A focused area within Orthopedics."
+  },
+  {
+    "id": "sub-sports-medicine-running-medicine",
+    "specialty_id": "sports-medicine",
+    "name": "Running Medicine",
+    "description": "A focused area within Sports Medicine."
+  },
+  {
+    "id": "sub-sports-medicine-shoulder-sports-care",
+    "specialty_id": "sports-medicine",
+    "name": "Shoulder Sports Care",
+    "description": "A focused area within Sports Medicine."
+  },
+  {
+    "id": "sub-sports-medicine-knee-sports-care",
+    "specialty_id": "sports-medicine",
+    "name": "Knee Sports Care",
+    "description": "A focused area within Sports Medicine."
+  },
+  {
+    "id": "sub-sports-medicine-exercise-physiology",
+    "specialty_id": "sports-medicine",
+    "name": "Exercise Physiology",
+    "description": "A focused area within Sports Medicine."
+  },
+  {
+    "id": "sub-physical-medicine-rehabilitation-neurorehabilitation",
+    "specialty_id": "physical-medicine-rehabilitation",
+    "name": "Neurorehabilitation",
+    "description": "A focused area within Physical Medicine and Rehabilitation."
+  },
+  {
+    "id": "sub-physical-medicine-rehabilitation-spinal-rehabilitation",
+    "specialty_id": "physical-medicine-rehabilitation",
+    "name": "Spinal Rehabilitation",
+    "description": "A focused area within Physical Medicine and Rehabilitation."
+  },
+  {
+    "id": "sub-physical-medicine-rehabilitation-amputee-rehabilitation",
+    "specialty_id": "physical-medicine-rehabilitation",
+    "name": "Amputee Rehabilitation",
+    "description": "A focused area within Physical Medicine and Rehabilitation."
+  },
+  {
+    "id": "sub-physical-medicine-rehabilitation-pain-rehabilitation",
+    "specialty_id": "physical-medicine-rehabilitation",
+    "name": "Pain Rehabilitation",
+    "description": "A focused area within Physical Medicine and Rehabilitation."
+  },
+  {
+    "id": "sub-pain-medicine-interventional-pain-care",
+    "specialty_id": "pain-medicine",
+    "name": "Interventional Pain Care",
+    "description": "A focused area within Pain Medicine."
+  },
+  {
+    "id": "sub-pain-medicine-neuropathic-pain",
+    "specialty_id": "pain-medicine",
+    "name": "Neuropathic Pain",
+    "description": "A focused area within Pain Medicine."
+  },
+  {
+    "id": "sub-pain-medicine-cancer-pain-support",
+    "specialty_id": "pain-medicine",
+    "name": "Cancer Pain Support",
+    "description": "A focused area within Pain Medicine."
+  },
+  {
+    "id": "sub-pain-medicine-headache-pain-care",
+    "specialty_id": "pain-medicine",
+    "name": "Headache Pain Care",
+    "description": "A focused area within Pain Medicine."
+  },
+  {
+    "id": "sub-general-surgery-laparoscopic-surgery",
+    "specialty_id": "general-surgery",
+    "name": "Laparoscopic Surgery",
+    "description": "A focused area within General Surgery."
+  },
+  {
+    "id": "sub-general-surgery-breast-surgery",
+    "specialty_id": "general-surgery",
+    "name": "Breast Surgery",
+    "description": "A focused area within General Surgery."
+  },
+  {
+    "id": "sub-general-surgery-colorectal-surgery",
+    "specialty_id": "general-surgery",
+    "name": "Colorectal Surgery",
+    "description": "A focused area within General Surgery."
+  },
+  {
+    "id": "sub-general-surgery-hepatobiliary-surgery",
+    "specialty_id": "general-surgery",
+    "name": "Hepatobiliary Surgery",
+    "description": "A focused area within General Surgery."
+  },
+  {
+    "id": "sub-cardiothoracic-surgery-cardiac-surgery",
+    "specialty_id": "cardiothoracic-surgery",
+    "name": "Cardiac Surgery",
+    "description": "A focused area within Cardiothoracic Surgery."
+  },
+  {
+    "id": "sub-cardiothoracic-surgery-aortic-surgery",
+    "specialty_id": "cardiothoracic-surgery",
+    "name": "Aortic Surgery",
+    "description": "A focused area within Cardiothoracic Surgery."
+  },
+  {
+    "id": "sub-cardiothoracic-surgery-thoracic-surgery",
+    "specialty_id": "cardiothoracic-surgery",
+    "name": "Thoracic Surgery",
+    "description": "A focused area within Cardiothoracic Surgery."
+  },
+  {
+    "id": "sub-cardiothoracic-surgery-minimally-invasive-heart-surgery",
+    "specialty_id": "cardiothoracic-surgery",
+    "name": "Minimally Invasive Heart Surgery",
+    "description": "A focused area within Cardiothoracic Surgery."
+  },
+  {
+    "id": "sub-neurosurgery-brain-tumor-surgery",
+    "specialty_id": "neurosurgery",
+    "name": "Brain Tumor Surgery",
+    "description": "A focused area within Neurosurgery."
+  },
+  {
+    "id": "sub-neurosurgery-spine-neurosurgery",
+    "specialty_id": "neurosurgery",
+    "name": "Spine Neurosurgery",
+    "description": "A focused area within Neurosurgery."
+  },
+  {
+    "id": "sub-neurosurgery-neurovascular-surgery",
+    "specialty_id": "neurosurgery",
+    "name": "Neurovascular Surgery",
+    "description": "A focused area within Neurosurgery."
+  },
+  {
+    "id": "sub-neurosurgery-pediatric-neurosurgery",
+    "specialty_id": "neurosurgery",
+    "name": "Pediatric Neurosurgery",
+    "description": "A focused area within Neurosurgery."
+  },
+  {
+    "id": "sub-plastic-reconstructive-surgery-burn-reconstruction",
+    "specialty_id": "plastic-reconstructive-surgery",
+    "name": "Burn Reconstruction",
+    "description": "A focused area within Plastic and Reconstructive Surgery."
+  },
+  {
+    "id": "sub-plastic-reconstructive-surgery-hand-reconstruction",
+    "specialty_id": "plastic-reconstructive-surgery",
+    "name": "Hand Reconstruction",
+    "description": "A focused area within Plastic and Reconstructive Surgery."
+  },
+  {
+    "id": "sub-plastic-reconstructive-surgery-craniofacial-surgery",
+    "specialty_id": "plastic-reconstructive-surgery",
+    "name": "Craniofacial Surgery",
+    "description": "A focused area within Plastic and Reconstructive Surgery."
+  },
+  {
+    "id": "sub-plastic-reconstructive-surgery-microsurgery",
+    "specialty_id": "plastic-reconstructive-surgery",
+    "name": "Microsurgery",
+    "description": "A focused area within Plastic and Reconstructive Surgery."
+  },
+  {
+    "id": "sub-urology-endourology",
+    "specialty_id": "urology",
+    "name": "Endourology",
+    "description": "A focused area within Urology."
+  },
+  {
+    "id": "sub-urology-andrology",
+    "specialty_id": "urology",
+    "name": "Andrology",
+    "description": "A focused area within Urology."
+  },
+  {
+    "id": "sub-urology-female-urology",
+    "specialty_id": "urology",
+    "name": "Female Urology",
+    "description": "A focused area within Urology."
+  },
+  {
+    "id": "sub-urology-urologic-oncology",
+    "specialty_id": "urology",
+    "name": "Urologic Oncology",
+    "description": "A focused area within Urology."
+  },
+  {
+    "id": "sub-ophthalmology-retina-care",
+    "specialty_id": "ophthalmology",
+    "name": "Retina Care",
+    "description": "A focused area within Ophthalmology."
+  },
+  {
+    "id": "sub-ophthalmology-glaucoma-care",
+    "specialty_id": "ophthalmology",
+    "name": "Glaucoma Care",
+    "description": "A focused area within Ophthalmology."
+  },
+  {
+    "id": "sub-ophthalmology-cornea-care",
+    "specialty_id": "ophthalmology",
+    "name": "Cornea Care",
+    "description": "A focused area within Ophthalmology."
+  },
+  {
+    "id": "sub-ophthalmology-pediatric-ophthalmology",
+    "specialty_id": "ophthalmology",
+    "name": "Pediatric Ophthalmology",
+    "description": "A focused area within Ophthalmology."
+  },
+  {
+    "id": "sub-otolaryngology-rhinology",
+    "specialty_id": "otolaryngology",
+    "name": "Rhinology",
+    "description": "A focused area within Otolaryngology."
+  },
+  {
+    "id": "sub-otolaryngology-otology",
+    "specialty_id": "otolaryngology",
+    "name": "Otology",
+    "description": "A focused area within Otolaryngology."
+  },
+  {
+    "id": "sub-otolaryngology-laryngology",
+    "specialty_id": "otolaryngology",
+    "name": "Laryngology",
+    "description": "A focused area within Otolaryngology."
+  },
+  {
+    "id": "sub-otolaryngology-head-and-neck-surgery",
+    "specialty_id": "otolaryngology",
+    "name": "Head and Neck Surgery",
+    "description": "A focused area within Otolaryngology."
+  },
+  {
+    "id": "sub-dentistry-orthodontics",
+    "specialty_id": "dentistry",
+    "name": "Orthodontics",
+    "description": "A focused area within Dentistry."
+  },
+  {
+    "id": "sub-dentistry-endodontics",
+    "specialty_id": "dentistry",
+    "name": "Endodontics",
+    "description": "A focused area within Dentistry."
+  },
+  {
+    "id": "sub-dentistry-periodontics",
+    "specialty_id": "dentistry",
+    "name": "Periodontics",
+    "description": "A focused area within Dentistry."
+  },
+  {
+    "id": "sub-dentistry-oral-and-maxillofacial-surgery",
+    "specialty_id": "dentistry",
+    "name": "Oral and Maxillofacial Surgery",
+    "description": "A focused area within Dentistry."
+  },
+  {
+    "id": "sub-psychiatry-addiction-psychiatry",
+    "specialty_id": "psychiatry",
+    "name": "Addiction Psychiatry",
+    "description": "A focused area within Psychiatry."
+  },
+  {
+    "id": "sub-psychiatry-child-and-adolescent-psychiatry",
+    "specialty_id": "psychiatry",
+    "name": "Child and Adolescent Psychiatry",
+    "description": "A focused area within Psychiatry."
+  },
+  {
+    "id": "sub-psychiatry-geriatric-psychiatry",
+    "specialty_id": "psychiatry",
+    "name": "Geriatric Psychiatry",
+    "description": "A focused area within Psychiatry."
+  },
+  {
+    "id": "sub-psychiatry-consultation-liaison-psychiatry",
+    "specialty_id": "psychiatry",
+    "name": "Consultation-Liaison Psychiatry",
+    "description": "A focused area within Psychiatry."
+  },
+  {
+    "id": "sub-clinical-psychology-cognitive-behavioral-therapy",
+    "specialty_id": "clinical-psychology",
+    "name": "Cognitive Behavioral Therapy",
+    "description": "A focused area within Clinical Psychology."
+  },
+  {
+    "id": "sub-clinical-psychology-trauma-focused-care",
+    "specialty_id": "clinical-psychology",
+    "name": "Trauma-focused Care",
+    "description": "A focused area within Clinical Psychology."
+  },
+  {
+    "id": "sub-clinical-psychology-health-psychology",
+    "specialty_id": "clinical-psychology",
+    "name": "Health Psychology",
+    "description": "A focused area within Clinical Psychology."
+  },
+  {
+    "id": "sub-clinical-psychology-child-psychology",
+    "specialty_id": "clinical-psychology",
+    "name": "Child Psychology",
+    "description": "A focused area within Clinical Psychology."
+  },
+  {
+    "id": "sub-sleep-medicine-sleep-apnea-care",
+    "specialty_id": "sleep-medicine",
+    "name": "Sleep Apnea Care",
+    "description": "A focused area within Sleep Medicine."
+  },
+  {
+    "id": "sub-sleep-medicine-insomnia-care",
+    "specialty_id": "sleep-medicine",
+    "name": "Insomnia Care",
+    "description": "A focused area within Sleep Medicine."
+  },
+  {
+    "id": "sub-sleep-medicine-circadian-medicine",
+    "specialty_id": "sleep-medicine",
+    "name": "Circadian Medicine",
+    "description": "A focused area within Sleep Medicine."
+  },
+  {
+    "id": "sub-sleep-medicine-pediatric-sleep-care",
+    "specialty_id": "sleep-medicine",
+    "name": "Pediatric Sleep Care",
+    "description": "A focused area within Sleep Medicine."
+  },
+  {
+    "id": "sub-radiology-neuroradiology",
+    "specialty_id": "radiology",
+    "name": "Neuroradiology",
+    "description": "A focused area within Radiology."
+  },
+  {
+    "id": "sub-radiology-musculoskeletal-imaging",
+    "specialty_id": "radiology",
+    "name": "Musculoskeletal Imaging",
+    "description": "A focused area within Radiology."
+  },
+  {
+    "id": "sub-radiology-breast-imaging",
+    "specialty_id": "radiology",
+    "name": "Breast Imaging",
+    "description": "A focused area within Radiology."
+  },
+  {
+    "id": "sub-radiology-interventional-radiology",
+    "specialty_id": "radiology",
+    "name": "Interventional Radiology",
+    "description": "A focused area within Radiology."
+  },
+  {
+    "id": "sub-pathology-anatomic-pathology",
+    "specialty_id": "pathology",
+    "name": "Anatomic Pathology",
+    "description": "A focused area within Pathology."
+  },
+  {
+    "id": "sub-pathology-clinical-pathology",
+    "specialty_id": "pathology",
+    "name": "Clinical Pathology",
+    "description": "A focused area within Pathology."
+  },
+  {
+    "id": "sub-pathology-molecular-pathology",
+    "specialty_id": "pathology",
+    "name": "Molecular Pathology",
+    "description": "A focused area within Pathology."
+  },
+  {
+    "id": "sub-pathology-hematopathology",
+    "specialty_id": "pathology",
+    "name": "Hematopathology",
+    "description": "A focused area within Pathology."
+  },
+  {
+    "id": "sub-emergency-medicine-trauma-care",
+    "specialty_id": "emergency-medicine",
+    "name": "Trauma Care",
+    "description": "A focused area within Emergency Medicine."
+  },
+  {
+    "id": "sub-emergency-medicine-resuscitation",
+    "specialty_id": "emergency-medicine",
+    "name": "Resuscitation",
+    "description": "A focused area within Emergency Medicine."
+  },
+  {
+    "id": "sub-emergency-medicine-emergency-ultrasound",
+    "specialty_id": "emergency-medicine",
+    "name": "Emergency Ultrasound",
+    "description": "A focused area within Emergency Medicine."
+  },
+  {
+    "id": "sub-emergency-medicine-acute-toxicology",
+    "specialty_id": "emergency-medicine",
+    "name": "Acute Toxicology",
+    "description": "A focused area within Emergency Medicine."
+  },
+  {
+    "id": "sub-critical-care-medical-icu",
+    "specialty_id": "critical-care",
+    "name": "Medical ICU",
+    "description": "A focused area within Critical Care Medicine."
+  },
+  {
+    "id": "sub-critical-care-surgical-icu",
+    "specialty_id": "critical-care",
+    "name": "Surgical ICU",
+    "description": "A focused area within Critical Care Medicine."
+  },
+  {
+    "id": "sub-critical-care-neurocritical-care",
+    "specialty_id": "critical-care",
+    "name": "Neurocritical Care",
+    "description": "A focused area within Critical Care Medicine."
+  },
+  {
+    "id": "sub-critical-care-cardiac-critical-care",
+    "specialty_id": "critical-care",
+    "name": "Cardiac Critical Care",
+    "description": "A focused area within Critical Care Medicine."
+  },
+  {
+    "id": "sub-anesthesiology-cardiac-anesthesia",
+    "specialty_id": "anesthesiology",
+    "name": "Cardiac Anesthesia",
+    "description": "A focused area within Anesthesiology."
+  },
+  {
+    "id": "sub-anesthesiology-pediatric-anesthesia",
+    "specialty_id": "anesthesiology",
+    "name": "Pediatric Anesthesia",
+    "description": "A focused area within Anesthesiology."
+  },
+  {
+    "id": "sub-anesthesiology-obstetric-anesthesia",
+    "specialty_id": "anesthesiology",
+    "name": "Obstetric Anesthesia",
+    "description": "A focused area within Anesthesiology."
+  },
+  {
+    "id": "sub-anesthesiology-regional-anesthesia",
+    "specialty_id": "anesthesiology",
+    "name": "Regional Anesthesia",
+    "description": "A focused area within Anesthesiology."
+  },
+  {
+    "id": "sub-family-medicine-community-family-care",
+    "specialty_id": "family-medicine",
+    "name": "Community Family Care",
+    "description": "A focused area within Family Medicine."
+  },
+  {
+    "id": "sub-family-medicine-women-s-primary-care",
+    "specialty_id": "family-medicine",
+    "name": "Women\u2019s Primary Care",
+    "description": "A focused area within Family Medicine."
+  },
+  {
+    "id": "sub-family-medicine-child-and-family-care",
+    "specialty_id": "family-medicine",
+    "name": "Child and Family Care",
+    "description": "A focused area within Family Medicine."
+  },
+  {
+    "id": "sub-family-medicine-chronic-disease-care",
+    "specialty_id": "family-medicine",
+    "name": "Chronic Disease Care",
+    "description": "A focused area within Family Medicine."
+  },
+  {
+    "id": "sub-public-health-preventive-medicine-occupational-health",
+    "specialty_id": "public-health-preventive-medicine",
+    "name": "Occupational Health",
+    "description": "A focused area within Public Health and Preventive Medicine."
+  },
+  {
+    "id": "sub-public-health-preventive-medicine-travel-health",
+    "specialty_id": "public-health-preventive-medicine",
+    "name": "Travel Health",
+    "description": "A focused area within Public Health and Preventive Medicine."
+  },
+  {
+    "id": "sub-public-health-preventive-medicine-epidemiology",
+    "specialty_id": "public-health-preventive-medicine",
+    "name": "Epidemiology",
+    "description": "A focused area within Public Health and Preventive Medicine."
+  },
+  {
+    "id": "sub-public-health-preventive-medicine-community-medicine",
+    "specialty_id": "public-health-preventive-medicine",
+    "name": "Community Medicine",
+    "description": "A focused area within Public Health and Preventive Medicine."
+  },
+  {
+    "id": "sub-nutrition-dietetics-clinical-nutrition",
+    "specialty_id": "nutrition-dietetics",
+    "name": "Clinical Nutrition",
+    "description": "A focused area within Nutrition and Dietetics."
+  },
+  {
+    "id": "sub-nutrition-dietetics-sports-nutrition",
+    "specialty_id": "nutrition-dietetics",
+    "name": "Sports Nutrition",
+    "description": "A focused area within Nutrition and Dietetics."
+  },
+  {
+    "id": "sub-nutrition-dietetics-pediatric-nutrition",
+    "specialty_id": "nutrition-dietetics",
+    "name": "Pediatric Nutrition",
+    "description": "A focused area within Nutrition and Dietetics."
+  },
+  {
+    "id": "sub-nutrition-dietetics-renal-nutrition",
+    "specialty_id": "nutrition-dietetics",
+    "name": "Renal Nutrition",
+    "description": "A focused area within Nutrition and Dietetics."
+  },
+  {
+    "id": "sub-physiotherapy-musculoskeletal-physiotherapy",
+    "specialty_id": "physiotherapy",
+    "name": "Musculoskeletal Physiotherapy",
+    "description": "A focused area within Physiotherapy."
+  },
+  {
+    "id": "sub-physiotherapy-neuro-physiotherapy",
+    "specialty_id": "physiotherapy",
+    "name": "Neuro Physiotherapy",
+    "description": "A focused area within Physiotherapy."
+  },
+  {
+    "id": "sub-physiotherapy-cardiorespiratory-physiotherapy",
+    "specialty_id": "physiotherapy",
+    "name": "Cardiorespiratory Physiotherapy",
+    "description": "A focused area within Physiotherapy."
+  },
+  {
+    "id": "sub-physiotherapy-pelvic-health-physiotherapy",
+    "specialty_id": "physiotherapy",
+    "name": "Pelvic Health Physiotherapy",
+    "description": "A focused area within Physiotherapy."
+  },
+  {
+    "id": "sub-occupational-therapy-hand-therapy",
+    "specialty_id": "occupational-therapy",
+    "name": "Hand Therapy",
+    "description": "A focused area within Occupational Therapy."
+  },
+  {
+    "id": "sub-occupational-therapy-pediatric-occupational-therapy",
+    "specialty_id": "occupational-therapy",
+    "name": "Pediatric Occupational Therapy",
+    "description": "A focused area within Occupational Therapy."
+  },
+  {
+    "id": "sub-occupational-therapy-neurological-occupational-therapy",
+    "specialty_id": "occupational-therapy",
+    "name": "Neurological Occupational Therapy",
+    "description": "A focused area within Occupational Therapy."
+  },
+  {
+    "id": "sub-occupational-therapy-work-rehabilitation",
+    "specialty_id": "occupational-therapy",
+    "name": "Work Rehabilitation",
+    "description": "A focused area within Occupational Therapy."
+  },
+  {
+    "id": "sub-speech-language-therapy-pediatric-speech-therapy",
+    "specialty_id": "speech-language-therapy",
+    "name": "Pediatric Speech Therapy",
+    "description": "A focused area within Speech and Language Therapy."
+  },
+  {
+    "id": "sub-speech-language-therapy-voice-therapy",
+    "specialty_id": "speech-language-therapy",
+    "name": "Voice Therapy",
+    "description": "A focused area within Speech and Language Therapy."
+  },
+  {
+    "id": "sub-speech-language-therapy-swallowing-therapy",
+    "specialty_id": "speech-language-therapy",
+    "name": "Swallowing Therapy",
+    "description": "A focused area within Speech and Language Therapy."
+  },
+  {
+    "id": "sub-speech-language-therapy-neurogenic-communication-care",
+    "specialty_id": "speech-language-therapy",
+    "name": "Neurogenic Communication Care",
+    "description": "A focused area within Speech and Language Therapy."
+  },
+  {
+    "id": "sub-audiology-pediatric-audiology",
+    "specialty_id": "audiology",
+    "name": "Pediatric Audiology",
+    "description": "A focused area within Audiology."
+  },
+  {
+    "id": "sub-audiology-vestibular-audiology",
+    "specialty_id": "audiology",
+    "name": "Vestibular Audiology",
+    "description": "A focused area within Audiology."
+  },
+  {
+    "id": "sub-audiology-hearing-device-care",
+    "specialty_id": "audiology",
+    "name": "Hearing Device Care",
+    "description": "A focused area within Audiology."
+  },
+  {
+    "id": "sub-audiology-occupational-audiology",
+    "specialty_id": "audiology",
+    "name": "Occupational Audiology",
+    "description": "A focused area within Audiology."
+  },
+  {
+    "id": "sub-palliative-medicine-cancer-supportive-care",
+    "specialty_id": "palliative-medicine",
+    "name": "Cancer Supportive Care",
+    "description": "A focused area within Palliative Medicine."
+  },
+  {
+    "id": "sub-palliative-medicine-home-based-palliative-care",
+    "specialty_id": "palliative-medicine",
+    "name": "Home-based Palliative Care",
+    "description": "A focused area within Palliative Medicine."
+  },
+  {
+    "id": "sub-palliative-medicine-pediatric-palliative-care",
+    "specialty_id": "palliative-medicine",
+    "name": "Pediatric Palliative Care",
+    "description": "A focused area within Palliative Medicine."
+  },
+  {
+    "id": "sub-palliative-medicine-pain-and-symptom-support",
+    "specialty_id": "palliative-medicine",
+    "name": "Pain and Symptom Support",
+    "description": "A focused area within Palliative Medicine."
+  }
+]

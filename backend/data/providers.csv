@@ -1,0 +1,11 @@
+id,name,type,ownership,specialty,city,district,consultation_fee_inr,distance_km,verified
+SC-001,SmartCare General Hospital,Hospital,Private,General Medicine,Kanpur,Kanpur Nagar,500,3.2,Demo
+SC-002,Kanpur Government Medical Centre,Hospital,Government,General Medicine,Kanpur,Kanpur Nagar,100,5.8,Demo
+SC-003,Metro Cardiac Care,Clinic,Private,Cardiology,Kanpur,Kanpur Nagar,700,4.1,Demo
+SC-004,Shanti Women & Child Centre,Hospital,Private,Obstetrics & Gynecology,Kanpur,Kanpur Nagar,600,6.4,Demo
+SC-005,City Pediatrics Clinic,Clinic,Private,Pediatrics,Kanpur,Kanpur Nagar,450,7.2,Demo
+SC-006,District Emergency Hospital,Hospital,Government,Emergency Medicine,Kanpur,Kanpur Nagar,0,8.1,Demo
+SC-007,Orthopedic & Joint Care,Clinic,Private,Orthopedics,Lucknow,Lucknow,650,12.5,Demo
+SC-008,Lucknow General Hospital,Hospital,Government,General Medicine,Lucknow,Lucknow,150,10.2,Demo
+SC-009,ClearSkin Dermatology,Clinic,Private,Dermatology,Lucknow,Lucknow,550,8.6,Demo
+SC-010,Riverbank Women Care,Clinic,Private,Obstetrics & Gynecology,Lucknow,Lucknow,650,9.4,Demo

@@ -1,9 +1,16 @@
 from __future__ import annotations
 
+from sqlalchemy import text
+
+from backend.db.session import engine
+
+from backend.app.api.auth import router as auth_router
+
 from pathlib import Path
 
 from fastapi import (
     FastAPI,
+    HTTPException,
     Query,
 )
 
@@ -26,6 +33,7 @@ from fastapi.staticfiles import (
 
 from backend.app.schemas import (
     DataSource,
+    MedicalSearchResponse,
     Provider,
     SearchResponse,
     VoiceAnalysisRequest,
@@ -39,7 +47,6 @@ from backend.app.schemas import (
 
 from backend.app.data.providers import (
     PROVIDERS,
-    HEALTH_PROFESSIONS,
     OFFICIAL_DATA_SOURCES,
 )
 
@@ -69,6 +76,15 @@ from backend.app.services.search import (
     search_providers,
 )
 
+from backend.app.services.medical_catalog import (
+    catalog_stats,
+    list_specialties,
+    search_medical_catalog,
+    specialty_detail,
+)
+
+from backend.ml.pipeline import CareRouter
+
 from backend.app.services.ml_models import (
     model_catalog,
     resolve_model_stack,
@@ -81,7 +97,7 @@ from backend.app.services.ml_models import (
 
 ROOT_DIR = Path(
     __file__
-).resolve().parents[2]
+).resolve().parent
 
 FRONTEND_DIR = (
     ROOT_DIR / "frontend"
@@ -104,6 +120,8 @@ app = FastAPI(
     ),
 )
 
+app.include_router(auth_router)
+
 
 # ============================================================
 # CORS
@@ -114,8 +132,10 @@ app.add_middleware(
     CORSMiddleware,
 
     allow_origins=[
-        "http://127.0.0.1:8000",
+        "http://localhost:5500",
+        "http://127.0.0.1:5500",
         "http://localhost:8000",
+        "http://127.0.0.1:8000",
     ],
 
     allow_credentials=True,
@@ -147,6 +167,10 @@ if FRONTEND_DIR.exists():
 # ============================================================
 # DISCLAIMER
 # ============================================================
+
+ML_DATA = ROOT_DIR / "backend" / "data" / "symptom_training_data.csv"
+MODEL_PATH = ROOT_DIR / "backend" / "models" / "symptom_router.joblib"
+care_router = CareRouter(ML_DATA, MODEL_PATH)
 
 DISCLAIMER = (
 
@@ -186,9 +210,73 @@ def health():
 
         "version": "1.0.0",
 
-        "providers_loaded":
-            len(PROVIDERS),
+        "providers_loaded": len(PROVIDERS),
+        "model": care_router.model_name,
+        "model_source": care_router.model_source,
+        "training_examples": care_router.training_examples,
+        "medical_catalog": catalog_stats(),
     }
+
+
+
+
+# ============================================================
+# DATABASE HEALTH CHECK
+# ============================================================
+
+@app.get("/api/health/database")
+def database_health():
+
+    try:
+        with engine.connect() as connection:
+
+            connection.execute(
+                text("SELECT 1")
+            )
+
+        return {
+            "status": "ok",
+            "database": "connected",
+        }
+
+    except Exception as exc:
+
+        return {
+            "status": "error",
+            "database": "disconnected",
+            "error": str(exc),
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 # ============================================================
@@ -214,7 +302,7 @@ def get_providers():
 )
 def get_professions():
 
-    return HEALTH_PROFESSIONS
+    return [specialty["name"] for specialty in list_specialties()]
 
 
 # ============================================================
@@ -240,6 +328,46 @@ def get_data_sources():
 def get_models():
 
     return model_catalog()
+
+
+# ============================================================
+# MEDICAL NAVIGATION CATALOG
+# ============================================================
+
+@app.get("/api/medical/catalog/stats")
+def get_medical_catalog_stats():
+    return catalog_stats()
+
+
+@app.get("/api/medical/specialties")
+def get_medical_specialties(
+    category: str | None = Query(default=None, max_length=80),
+):
+    return list_specialties(category)
+
+
+@app.get("/api/medical/specialties/{specialty_id}")
+def get_medical_specialty(specialty_id: str):
+    result = specialty_detail(specialty_id)
+    if not result:
+        raise HTTPException(status_code=404, detail="Medical specialty not found")
+    return result
+
+
+@app.get(
+    "/api/medical/search",
+    response_model=MedicalSearchResponse,
+)
+def search_medical_specialties(
+    query: str = Query(default="", max_length=300),
+    limit: int = Query(default=5, ge=1, le=12),
+):
+    results = search_medical_catalog(query, limit=limit)
+    return MedicalSearchResponse(
+        query=query,
+        total=len(results),
+        results=results,
+    )
 
 
 # ============================================================
@@ -344,6 +472,11 @@ def search(
 # VOICE + AI ANALYSIS
 # ============================================================
 
+@app.post("/api/analyze", response_model=VoiceAnalysisResponse)
+def analyze_alias(request: VoiceAnalysisRequest):
+    return analyze_voice(request)
+
+
 @app.post(
     "/api/voice/analyze",
     response_model=VoiceAnalysisResponse,
@@ -400,22 +533,24 @@ def analyze_voice(
     # 5. Intent
     # --------------------------------------------------------
 
-    intent = (
-        classify_intent(
-            normalized_text,
-            symptoms
-        )
-    )
+    rule_intent = classify_intent(f"{transcript} {normalized_text}", symptoms)
+    ml_result = care_router.analyze(normalized_text)
+    intent = rule_intent or ml_result["intent"]
+    ml_confidence = float(ml_result.get("confidence", 0.0))
 
 
     # --------------------------------------------------------
     # 6. Specialty
     # --------------------------------------------------------
 
-    suggested_specialty = (
-        predict_specialty(
-            symptoms
-        )
+    suggested_specialty = predict_specialty(symptoms)
+    if intent in {"child_fever", "child_cough"}:
+        suggested_specialty = "Pediatrics"
+
+    medical_matches = search_medical_catalog(
+        transcript,
+        limit=3,
+        fallback_specialty=suggested_specialty,
     )
 
 
@@ -527,28 +662,25 @@ def analyze_voice(
     # 13. Voice response
     # --------------------------------------------------------
 
-    spoken_response = (
-
-        "I understood your request as "
-
-        + intent.replace(
-            "_",
-            " "
+    if detected_language in {"Hindi", "Hinglish"}:
+        if assessment.urgency == "emergency":
+            safety_message = "Aapke message mein emergency warning mili hai. Abhi turant emergency medical care lein aur zarurat ho to local emergency services ko call karein."
+        elif assessment.urgency == "urgent":
+            safety_message = "Aapko jaldi medical evaluation karani chahiye."
+        else:
+            safety_message = "Agar symptoms bane rahein ya badhein, doctor se consultation lein."
+        spoken_response = (
+            f"Maine aapki baat ko {intent.replace('_', ' ')} ke roop mein samjha. "
+            f"Possible care area {suggested_specialty} hai. {safety_message} "
+            "Yeh medical diagnosis nahi hai."
         )
-
-        + ". "
-
-        + f"The possible care area is "
-        f"{suggested_specialty}. "
-
-        + assessment.message
-
-        + " "
-
-        + recommended_action
-
-        + " This is not a medical diagnosis."
-    )
+    else:
+        spoken_response = (
+            f"I understood your request as {intent.replace('_', ' ')}. "
+            f"The possible care area is {suggested_specialty}. "
+            f"{assessment.message} {recommended_action} "
+            "This is not a medical diagnosis."
+        )
 
 
     # --------------------------------------------------------
@@ -581,13 +713,14 @@ def analyze_voice(
         why_this_recommendation=
             reasons,
 
-        model_stack=
-            resolve_model_stack(
+        medical_matches=
+            medical_matches,
 
-                request.speech_model,
-
-                request.language_model,
-            ),
+        model_stack={
+            **resolve_model_stack(request.speech_model, request.language_model),
+            "nlp": care_router.model_name,
+            "model_source": care_router.model_source,
+        },
 
         assessment=
             assessment,
@@ -600,6 +733,9 @@ def analyze_voice(
 
         spoken_response=
             spoken_response,
+
+        confidence=round(ml_confidence, 3),
+        model_source=care_router.model_source,
 
         disclaimer=
             DISCLAIMER,

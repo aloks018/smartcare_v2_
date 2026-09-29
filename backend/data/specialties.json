@@ -1,0 +1,2690 @@
+[
+  {
+    "id": "general-medicine",
+    "name": "General Medicine",
+    "parent_category": "Primary care",
+    "subspecialty_ids": [
+      "sub-general-medicine-internal-medicine",
+      "sub-general-medicine-preventive-medicine",
+      "sub-general-medicine-chronic-disease-care",
+      "sub-general-medicine-primary-care"
+    ],
+    "common_symptom_ids": [
+      "sym-fever",
+      "sym-fatigue",
+      "sym-body-ache",
+      "sym-loss-of-appetite"
+    ],
+    "related_condition_ids": [
+      "cond-viral-illness",
+      "cond-hypertension",
+      "cond-diabetes-screening",
+      "cond-anemia"
+    ],
+    "treatment_ids": [
+      "trt-clinical-assessment",
+      "trt-health-screening",
+      "trt-medication-review",
+      "trt-referral-coordination"
+    ],
+    "keyword_ids": [
+      "kw-general-medicine-specialty-general-medicine",
+      "kw-general-medicine-symptom-fever",
+      "kw-general-medicine-symptom-fatigue",
+      "kw-general-medicine-symptom-body-ache",
+      "kw-general-medicine-symptom-loss-of-appetite",
+      "kw-general-medicine-condition-viral-illness",
+      "kw-general-medicine-condition-hypertension",
+      "kw-general-medicine-condition-diabetes-screening",
+      "kw-general-medicine-condition-anemia",
+      "kw-general-medicine-treatment-clinical-assessment",
+      "kw-general-medicine-treatment-health-screening",
+      "kw-general-medicine-treatment-medication-review",
+      "kw-general-medicine-treatment-referral-coordination",
+      "kw-general-medicine-subspecialty-internal-medicine",
+      "kw-general-medicine-subspecialty-preventive-medicine",
+      "kw-general-medicine-subspecialty-chronic-disease-care",
+      "kw-general-medicine-subspecialty-primary-care",
+      "kw-general-medicine-related-physician",
+      "kw-general-medicine-related-general-doctor",
+      "kw-general-medicine-related-common-illness",
+      "kw-general-medicine-related-medical-checkup",
+      "kw-general-medicine-related-initial-assessment",
+      "kw-general-medicine-related-family-doctor"
+    ],
+    "description": "Provides first-contact care for common symptoms, long-term health concerns, and referral planning.",
+    "when_to_consult": "Consult for a new, persistent, or unclear health concern when the right specialty is not obvious."
+  },
+  {
+    "id": "cardiology",
+    "name": "Cardiology",
+    "parent_category": "Medicine",
+    "subspecialty_ids": [
+      "sub-cardiology-interventional-cardiology",
+      "sub-cardiology-heart-failure-care",
+      "sub-cardiology-cardiac-imaging",
+      "sub-cardiology-electrophysiology"
+    ],
+    "common_symptom_ids": [
+      "sym-chest-discomfort",
+      "sym-palpitations",
+      "sym-shortness-of-breath",
+      "sym-leg-swelling"
+    ],
+    "related_condition_ids": [
+      "cond-hypertension",
+      "cond-coronary-artery-disease",
+      "cond-heart-failure",
+      "cond-arrhythmia"
+    ],
+    "treatment_ids": [
+      "trt-ecg",
+      "trt-echocardiography",
+      "trt-cardiac-risk-assessment",
+      "trt-heart-rhythm-monitoring"
+    ],
+    "keyword_ids": [
+      "kw-cardiology-specialty-cardiology",
+      "kw-cardiology-symptom-chest-discomfort",
+      "kw-cardiology-symptom-palpitations",
+      "kw-cardiology-symptom-shortness-of-breath",
+      "kw-cardiology-symptom-leg-swelling",
+      "kw-cardiology-condition-hypertension",
+      "kw-cardiology-condition-coronary-artery-disease",
+      "kw-cardiology-condition-heart-failure",
+      "kw-cardiology-condition-arrhythmia",
+      "kw-cardiology-treatment-ecg",
+      "kw-cardiology-treatment-echocardiography",
+      "kw-cardiology-treatment-cardiac-risk-assessment",
+      "kw-cardiology-treatment-heart-rhythm-monitoring",
+      "kw-cardiology-subspecialty-interventional-cardiology",
+      "kw-cardiology-subspecialty-heart-failure-care",
+      "kw-cardiology-subspecialty-cardiac-imaging",
+      "kw-cardiology-subspecialty-electrophysiology",
+      "kw-cardiology-related-heart-doctor",
+      "kw-cardiology-related-cardiac-specialist",
+      "kw-cardiology-related-blood-pressure",
+      "kw-cardiology-related-heart-rhythm",
+      "kw-cardiology-related-cholesterol",
+      "kw-cardiology-related-chest-symptoms"
+    ],
+    "description": "Focuses on the heart, circulation, and cardiovascular risk assessment.",
+    "when_to_consult": "Consult for ongoing chest symptoms, heart-rhythm concerns, uncontrolled blood pressure, or a clinician-directed cardiac review."
+  },
+  {
+    "id": "dermatology",
+    "name": "Dermatology",
+    "parent_category": "Medicine",
+    "subspecialty_ids": [
+      "sub-dermatology-medical-dermatology",
+      "sub-dermatology-pediatric-dermatology",
+      "sub-dermatology-dermatopathology",
+      "sub-dermatology-cosmetic-dermatology"
+    ],
+    "common_symptom_ids": [
+      "sym-skin-rash",
+      "sym-itching",
+      "sym-acne",
+      "sym-hair-loss"
+    ],
+    "related_condition_ids": [
+      "cond-eczema",
+      "cond-psoriasis",
+      "cond-fungal-infection",
+      "cond-acne"
+    ],
+    "treatment_ids": [
+      "trt-skin-examination",
+      "trt-dermoscopy",
+      "trt-topical-treatment-planning",
+      "trt-allergy-patch-testing"
+    ],
+    "keyword_ids": [
+      "kw-dermatology-specialty-dermatology",
+      "kw-dermatology-symptom-skin-rash",
+      "kw-dermatology-symptom-itching",
+      "kw-dermatology-symptom-acne",
+      "kw-dermatology-symptom-hair-loss",
+      "kw-dermatology-condition-eczema",
+      "kw-dermatology-condition-psoriasis",
+      "kw-dermatology-condition-fungal-infection",
+      "kw-dermatology-condition-acne",
+      "kw-dermatology-treatment-skin-examination",
+      "kw-dermatology-treatment-dermoscopy",
+      "kw-dermatology-treatment-topical-treatment-planning",
+      "kw-dermatology-treatment-allergy-patch-testing",
+      "kw-dermatology-subspecialty-medical-dermatology",
+      "kw-dermatology-subspecialty-pediatric-dermatology",
+      "kw-dermatology-subspecialty-dermatopathology",
+      "kw-dermatology-subspecialty-cosmetic-dermatology",
+      "kw-dermatology-related-skin-doctor",
+      "kw-dermatology-related-rash",
+      "kw-dermatology-related-itchy-skin",
+      "kw-dermatology-related-pimples",
+      "kw-dermatology-related-scalp",
+      "kw-dermatology-related-nail-problem"
+    ],
+    "description": "Cares for conditions affecting the skin, hair, nails, and related allergies.",
+    "when_to_consult": "Consult for a persistent, spreading, painful, or recurrent skin, hair, or nail concern."
+  },
+  {
+    "id": "endocrinology",
+    "name": "Endocrinology",
+    "parent_category": "Medicine",
+    "subspecialty_ids": [
+      "sub-endocrinology-diabetology",
+      "sub-endocrinology-thyroid-care",
+      "sub-endocrinology-metabolic-medicine",
+      "sub-endocrinology-reproductive-endocrinology"
+    ],
+    "common_symptom_ids": [
+      "sym-increased-thirst",
+      "sym-weight-change",
+      "sym-heat-intolerance",
+      "sym-irregular-periods"
+    ],
+    "related_condition_ids": [
+      "cond-diabetes",
+      "cond-thyroid-disorder",
+      "cond-osteoporosis",
+      "cond-pcos"
+    ],
+    "treatment_ids": [
+      "trt-blood-sugar-review",
+      "trt-thyroid-testing",
+      "trt-hormone-evaluation",
+      "trt-bone-health-assessment"
+    ],
+    "keyword_ids": [
+      "kw-endocrinology-specialty-endocrinology",
+      "kw-endocrinology-symptom-increased-thirst",
+      "kw-endocrinology-symptom-weight-change",
+      "kw-endocrinology-symptom-heat-intolerance",
+      "kw-endocrinology-symptom-irregular-periods",
+      "kw-endocrinology-condition-diabetes",
+      "kw-endocrinology-condition-thyroid-disorder",
+      "kw-endocrinology-condition-osteoporosis",
+      "kw-endocrinology-condition-pcos",
+      "kw-endocrinology-treatment-blood-sugar-review",
+      "kw-endocrinology-treatment-thyroid-testing",
+      "kw-endocrinology-treatment-hormone-evaluation",
+      "kw-endocrinology-treatment-bone-health-assessment",
+      "kw-endocrinology-subspecialty-diabetology",
+      "kw-endocrinology-subspecialty-thyroid-care",
+      "kw-endocrinology-subspecialty-metabolic-medicine",
+      "kw-endocrinology-subspecialty-reproductive-endocrinology",
+      "kw-endocrinology-related-hormone-doctor",
+      "kw-endocrinology-related-sugar-level",
+      "kw-endocrinology-related-thyroid",
+      "kw-endocrinology-related-insulin",
+      "kw-endocrinology-related-metabolism",
+      "kw-endocrinology-related-endocrine"
+    ],
+    "description": "Focuses on hormones, metabolism, diabetes, thyroid conditions, and bone health.",
+    "when_to_consult": "Consult for diabetes management, thyroid-related symptoms, unexplained metabolic changes, or hormone concerns."
+  },
+  {
+    "id": "gastroenterology",
+    "name": "Gastroenterology",
+    "parent_category": "Medicine",
+    "subspecialty_ids": [
+      "sub-gastroenterology-hepatology",
+      "sub-gastroenterology-inflammatory-bowel-disease",
+      "sub-gastroenterology-pancreatic-care",
+      "sub-gastroenterology-therapeutic-endoscopy"
+    ],
+    "common_symptom_ids": [
+      "sym-abdominal-pain",
+      "sym-heartburn",
+      "sym-bloating",
+      "sym-change-in-bowel-habit"
+    ],
+    "related_condition_ids": [
+      "cond-acid-reflux",
+      "cond-irritable-bowel-syndrome",
+      "cond-fatty-liver-disease",
+      "cond-hepatitis"
+    ],
+    "treatment_ids": [
+      "trt-digestive-evaluation",
+      "trt-endoscopy-planning",
+      "trt-liver-assessment",
+      "trt-nutrition-related-care"
+    ],
+    "keyword_ids": [
+      "kw-gastroenterology-specialty-gastroenterology",
+      "kw-gastroenterology-symptom-abdominal-pain",
+      "kw-gastroenterology-symptom-heartburn",
+      "kw-gastroenterology-symptom-bloating",
+      "kw-gastroenterology-symptom-change-in-bowel-habit",
+      "kw-gastroenterology-condition-acid-reflux",
+      "kw-gastroenterology-condition-irritable-bowel-syndrome",
+      "kw-gastroenterology-condition-fatty-liver-disease",
+      "kw-gastroenterology-condition-hepatitis",
+      "kw-gastroenterology-treatment-digestive-evaluation",
+      "kw-gastroenterology-treatment-endoscopy-planning",
+      "kw-gastroenterology-treatment-liver-assessment",
+      "kw-gastroenterology-treatment-nutrition-related-care",
+      "kw-gastroenterology-subspecialty-hepatology",
+      "kw-gastroenterology-subspecialty-inflammatory-bowel-disease",
+      "kw-gastroenterology-subspecialty-pancreatic-care",
+      "kw-gastroenterology-subspecialty-therapeutic-endoscopy",
+      "kw-gastroenterology-related-stomach-doctor",
+      "kw-gastroenterology-related-digestion",
+      "kw-gastroenterology-related-acidity",
+      "kw-gastroenterology-related-liver",
+      "kw-gastroenterology-related-bowel",
+      "kw-gastroenterology-related-gastric"
+    ],
+    "description": "Cares for the digestive tract, liver, pancreas, and gastrointestinal symptoms.",
+    "when_to_consult": "Consult for persistent digestive symptoms, recurrent abdominal pain, or a clinician-directed liver or bowel review."
+  },
+  {
+    "id": "neurology",
+    "name": "Neurology",
+    "parent_category": "Medicine",
+    "subspecialty_ids": [
+      "sub-neurology-headache-medicine",
+      "sub-neurology-epilepsy-care",
+      "sub-neurology-movement-disorders",
+      "sub-neurology-neuroimmunology"
+    ],
+    "common_symptom_ids": [
+      "sym-headache",
+      "sym-dizziness",
+      "sym-numbness",
+      "sym-tremor"
+    ],
+    "related_condition_ids": [
+      "cond-migraine",
+      "cond-epilepsy",
+      "cond-stroke-follow-up",
+      "cond-neuropathy"
+    ],
+    "treatment_ids": [
+      "trt-neurological-examination",
+      "trt-nerve-testing",
+      "trt-headache-evaluation",
+      "trt-stroke-rehabilitation-planning"
+    ],
+    "keyword_ids": [
+      "kw-neurology-specialty-neurology",
+      "kw-neurology-symptom-headache",
+      "kw-neurology-symptom-dizziness",
+      "kw-neurology-symptom-numbness",
+      "kw-neurology-symptom-tremor",
+      "kw-neurology-condition-migraine",
+      "kw-neurology-condition-epilepsy",
+      "kw-neurology-condition-stroke-follow-up",
+      "kw-neurology-condition-neuropathy",
+      "kw-neurology-treatment-neurological-examination",
+      "kw-neurology-treatment-nerve-testing",
+      "kw-neurology-treatment-headache-evaluation",
+      "kw-neurology-treatment-stroke-rehabilitation-planning",
+      "kw-neurology-subspecialty-headache-medicine",
+      "kw-neurology-subspecialty-epilepsy-care",
+      "kw-neurology-subspecialty-movement-disorders",
+      "kw-neurology-subspecialty-neuroimmunology",
+      "kw-neurology-related-brain-doctor",
+      "kw-neurology-related-nerve-doctor",
+      "kw-neurology-related-migraine",
+      "kw-neurology-related-seizure",
+      "kw-neurology-related-tingling",
+      "kw-neurology-related-vertigo"
+    ],
+    "description": "Focuses on the brain, spinal cord, nerves, and neurological symptoms.",
+    "when_to_consult": "Consult for recurring headaches, seizure-related concerns, unexplained numbness, balance changes, or neurological follow-up."
+  },
+  {
+    "id": "pulmonology",
+    "name": "Pulmonology",
+    "parent_category": "Medicine",
+    "subspecialty_ids": [
+      "sub-pulmonology-sleep-respiratory-care",
+      "sub-pulmonology-interventional-pulmonology",
+      "sub-pulmonology-asthma-care",
+      "sub-pulmonology-critical-respiratory-care"
+    ],
+    "common_symptom_ids": [
+      "sym-persistent-cough",
+      "sym-wheezing",
+      "sym-breathlessness",
+      "sym-snoring"
+    ],
+    "related_condition_ids": [
+      "cond-asthma",
+      "cond-copd",
+      "cond-pneumonia-follow-up",
+      "cond-sleep-apnea"
+    ],
+    "treatment_ids": [
+      "trt-lung-function-testing",
+      "trt-inhaler-review",
+      "trt-sleep-study-planning",
+      "trt-respiratory-assessment"
+    ],
+    "keyword_ids": [
+      "kw-pulmonology-specialty-pulmonology",
+      "kw-pulmonology-symptom-persistent-cough",
+      "kw-pulmonology-symptom-wheezing",
+      "kw-pulmonology-symptom-breathlessness",
+      "kw-pulmonology-symptom-snoring",
+      "kw-pulmonology-condition-asthma",
+      "kw-pulmonology-condition-copd",
+      "kw-pulmonology-condition-pneumonia-follow-up",
+      "kw-pulmonology-condition-sleep-apnea",
+      "kw-pulmonology-treatment-lung-function-testing",
+      "kw-pulmonology-treatment-inhaler-review",
+      "kw-pulmonology-treatment-sleep-study-planning",
+      "kw-pulmonology-treatment-respiratory-assessment",
+      "kw-pulmonology-subspecialty-sleep-respiratory-care",
+      "kw-pulmonology-subspecialty-interventional-pulmonology",
+      "kw-pulmonology-subspecialty-asthma-care",
+      "kw-pulmonology-subspecialty-critical-respiratory-care",
+      "kw-pulmonology-related-lung-doctor",
+      "kw-pulmonology-related-breathing",
+      "kw-pulmonology-related-asthma",
+      "kw-pulmonology-related-cough",
+      "kw-pulmonology-related-wheezing",
+      "kw-pulmonology-related-sleep-apnea"
+    ],
+    "description": "Cares for the lungs, airways, sleep-related breathing, and respiratory conditions.",
+    "when_to_consult": "Consult for continuing cough, wheezing, breathlessness, or asthma and inhaler management concerns."
+  },
+  {
+    "id": "nephrology",
+    "name": "Nephrology",
+    "parent_category": "Medicine",
+    "subspecialty_ids": [
+      "sub-nephrology-dialysis-medicine",
+      "sub-nephrology-glomerular-disease",
+      "sub-nephrology-kidney-transplant-care",
+      "sub-nephrology-hypertension-and-kidney-care"
+    ],
+    "common_symptom_ids": [
+      "sym-swelling",
+      "sym-foamy-urine",
+      "sym-reduced-urine",
+      "sym-flank-discomfort"
+    ],
+    "related_condition_ids": [
+      "cond-chronic-kidney-disease",
+      "cond-kidney-stones",
+      "cond-proteinuria",
+      "cond-electrolyte-disorder"
+    ],
+    "treatment_ids": [
+      "trt-kidney-function-review",
+      "trt-urine-testing",
+      "trt-dialysis-planning",
+      "trt-blood-pressure-management"
+    ],
+    "keyword_ids": [
+      "kw-nephrology-specialty-nephrology",
+      "kw-nephrology-symptom-swelling",
+      "kw-nephrology-symptom-foamy-urine",
+      "kw-nephrology-symptom-reduced-urine",
+      "kw-nephrology-symptom-flank-discomfort",
+      "kw-nephrology-condition-chronic-kidney-disease",
+      "kw-nephrology-condition-kidney-stones",
+      "kw-nephrology-condition-proteinuria",
+      "kw-nephrology-condition-electrolyte-disorder",
+      "kw-nephrology-treatment-kidney-function-review",
+      "kw-nephrology-treatment-urine-testing",
+      "kw-nephrology-treatment-dialysis-planning",
+      "kw-nephrology-treatment-blood-pressure-management",
+      "kw-nephrology-subspecialty-dialysis-medicine",
+      "kw-nephrology-subspecialty-glomerular-disease",
+      "kw-nephrology-subspecialty-kidney-transplant-care",
+      "kw-nephrology-subspecialty-hypertension-and-kidney-care",
+      "kw-nephrology-related-kidney-doctor",
+      "kw-nephrology-related-renal",
+      "kw-nephrology-related-creatinine",
+      "kw-nephrology-related-urine-protein",
+      "kw-nephrology-related-dialysis",
+      "kw-nephrology-related-kidney-function"
+    ],
+    "description": "Focuses on kidney function, fluid balance, blood pressure, and renal replacement care.",
+    "when_to_consult": "Consult for abnormal kidney tests, recurrent swelling, urine changes, or kidney disease follow-up."
+  },
+  {
+    "id": "rheumatology",
+    "name": "Rheumatology",
+    "parent_category": "Medicine",
+    "subspecialty_ids": [
+      "sub-rheumatology-autoimmune-disease-care",
+      "sub-rheumatology-inflammatory-arthritis",
+      "sub-rheumatology-connective-tissue-disease",
+      "sub-rheumatology-pediatric-rheumatology"
+    ],
+    "common_symptom_ids": [
+      "sym-joint-swelling",
+      "sym-morning-stiffness",
+      "sym-muscle-pain",
+      "sym-fatigue"
+    ],
+    "related_condition_ids": [
+      "cond-rheumatoid-arthritis",
+      "cond-lupus",
+      "cond-gout",
+      "cond-vasculitis"
+    ],
+    "treatment_ids": [
+      "trt-autoimmune-evaluation",
+      "trt-joint-inflammation-management",
+      "trt-infusion-planning",
+      "trt-bone-health-review"
+    ],
+    "keyword_ids": [
+      "kw-rheumatology-specialty-rheumatology",
+      "kw-rheumatology-symptom-joint-swelling",
+      "kw-rheumatology-symptom-morning-stiffness",
+      "kw-rheumatology-symptom-muscle-pain",
+      "kw-rheumatology-symptom-fatigue",
+      "kw-rheumatology-condition-rheumatoid-arthritis",
+      "kw-rheumatology-condition-lupus",
+      "kw-rheumatology-condition-gout",
+      "kw-rheumatology-condition-vasculitis",
+      "kw-rheumatology-treatment-autoimmune-evaluation",
+      "kw-rheumatology-treatment-joint-inflammation-management",
+      "kw-rheumatology-treatment-infusion-planning",
+      "kw-rheumatology-treatment-bone-health-review",
+      "kw-rheumatology-subspecialty-autoimmune-disease-care",
+      "kw-rheumatology-subspecialty-inflammatory-arthritis",
+      "kw-rheumatology-subspecialty-connective-tissue-disease",
+      "kw-rheumatology-subspecialty-pediatric-rheumatology",
+      "kw-rheumatology-related-arthritis-doctor",
+      "kw-rheumatology-related-autoimmune",
+      "kw-rheumatology-related-joint-swelling",
+      "kw-rheumatology-related-lupus",
+      "kw-rheumatology-related-gout",
+      "kw-rheumatology-related-rheumatic"
+    ],
+    "description": "Cares for autoimmune and inflammatory diseases affecting joints, muscles, and connective tissues.",
+    "when_to_consult": "Consult for persistent joint swelling, morning stiffness, recurring inflammatory symptoms, or autoimmune-disease monitoring."
+  },
+  {
+    "id": "hematology",
+    "name": "Hematology",
+    "parent_category": "Medicine",
+    "subspecialty_ids": [
+      "sub-hematology-benign-hematology",
+      "sub-hematology-coagulation-care",
+      "sub-hematology-transfusion-medicine",
+      "sub-hematology-hematologic-malignancy-care"
+    ],
+    "common_symptom_ids": [
+      "sym-easy-bruising",
+      "sym-persistent-fatigue",
+      "sym-frequent-infections",
+      "sym-pale-skin"
+    ],
+    "related_condition_ids": [
+      "cond-anemia",
+      "cond-bleeding-disorder",
+      "cond-clotting-disorder",
+      "cond-blood-cell-disorder"
+    ],
+    "treatment_ids": [
+      "trt-blood-count-interpretation",
+      "trt-iron-assessment",
+      "trt-clotting-evaluation",
+      "trt-bone-marrow-assessment-planning"
+    ],
+    "keyword_ids": [
+      "kw-hematology-specialty-hematology",
+      "kw-hematology-symptom-easy-bruising",
+      "kw-hematology-symptom-persistent-fatigue",
+      "kw-hematology-symptom-frequent-infections",
+      "kw-hematology-symptom-pale-skin",
+      "kw-hematology-condition-anemia",
+      "kw-hematology-condition-bleeding-disorder",
+      "kw-hematology-condition-clotting-disorder",
+      "kw-hematology-condition-blood-cell-disorder",
+      "kw-hematology-treatment-blood-count-interpretation",
+      "kw-hematology-treatment-iron-assessment",
+      "kw-hematology-treatment-clotting-evaluation",
+      "kw-hematology-treatment-bone-marrow-assessment-planning",
+      "kw-hematology-subspecialty-benign-hematology",
+      "kw-hematology-subspecialty-coagulation-care",
+      "kw-hematology-subspecialty-transfusion-medicine",
+      "kw-hematology-subspecialty-hematologic-malignancy-care",
+      "kw-hematology-related-blood-doctor",
+      "kw-hematology-related-anemia",
+      "kw-hematology-related-low-hemoglobin",
+      "kw-hematology-related-bleeding",
+      "kw-hematology-related-clotting",
+      "kw-hematology-related-blood-count"
+    ],
+    "description": "Focuses on blood cells, clotting, anemia, and related disorders.",
+    "when_to_consult": "Consult for persistent unexplained anemia, abnormal blood counts, easy bruising, or clinician-referred blood concerns."
+  },
+  {
+    "id": "infectious-disease",
+    "name": "Infectious Disease",
+    "parent_category": "Medicine",
+    "subspecialty_ids": [
+      "sub-infectious-disease-travel-medicine",
+      "sub-infectious-disease-antimicrobial-stewardship",
+      "sub-infectious-disease-hiv-medicine",
+      "sub-infectious-disease-tropical-medicine"
+    ],
+    "common_symptom_ids": [
+      "sym-persistent-fever",
+      "sym-recurrent-infection",
+      "sym-night-sweats",
+      "sym-travel-related-illness"
+    ],
+    "related_condition_ids": [
+      "cond-tuberculosis",
+      "cond-dengue-follow-up",
+      "cond-urinary-infection",
+      "cond-viral-infection"
+    ],
+    "treatment_ids": [
+      "trt-infection-evaluation",
+      "trt-antimicrobial-review",
+      "trt-travel-health-counseling",
+      "trt-vaccination-planning"
+    ],
+    "keyword_ids": [
+      "kw-infectious-disease-specialty-infectious-disease",
+      "kw-infectious-disease-symptom-persistent-fever",
+      "kw-infectious-disease-symptom-recurrent-infection",
+      "kw-infectious-disease-symptom-night-sweats",
+      "kw-infectious-disease-symptom-travel-related-illness",
+      "kw-infectious-disease-condition-tuberculosis",
+      "kw-infectious-disease-condition-dengue-follow-up",
+      "kw-infectious-disease-condition-urinary-infection",
+      "kw-infectious-disease-condition-viral-infection",
+      "kw-infectious-disease-treatment-infection-evaluation",
+      "kw-infectious-disease-treatment-antimicrobial-review",
+      "kw-infectious-disease-treatment-travel-health-counseling",
+      "kw-infectious-disease-treatment-vaccination-planning",
+      "kw-infectious-disease-subspecialty-travel-medicine",
+      "kw-infectious-disease-subspecialty-antimicrobial-stewardship",
+      "kw-infectious-disease-subspecialty-hiv-medicine",
+      "kw-infectious-disease-subspecialty-tropical-medicine",
+      "kw-infectious-disease-related-infection-specialist",
+      "kw-infectious-disease-related-fever-specialist",
+      "kw-infectious-disease-related-tropical-disease",
+      "kw-infectious-disease-related-antibiotic-review",
+      "kw-infectious-disease-related-tb",
+      "kw-infectious-disease-related-dengue"
+    ],
+    "description": "Focuses on infections, prevention, antimicrobial use, and travel-related health risks.",
+    "when_to_consult": "Consult for recurring, unexplained, or complicated infections, or when referred for infection management."
+  },
+  {
+    "id": "medical-oncology",
+    "name": "Medical Oncology",
+    "parent_category": "Medicine",
+    "subspecialty_ids": [
+      "sub-medical-oncology-breast-oncology",
+      "sub-medical-oncology-gastrointestinal-oncology",
+      "sub-medical-oncology-thoracic-oncology",
+      "sub-medical-oncology-geriatric-oncology"
+    ],
+    "common_symptom_ids": [
+      "sym-unexplained-weight-loss",
+      "sym-persistent-lump",
+      "sym-unusual-bleeding",
+      "sym-prolonged-fatigue"
+    ],
+    "related_condition_ids": [
+      "cond-solid-tumor-care",
+      "cond-cancer-treatment-planning",
+      "cond-cancer-surveillance",
+      "cond-treatment-side-effects"
+    ],
+    "treatment_ids": [
+      "trt-treatment-planning",
+      "trt-systemic-therapy-counseling",
+      "trt-symptom-support",
+      "trt-survivorship-planning"
+    ],
+    "keyword_ids": [
+      "kw-medical-oncology-specialty-medical-oncology",
+      "kw-medical-oncology-symptom-unexplained-weight-loss",
+      "kw-medical-oncology-symptom-persistent-lump",
+      "kw-medical-oncology-symptom-unusual-bleeding",
+      "kw-medical-oncology-symptom-prolonged-fatigue",
+      "kw-medical-oncology-condition-solid-tumor-care",
+      "kw-medical-oncology-condition-cancer-treatment-planning",
+      "kw-medical-oncology-condition-cancer-surveillance",
+      "kw-medical-oncology-condition-treatment-side-effects",
+      "kw-medical-oncology-treatment-treatment-planning",
+      "kw-medical-oncology-treatment-systemic-therapy-counseling",
+      "kw-medical-oncology-treatment-symptom-support",
+      "kw-medical-oncology-treatment-survivorship-planning",
+      "kw-medical-oncology-subspecialty-breast-oncology",
+      "kw-medical-oncology-subspecialty-gastrointestinal-oncology",
+      "kw-medical-oncology-subspecialty-thoracic-oncology",
+      "kw-medical-oncology-subspecialty-geriatric-oncology",
+      "kw-medical-oncology-related-cancer-doctor",
+      "kw-medical-oncology-related-oncology",
+      "kw-medical-oncology-related-tumor",
+      "kw-medical-oncology-related-chemotherapy",
+      "kw-medical-oncology-related-cancer-treatment",
+      "kw-medical-oncology-related-cancer-follow-up"
+    ],
+    "description": "Coordinates systemic cancer treatment, monitoring, symptom support, and survivorship care.",
+    "when_to_consult": "Consult after a cancer diagnosis, for treatment planning, or when referred for an oncology opinion."
+  },
+  {
+    "id": "geriatrics",
+    "name": "Geriatric Medicine",
+    "parent_category": "Medicine",
+    "subspecialty_ids": [
+      "sub-geriatrics-cognitive-geriatrics",
+      "sub-geriatrics-falls-prevention",
+      "sub-geriatrics-geriatric-rehabilitation",
+      "sub-geriatrics-long-term-care"
+    ],
+    "common_symptom_ids": [
+      "sym-falls",
+      "sym-memory-change",
+      "sym-multiple-medicines",
+      "sym-frailty"
+    ],
+    "related_condition_ids": [
+      "cond-frailty-syndrome",
+      "cond-dementia-care",
+      "cond-polypharmacy",
+      "cond-osteoporosis"
+    ],
+    "treatment_ids": [
+      "trt-comprehensive-geriatric-assessment",
+      "trt-fall-risk-review",
+      "trt-medication-review",
+      "trt-care-planning"
+    ],
+    "keyword_ids": [
+      "kw-geriatrics-specialty-geriatric-medicine",
+      "kw-geriatrics-symptom-falls",
+      "kw-geriatrics-symptom-memory-change",
+      "kw-geriatrics-symptom-multiple-medicines",
+      "kw-geriatrics-symptom-frailty",
+      "kw-geriatrics-condition-frailty-syndrome",
+      "kw-geriatrics-condition-dementia-care",
+      "kw-geriatrics-condition-polypharmacy",
+      "kw-geriatrics-condition-osteoporosis",
+      "kw-geriatrics-treatment-comprehensive-geriatric-assessment",
+      "kw-geriatrics-treatment-fall-risk-review",
+      "kw-geriatrics-treatment-medication-review",
+      "kw-geriatrics-treatment-care-planning",
+      "kw-geriatrics-subspecialty-cognitive-geriatrics",
+      "kw-geriatrics-subspecialty-falls-prevention",
+      "kw-geriatrics-subspecialty-geriatric-rehabilitation",
+      "kw-geriatrics-subspecialty-long-term-care",
+      "kw-geriatrics-related-elder-care-doctor",
+      "kw-geriatrics-related-senior-health",
+      "kw-geriatrics-related-falls",
+      "kw-geriatrics-related-memory-in-old-age",
+      "kw-geriatrics-related-multiple-medicines",
+      "kw-geriatrics-related-frailty"
+    ],
+    "description": "Provides coordinated health care for older adults with multiple or complex needs.",
+    "when_to_consult": "Consult for falls, memory changes, multiple medication concerns, frailty, or complex older-adult care planning."
+  },
+  {
+    "id": "allergy-immunology",
+    "name": "Allergy and Immunology",
+    "parent_category": "Medicine",
+    "subspecialty_ids": [
+      "sub-allergy-immunology-food-allergy-care",
+      "sub-allergy-immunology-allergic-asthma",
+      "sub-allergy-immunology-drug-allergy-care",
+      "sub-allergy-immunology-clinical-immunology"
+    ],
+    "common_symptom_ids": [
+      "sym-hives",
+      "sym-sneezing",
+      "sym-recurrent-wheeze",
+      "sym-food-reaction"
+    ],
+    "related_condition_ids": [
+      "cond-allergic-rhinitis",
+      "cond-urticaria",
+      "cond-food-allergy",
+      "cond-immune-deficiency-evaluation"
+    ],
+    "treatment_ids": [
+      "trt-allergy-testing",
+      "trt-trigger-assessment",
+      "trt-immunotherapy-planning",
+      "trt-immune-review"
+    ],
+    "keyword_ids": [
+      "kw-allergy-immunology-specialty-allergy-and-immunology",
+      "kw-allergy-immunology-symptom-hives",
+      "kw-allergy-immunology-symptom-sneezing",
+      "kw-allergy-immunology-symptom-recurrent-wheeze",
+      "kw-allergy-immunology-symptom-food-reaction",
+      "kw-allergy-immunology-condition-allergic-rhinitis",
+      "kw-allergy-immunology-condition-urticaria",
+      "kw-allergy-immunology-condition-food-allergy",
+      "kw-allergy-immunology-condition-immune-deficiency-evaluation",
+      "kw-allergy-immunology-treatment-allergy-testing",
+      "kw-allergy-immunology-treatment-trigger-assessment",
+      "kw-allergy-immunology-treatment-immunotherapy-planning",
+      "kw-allergy-immunology-treatment-immune-review",
+      "kw-allergy-immunology-subspecialty-food-allergy-care",
+      "kw-allergy-immunology-subspecialty-allergic-asthma",
+      "kw-allergy-immunology-subspecialty-drug-allergy-care",
+      "kw-allergy-immunology-subspecialty-clinical-immunology",
+      "kw-allergy-immunology-related-allergy-doctor",
+      "kw-allergy-immunology-related-hives",
+      "kw-allergy-immunology-related-sneezing",
+      "kw-allergy-immunology-related-food-allergy",
+      "kw-allergy-immunology-related-immune-system",
+      "kw-allergy-immunology-related-allergic-reaction"
+    ],
+    "description": "Assesses allergic reactions, immune-related concerns, and trigger-management options.",
+    "when_to_consult": "Consult for recurring allergies, hives, suspected food or drug reactions, or clinician-directed immune evaluation."
+  },
+  {
+    "id": "pediatrics",
+    "name": "Pediatrics",
+    "parent_category": "Child health",
+    "subspecialty_ids": [
+      "sub-pediatrics-developmental-pediatrics",
+      "sub-pediatrics-adolescent-medicine",
+      "sub-pediatrics-pediatric-emergency-care",
+      "sub-pediatrics-pediatric-nutrition"
+    ],
+    "common_symptom_ids": [
+      "sym-child-fever",
+      "sym-feeding-difficulty",
+      "sym-cough-in-child",
+      "sym-poor-weight-gain"
+    ],
+    "related_condition_ids": [
+      "cond-common-childhood-illness",
+      "cond-growth-concern",
+      "cond-childhood-asthma",
+      "cond-developmental-concern"
+    ],
+    "treatment_ids": [
+      "trt-child-health-assessment",
+      "trt-growth-monitoring",
+      "trt-vaccination-counseling",
+      "trt-development-review"
+    ],
+    "keyword_ids": [
+      "kw-pediatrics-specialty-pediatrics",
+      "kw-pediatrics-symptom-child-fever",
+      "kw-pediatrics-symptom-feeding-difficulty",
+      "kw-pediatrics-symptom-cough-in-child",
+      "kw-pediatrics-symptom-poor-weight-gain",
+      "kw-pediatrics-condition-common-childhood-illness",
+      "kw-pediatrics-condition-growth-concern",
+      "kw-pediatrics-condition-childhood-asthma",
+      "kw-pediatrics-condition-developmental-concern",
+      "kw-pediatrics-treatment-child-health-assessment",
+      "kw-pediatrics-treatment-growth-monitoring",
+      "kw-pediatrics-treatment-vaccination-counseling",
+      "kw-pediatrics-treatment-development-review",
+      "kw-pediatrics-subspecialty-developmental-pediatrics",
+      "kw-pediatrics-subspecialty-adolescent-medicine",
+      "kw-pediatrics-subspecialty-pediatric-emergency-care",
+      "kw-pediatrics-subspecialty-pediatric-nutrition",
+      "kw-pediatrics-related-child-doctor",
+      "kw-pediatrics-related-baby-doctor",
+      "kw-pediatrics-related-pediatrician",
+      "kw-pediatrics-related-growth",
+      "kw-pediatrics-related-child-fever",
+      "kw-pediatrics-related-vaccination"
+    ],
+    "description": "Provides general health care, prevention, growth monitoring, and illness assessment for children and adolescents.",
+    "when_to_consult": "Consult for a child\u2019s persistent symptoms, growth or development concerns, or routine pediatric care."
+  },
+  {
+    "id": "neonatology",
+    "name": "Neonatology",
+    "parent_category": "Child health",
+    "subspecialty_ids": [
+      "sub-neonatology-neonatal-intensive-care",
+      "sub-neonatology-high-risk-newborn-follow-up",
+      "sub-neonatology-neonatal-nutrition",
+      "sub-neonatology-neonatal-transport"
+    ],
+    "common_symptom_ids": [
+      "sym-premature-birth-concern",
+      "sym-newborn-feeding-problem",
+      "sym-newborn-jaundice",
+      "sym-low-birth-weight"
+    ],
+    "related_condition_ids": [
+      "cond-prematurity",
+      "cond-neonatal-jaundice",
+      "cond-newborn-infection",
+      "cond-respiratory-distress-in-newborn"
+    ],
+    "treatment_ids": [
+      "trt-newborn-assessment",
+      "trt-nicu-care",
+      "trt-feeding-support",
+      "trt-newborn-follow-up"
+    ],
+    "keyword_ids": [
+      "kw-neonatology-specialty-neonatology",
+      "kw-neonatology-symptom-premature-birth-concern",
+      "kw-neonatology-symptom-newborn-feeding-problem",
+      "kw-neonatology-symptom-newborn-jaundice",
+      "kw-neonatology-symptom-low-birth-weight",
+      "kw-neonatology-condition-prematurity",
+      "kw-neonatology-condition-neonatal-jaundice",
+      "kw-neonatology-condition-newborn-infection",
+      "kw-neonatology-condition-respiratory-distress-in-newborn",
+      "kw-neonatology-treatment-newborn-assessment",
+      "kw-neonatology-treatment-nicu-care",
+      "kw-neonatology-treatment-feeding-support",
+      "kw-neonatology-treatment-newborn-follow-up",
+      "kw-neonatology-subspecialty-neonatal-intensive-care",
+      "kw-neonatology-subspecialty-high-risk-newborn-follow-up",
+      "kw-neonatology-subspecialty-neonatal-nutrition",
+      "kw-neonatology-subspecialty-neonatal-transport",
+      "kw-neonatology-related-newborn-doctor",
+      "kw-neonatology-related-nicu",
+      "kw-neonatology-related-premature-baby",
+      "kw-neonatology-related-newborn-jaundice",
+      "kw-neonatology-related-infant-feeding",
+      "kw-neonatology-related-neonatal"
+    ],
+    "description": "Cares for newborns, especially premature or medically complex infants.",
+    "when_to_consult": "Consult through a maternity or pediatric team for a newborn health concern, especially after a high-risk birth."
+  },
+  {
+    "id": "pediatric-cardiology",
+    "name": "Pediatric Cardiology",
+    "parent_category": "Child health",
+    "subspecialty_ids": [
+      "sub-pediatric-cardiology-congenital-heart-care",
+      "sub-pediatric-cardiology-pediatric-electrophysiology",
+      "sub-pediatric-cardiology-fetal-cardiology",
+      "sub-pediatric-cardiology-pediatric-heart-failure"
+    ],
+    "common_symptom_ids": [
+      "sym-child-heart-murmur",
+      "sym-blue-lips",
+      "sym-poor-feeding",
+      "sym-fainting-in-child"
+    ],
+    "related_condition_ids": [
+      "cond-congenital-heart-disease",
+      "cond-heart-murmur",
+      "cond-pediatric-arrhythmia",
+      "cond-kawasaki-disease-follow-up"
+    ],
+    "treatment_ids": [
+      "trt-pediatric-echocardiography",
+      "trt-heart-rhythm-assessment",
+      "trt-congenital-heart-follow-up",
+      "trt-activity-guidance"
+    ],
+    "keyword_ids": [
+      "kw-pediatric-cardiology-specialty-pediatric-cardiology",
+      "kw-pediatric-cardiology-symptom-child-heart-murmur",
+      "kw-pediatric-cardiology-symptom-blue-lips",
+      "kw-pediatric-cardiology-symptom-poor-feeding",
+      "kw-pediatric-cardiology-symptom-fainting-in-child",
+      "kw-pediatric-cardiology-condition-congenital-heart-disease",
+      "kw-pediatric-cardiology-condition-heart-murmur",
+      "kw-pediatric-cardiology-condition-pediatric-arrhythmia",
+      "kw-pediatric-cardiology-condition-kawasaki-disease-follow-up",
+      "kw-pediatric-cardiology-treatment-pediatric-echocardiography",
+      "kw-pediatric-cardiology-treatment-heart-rhythm-assessment",
+      "kw-pediatric-cardiology-treatment-congenital-heart-follow-up",
+      "kw-pediatric-cardiology-treatment-activity-guidance",
+      "kw-pediatric-cardiology-subspecialty-congenital-heart-care",
+      "kw-pediatric-cardiology-subspecialty-pediatric-electrophysiology",
+      "kw-pediatric-cardiology-subspecialty-fetal-cardiology",
+      "kw-pediatric-cardiology-subspecialty-pediatric-heart-failure",
+      "kw-pediatric-cardiology-related-child-heart-doctor",
+      "kw-pediatric-cardiology-related-heart-murmur",
+      "kw-pediatric-cardiology-related-congenital-heart",
+      "kw-pediatric-cardiology-related-blue-baby",
+      "kw-pediatric-cardiology-related-pediatric-cardiac",
+      "kw-pediatric-cardiology-related-child-palpitations"
+    ],
+    "description": "Focuses on heart conditions present in or affecting infants, children, and adolescents.",
+    "when_to_consult": "Consult when a child is referred for a murmur, congenital heart condition, fainting, or cardiac symptoms."
+  },
+  {
+    "id": "obstetrics-gynecology",
+    "name": "Obstetrics and Gynecology",
+    "parent_category": "Women\u2019s health",
+    "subspecialty_ids": [
+      "sub-obstetrics-gynecology-high-risk-obstetrics",
+      "sub-obstetrics-gynecology-gynecologic-surgery",
+      "sub-obstetrics-gynecology-menstrual-health",
+      "sub-obstetrics-gynecology-menopause-care"
+    ],
+    "common_symptom_ids": [
+      "sym-pelvic-pain",
+      "sym-irregular-periods",
+      "sym-abnormal-bleeding",
+      "sym-pregnancy-concern"
+    ],
+    "related_condition_ids": [
+      "cond-menstrual-disorder",
+      "cond-uterine-fibroids",
+      "cond-endometriosis",
+      "cond-pregnancy-care"
+    ],
+    "treatment_ids": [
+      "trt-gynecological-examination",
+      "trt-prenatal-care",
+      "trt-menstrual-health-assessment",
+      "trt-contraception-counseling"
+    ],
+    "keyword_ids": [
+      "kw-obstetrics-gynecology-specialty-obstetrics-and-gynecology",
+      "kw-obstetrics-gynecology-symptom-pelvic-pain",
+      "kw-obstetrics-gynecology-symptom-irregular-periods",
+      "kw-obstetrics-gynecology-symptom-abnormal-bleeding",
+      "kw-obstetrics-gynecology-symptom-pregnancy-concern",
+      "kw-obstetrics-gynecology-condition-menstrual-disorder",
+      "kw-obstetrics-gynecology-condition-uterine-fibroids",
+      "kw-obstetrics-gynecology-condition-endometriosis",
+      "kw-obstetrics-gynecology-condition-pregnancy-care",
+      "kw-obstetrics-gynecology-treatment-gynecological-examination",
+      "kw-obstetrics-gynecology-treatment-prenatal-care",
+      "kw-obstetrics-gynecology-treatment-menstrual-health-assessment",
+      "kw-obstetrics-gynecology-treatment-contraception-counseling",
+      "kw-obstetrics-gynecology-subspecialty-high-risk-obstetrics",
+      "kw-obstetrics-gynecology-subspecialty-gynecologic-surgery",
+      "kw-obstetrics-gynecology-subspecialty-menstrual-health",
+      "kw-obstetrics-gynecology-subspecialty-menopause-care",
+      "kw-obstetrics-gynecology-related-women-doctor",
+      "kw-obstetrics-gynecology-related-gynecologist",
+      "kw-obstetrics-gynecology-related-period-problem",
+      "kw-obstetrics-gynecology-related-pregnancy",
+      "kw-obstetrics-gynecology-related-pelvic-pain",
+      "kw-obstetrics-gynecology-related-menstrual"
+    ],
+    "description": "Cares for reproductive health, pregnancy, gynecologic symptoms, and preventive women\u2019s health.",
+    "when_to_consult": "Consult for menstrual or pelvic symptoms, pregnancy care, contraception questions, or preventive gynecologic visits."
+  },
+  {
+    "id": "reproductive-medicine",
+    "name": "Reproductive Medicine",
+    "parent_category": "Women\u2019s health",
+    "subspecialty_ids": [
+      "sub-reproductive-medicine-ivf-medicine",
+      "sub-reproductive-medicine-andrology",
+      "sub-reproductive-medicine-fertility-preservation",
+      "sub-reproductive-medicine-recurrent-pregnancy-loss-care"
+    ],
+    "common_symptom_ids": [
+      "sym-difficulty-conceiving",
+      "sym-irregular-ovulation",
+      "sym-recurrent-pregnancy-loss",
+      "sym-fertility-concern"
+    ],
+    "related_condition_ids": [
+      "cond-infertility",
+      "cond-ovulatory-disorder",
+      "cond-male-factor-infertility",
+      "cond-recurrent-miscarriage-evaluation"
+    ],
+    "treatment_ids": [
+      "trt-fertility-evaluation",
+      "trt-ovulation-tracking",
+      "trt-assisted-reproduction-counseling",
+      "trt-preconception-planning"
+    ],
+    "keyword_ids": [
+      "kw-reproductive-medicine-specialty-reproductive-medicine",
+      "kw-reproductive-medicine-symptom-difficulty-conceiving",
+      "kw-reproductive-medicine-symptom-irregular-ovulation",
+      "kw-reproductive-medicine-symptom-recurrent-pregnancy-loss",
+      "kw-reproductive-medicine-symptom-fertility-concern",
+      "kw-reproductive-medicine-condition-infertility",
+      "kw-reproductive-medicine-condition-ovulatory-disorder",
+      "kw-reproductive-medicine-condition-male-factor-infertility",
+      "kw-reproductive-medicine-condition-recurrent-miscarriage-evaluation",
+      "kw-reproductive-medicine-treatment-fertility-evaluation",
+      "kw-reproductive-medicine-treatment-ovulation-tracking",
+      "kw-reproductive-medicine-treatment-assisted-reproduction-counseling",
+      "kw-reproductive-medicine-treatment-preconception-planning",
+      "kw-reproductive-medicine-subspecialty-ivf-medicine",
+      "kw-reproductive-medicine-subspecialty-andrology",
+      "kw-reproductive-medicine-subspecialty-fertility-preservation",
+      "kw-reproductive-medicine-subspecialty-recurrent-pregnancy-loss-care",
+      "kw-reproductive-medicine-related-fertility-doctor",
+      "kw-reproductive-medicine-related-infertility",
+      "kw-reproductive-medicine-related-ivf",
+      "kw-reproductive-medicine-related-trying-to-conceive",
+      "kw-reproductive-medicine-related-ovulation",
+      "kw-reproductive-medicine-related-reproductive-health"
+    ],
+    "description": "Focuses on fertility assessment, assisted reproduction, and preconception planning.",
+    "when_to_consult": "Consult after difficulty conceiving, for fertility evaluation, or when seeking reproductive planning support."
+  },
+  {
+    "id": "maternal-fetal-medicine",
+    "name": "Maternal-Fetal Medicine",
+    "parent_category": "Women\u2019s health",
+    "subspecialty_ids": [
+      "sub-maternal-fetal-medicine-fetal-imaging",
+      "sub-maternal-fetal-medicine-obstetric-medicine",
+      "sub-maternal-fetal-medicine-multiple-pregnancy-care",
+      "sub-maternal-fetal-medicine-genetic-counseling-in-pregnancy"
+    ],
+    "common_symptom_ids": [
+      "sym-high-risk-pregnancy",
+      "sym-pregnancy-hypertension",
+      "sym-gestational-diabetes",
+      "sym-fetal-growth-concern"
+    ],
+    "related_condition_ids": [
+      "cond-high-risk-pregnancy",
+      "cond-preeclampsia",
+      "cond-gestational-diabetes",
+      "cond-multiple-pregnancy"
+    ],
+    "treatment_ids": [
+      "trt-high-risk-prenatal-assessment",
+      "trt-fetal-ultrasound-planning",
+      "trt-maternal-health-monitoring",
+      "trt-delivery-planning"
+    ],
+    "keyword_ids": [
+      "kw-maternal-fetal-medicine-specialty-maternal-fetal-medicine",
+      "kw-maternal-fetal-medicine-symptom-high-risk-pregnancy",
+      "kw-maternal-fetal-medicine-symptom-pregnancy-hypertension",
+      "kw-maternal-fetal-medicine-symptom-gestational-diabetes",
+      "kw-maternal-fetal-medicine-symptom-fetal-growth-concern",
+      "kw-maternal-fetal-medicine-condition-high-risk-pregnancy",
+      "kw-maternal-fetal-medicine-condition-preeclampsia",
+      "kw-maternal-fetal-medicine-condition-gestational-diabetes",
+      "kw-maternal-fetal-medicine-condition-multiple-pregnancy",
+      "kw-maternal-fetal-medicine-treatment-high-risk-prenatal-assessment",
+      "kw-maternal-fetal-medicine-treatment-fetal-ultrasound-planning",
+      "kw-maternal-fetal-medicine-treatment-maternal-health-monitoring",
+      "kw-maternal-fetal-medicine-treatment-delivery-planning",
+      "kw-maternal-fetal-medicine-subspecialty-fetal-imaging",
+      "kw-maternal-fetal-medicine-subspecialty-obstetric-medicine",
+      "kw-maternal-fetal-medicine-subspecialty-multiple-pregnancy-care",
+      "kw-maternal-fetal-medicine-subspecialty-genetic-counseling-in-pregnancy",
+      "kw-maternal-fetal-medicine-related-high-risk-pregnancy",
+      "kw-maternal-fetal-medicine-related-pregnancy-specialist",
+      "kw-maternal-fetal-medicine-related-gestational-diabetes",
+      "kw-maternal-fetal-medicine-related-preeclampsia",
+      "kw-maternal-fetal-medicine-related-fetal-growth",
+      "kw-maternal-fetal-medicine-related-maternal-fetal"
+    ],
+    "description": "Provides specialist care for pregnancies with maternal, fetal, or obstetric risk factors.",
+    "when_to_consult": "Consult when referred for a high-risk pregnancy, complex medical condition in pregnancy, or fetal-monitoring concern."
+  },
+  {
+    "id": "orthopedics",
+    "name": "Orthopedics",
+    "parent_category": "Musculoskeletal care",
+    "subspecialty_ids": [
+      "sub-orthopedics-joint-replacement",
+      "sub-orthopedics-spine-surgery",
+      "sub-orthopedics-trauma-orthopedics",
+      "sub-orthopedics-hand-and-upper-limb-care"
+    ],
+    "common_symptom_ids": [
+      "sym-joint-pain",
+      "sym-back-pain",
+      "sym-bone-injury",
+      "sym-limited-movement"
+    ],
+    "related_condition_ids": [
+      "cond-osteoarthritis",
+      "cond-fracture",
+      "cond-sports-injury",
+      "cond-spinal-degeneration"
+    ],
+    "treatment_ids": [
+      "trt-orthopedic-examination",
+      "trt-fracture-care",
+      "trt-joint-replacement-assessment",
+      "trt-mobility-planning"
+    ],
+    "keyword_ids": [
+      "kw-orthopedics-specialty-orthopedics",
+      "kw-orthopedics-symptom-joint-pain",
+      "kw-orthopedics-symptom-back-pain",
+      "kw-orthopedics-symptom-bone-injury",
+      "kw-orthopedics-symptom-limited-movement",
+      "kw-orthopedics-condition-osteoarthritis",
+      "kw-orthopedics-condition-fracture",
+      "kw-orthopedics-condition-sports-injury",
+      "kw-orthopedics-condition-spinal-degeneration",
+      "kw-orthopedics-treatment-orthopedic-examination",
+      "kw-orthopedics-treatment-fracture-care",
+      "kw-orthopedics-treatment-joint-replacement-assessment",
+      "kw-orthopedics-treatment-mobility-planning",
+      "kw-orthopedics-subspecialty-joint-replacement",
+      "kw-orthopedics-subspecialty-spine-surgery",
+      "kw-orthopedics-subspecialty-trauma-orthopedics",
+      "kw-orthopedics-subspecialty-hand-and-upper-limb-care",
+      "kw-orthopedics-related-bone-doctor",
+      "kw-orthopedics-related-orthopedic",
+      "kw-orthopedics-related-joint-pain",
+      "kw-orthopedics-related-fracture",
+      "kw-orthopedics-related-back-pain",
+      "kw-orthopedics-related-knee-pain"
+    ],
+    "description": "Cares for bones, joints, ligaments, tendons, and musculoskeletal injuries.",
+    "when_to_consult": "Consult for persistent joint or back pain, injury, fracture follow-up, or reduced movement."
+  },
+  {
+    "id": "sports-medicine",
+    "name": "Sports Medicine",
+    "parent_category": "Musculoskeletal care",
+    "subspecialty_ids": [
+      "sub-sports-medicine-running-medicine",
+      "sub-sports-medicine-shoulder-sports-care",
+      "sub-sports-medicine-knee-sports-care",
+      "sub-sports-medicine-exercise-physiology"
+    ],
+    "common_symptom_ids": [
+      "sym-exercise-related-pain",
+      "sym-sprain",
+      "sym-overuse-injury",
+      "sym-reduced-performance"
+    ],
+    "related_condition_ids": [
+      "cond-tendon-injury",
+      "cond-ligament-injury",
+      "cond-stress-fracture",
+      "cond-runner-s-knee"
+    ],
+    "treatment_ids": [
+      "trt-injury-assessment",
+      "trt-return-to-sport-planning",
+      "trt-exercise-prescription",
+      "trt-injury-prevention"
+    ],
+    "keyword_ids": [
+      "kw-sports-medicine-specialty-sports-medicine",
+      "kw-sports-medicine-symptom-exercise-related-pain",
+      "kw-sports-medicine-symptom-sprain",
+      "kw-sports-medicine-symptom-overuse-injury",
+      "kw-sports-medicine-symptom-reduced-performance",
+      "kw-sports-medicine-condition-tendon-injury",
+      "kw-sports-medicine-condition-ligament-injury",
+      "kw-sports-medicine-condition-stress-fracture",
+      "kw-sports-medicine-condition-runner-s-knee",
+      "kw-sports-medicine-treatment-injury-assessment",
+      "kw-sports-medicine-treatment-return-to-sport-planning",
+      "kw-sports-medicine-treatment-exercise-prescription",
+      "kw-sports-medicine-treatment-injury-prevention",
+      "kw-sports-medicine-subspecialty-running-medicine",
+      "kw-sports-medicine-subspecialty-shoulder-sports-care",
+      "kw-sports-medicine-subspecialty-knee-sports-care",
+      "kw-sports-medicine-subspecialty-exercise-physiology",
+      "kw-sports-medicine-related-sports-doctor",
+      "kw-sports-medicine-related-gym-injury",
+      "kw-sports-medicine-related-sprain",
+      "kw-sports-medicine-related-running-pain",
+      "kw-sports-medicine-related-athlete-injury",
+      "kw-sports-medicine-related-return-to-sport"
+    ],
+    "description": "Focuses on activity-related injuries, exercise health, and safe return to sport.",
+    "when_to_consult": "Consult for a sports or exercise injury, recurrent pain with activity, or return-to-play planning."
+  },
+  {
+    "id": "physical-medicine-rehabilitation",
+    "name": "Physical Medicine and Rehabilitation",
+    "parent_category": "Rehabilitation",
+    "subspecialty_ids": [
+      "sub-physical-medicine-rehabilitation-neurorehabilitation",
+      "sub-physical-medicine-rehabilitation-spinal-rehabilitation",
+      "sub-physical-medicine-rehabilitation-amputee-rehabilitation",
+      "sub-physical-medicine-rehabilitation-pain-rehabilitation"
+    ],
+    "common_symptom_ids": [
+      "sym-weakness",
+      "sym-mobility-limitation",
+      "sym-chronic-pain",
+      "sym-recovery-after-injury"
+    ],
+    "related_condition_ids": [
+      "cond-stroke-rehabilitation",
+      "cond-spinal-injury",
+      "cond-chronic-pain",
+      "cond-functional-limitation"
+    ],
+    "treatment_ids": [
+      "trt-rehabilitation-assessment",
+      "trt-assistive-device-planning",
+      "trt-functional-recovery-plan",
+      "trt-spasticity-management"
+    ],
+    "keyword_ids": [
+      "kw-physical-medicine-rehabilitation-specialty-physical-medicine-and-rehabilitation",
+      "kw-physical-medicine-rehabilitation-symptom-weakness",
+      "kw-physical-medicine-rehabilitation-symptom-mobility-limitation",
+      "kw-physical-medicine-rehabilitation-symptom-chronic-pain",
+      "kw-physical-medicine-rehabilitation-symptom-recovery-after-injury",
+      "kw-physical-medicine-rehabilitation-condition-stroke-rehabilitation",
+      "kw-physical-medicine-rehabilitation-condition-spinal-injury",
+      "kw-physical-medicine-rehabilitation-condition-chronic-pain",
+      "kw-physical-medicine-rehabilitation-condition-functional-limitation",
+      "kw-physical-medicine-rehabilitation-treatment-rehabilitation-assessment",
+      "kw-physical-medicine-rehabilitation-treatment-assistive-device-planning",
+      "kw-physical-medicine-rehabilitation-treatment-functional-recovery-plan",
+      "kw-physical-medicine-rehabilitation-treatment-spasticity-management",
+      "kw-physical-medicine-rehabilitation-subspecialty-neurorehabilitation",
+      "kw-physical-medicine-rehabilitation-subspecialty-spinal-rehabilitation",
+      "kw-physical-medicine-rehabilitation-subspecialty-amputee-rehabilitation",
+      "kw-physical-medicine-rehabilitation-subspecialty-pain-rehabilitation",
+      "kw-physical-medicine-rehabilitation-related-rehab-doctor",
+      "kw-physical-medicine-rehabilitation-related-physiatry",
+      "kw-physical-medicine-rehabilitation-related-mobility",
+      "kw-physical-medicine-rehabilitation-related-stroke-recovery",
+      "kw-physical-medicine-rehabilitation-related-functional-recovery",
+      "kw-physical-medicine-rehabilitation-related-rehabilitation"
+    ],
+    "description": "Helps restore function, independence, mobility, and quality of life after illness or injury.",
+    "when_to_consult": "Consult for lasting mobility, function, or recovery needs after an injury, surgery, or neurological illness."
+  },
+  {
+    "id": "pain-medicine",
+    "name": "Pain Medicine",
+    "parent_category": "Rehabilitation",
+    "subspecialty_ids": [
+      "sub-pain-medicine-interventional-pain-care",
+      "sub-pain-medicine-neuropathic-pain",
+      "sub-pain-medicine-cancer-pain-support",
+      "sub-pain-medicine-headache-pain-care"
+    ],
+    "common_symptom_ids": [
+      "sym-chronic-pain",
+      "sym-nerve-pain",
+      "sym-back-pain",
+      "sym-pain-affecting-sleep"
+    ],
+    "related_condition_ids": [
+      "cond-chronic-pain-syndrome",
+      "cond-neuropathic-pain",
+      "cond-complex-regional-pain",
+      "cond-cancer-pain-support"
+    ],
+    "treatment_ids": [
+      "trt-pain-assessment",
+      "trt-multimodal-pain-plan",
+      "trt-procedure-counseling",
+      "trt-sleep-and-function-review"
+    ],
+    "keyword_ids": [
+      "kw-pain-medicine-specialty-pain-medicine",
+      "kw-pain-medicine-symptom-chronic-pain",
+      "kw-pain-medicine-symptom-nerve-pain",
+      "kw-pain-medicine-symptom-back-pain",
+      "kw-pain-medicine-symptom-pain-affecting-sleep",
+      "kw-pain-medicine-condition-chronic-pain-syndrome",
+      "kw-pain-medicine-condition-neuropathic-pain",
+      "kw-pain-medicine-condition-complex-regional-pain",
+      "kw-pain-medicine-condition-cancer-pain-support",
+      "kw-pain-medicine-treatment-pain-assessment",
+      "kw-pain-medicine-treatment-multimodal-pain-plan",
+      "kw-pain-medicine-treatment-procedure-counseling",
+      "kw-pain-medicine-treatment-sleep-and-function-review",
+      "kw-pain-medicine-subspecialty-interventional-pain-care",
+      "kw-pain-medicine-subspecialty-neuropathic-pain",
+      "kw-pain-medicine-subspecialty-cancer-pain-support",
+      "kw-pain-medicine-subspecialty-headache-pain-care",
+      "kw-pain-medicine-related-pain-doctor",
+      "kw-pain-medicine-related-long-term-pain",
+      "kw-pain-medicine-related-nerve-pain",
+      "kw-pain-medicine-related-pain-clinic",
+      "kw-pain-medicine-related-back-pain",
+      "kw-pain-medicine-related-chronic-pain"
+    ],
+    "description": "Provides multidisciplinary assessment and management options for persistent or complex pain.",
+    "when_to_consult": "Consult for pain lasting beyond expected recovery, pain limiting daily life, or specialist pain-management referral."
+  },
+  {
+    "id": "general-surgery",
+    "name": "General Surgery",
+    "parent_category": "Surgery",
+    "subspecialty_ids": [
+      "sub-general-surgery-laparoscopic-surgery",
+      "sub-general-surgery-breast-surgery",
+      "sub-general-surgery-colorectal-surgery",
+      "sub-general-surgery-hepatobiliary-surgery"
+    ],
+    "common_symptom_ids": [
+      "sym-abdominal-lump",
+      "sym-persistent-hernia-discomfort",
+      "sym-gallbladder-pain",
+      "sym-surgical-wound-concern"
+    ],
+    "related_condition_ids": [
+      "cond-hernia",
+      "cond-gallstones",
+      "cond-appendicitis-evaluation",
+      "cond-soft-tissue-lump"
+    ],
+    "treatment_ids": [
+      "trt-surgical-consultation",
+      "trt-preoperative-assessment",
+      "trt-postoperative-follow-up",
+      "trt-wound-care-planning"
+    ],
+    "keyword_ids": [
+      "kw-general-surgery-specialty-general-surgery",
+      "kw-general-surgery-symptom-abdominal-lump",
+      "kw-general-surgery-symptom-persistent-hernia-discomfort",
+      "kw-general-surgery-symptom-gallbladder-pain",
+      "kw-general-surgery-symptom-surgical-wound-concern",
+      "kw-general-surgery-condition-hernia",
+      "kw-general-surgery-condition-gallstones",
+      "kw-general-surgery-condition-appendicitis-evaluation",
+      "kw-general-surgery-condition-soft-tissue-lump",
+      "kw-general-surgery-treatment-surgical-consultation",
+      "kw-general-surgery-treatment-preoperative-assessment",
+      "kw-general-surgery-treatment-postoperative-follow-up",
+      "kw-general-surgery-treatment-wound-care-planning",
+      "kw-general-surgery-subspecialty-laparoscopic-surgery",
+      "kw-general-surgery-subspecialty-breast-surgery",
+      "kw-general-surgery-subspecialty-colorectal-surgery",
+      "kw-general-surgery-subspecialty-hepatobiliary-surgery",
+      "kw-general-surgery-related-surgeon",
+      "kw-general-surgery-related-general-surgery",
+      "kw-general-surgery-related-hernia",
+      "kw-general-surgery-related-gallbladder",
+      "kw-general-surgery-related-appendix",
+      "kw-general-surgery-related-operation"
+    ],
+    "description": "Provides surgical assessment and treatment planning for common abdominal, skin, breast, and soft-tissue conditions.",
+    "when_to_consult": "Consult when referred for a possible operation, hernia, gallbladder concern, lump, or postoperative care."
+  },
+  {
+    "id": "cardiothoracic-surgery",
+    "name": "Cardiothoracic Surgery",
+    "parent_category": "Surgery",
+    "subspecialty_ids": [
+      "sub-cardiothoracic-surgery-cardiac-surgery",
+      "sub-cardiothoracic-surgery-aortic-surgery",
+      "sub-cardiothoracic-surgery-thoracic-surgery",
+      "sub-cardiothoracic-surgery-minimally-invasive-heart-surgery"
+    ],
+    "common_symptom_ids": [
+      "sym-heart-surgery-referral",
+      "sym-chest-surgical-concern",
+      "sym-aortic-condition",
+      "sym-lung-surgery-referral"
+    ],
+    "related_condition_ids": [
+      "cond-coronary-artery-disease-surgery",
+      "cond-valve-disease",
+      "cond-aortic-aneurysm",
+      "cond-thoracic-tumor"
+    ],
+    "treatment_ids": [
+      "trt-surgical-cardiac-assessment",
+      "trt-valve-surgery-planning",
+      "trt-bypass-surgery-counseling",
+      "trt-thoracic-surgery-review"
+    ],
+    "keyword_ids": [
+      "kw-cardiothoracic-surgery-specialty-cardiothoracic-surgery",
+      "kw-cardiothoracic-surgery-symptom-heart-surgery-referral",
+      "kw-cardiothoracic-surgery-symptom-chest-surgical-concern",
+      "kw-cardiothoracic-surgery-symptom-aortic-condition",
+      "kw-cardiothoracic-surgery-symptom-lung-surgery-referral",
+      "kw-cardiothoracic-surgery-condition-coronary-artery-disease-surgery",
+      "kw-cardiothoracic-surgery-condition-valve-disease",
+      "kw-cardiothoracic-surgery-condition-aortic-aneurysm",
+      "kw-cardiothoracic-surgery-condition-thoracic-tumor",
+      "kw-cardiothoracic-surgery-treatment-surgical-cardiac-assessment",
+      "kw-cardiothoracic-surgery-treatment-valve-surgery-planning",
+      "kw-cardiothoracic-surgery-treatment-bypass-surgery-counseling",
+      "kw-cardiothoracic-surgery-treatment-thoracic-surgery-review",
+      "kw-cardiothoracic-surgery-subspecialty-cardiac-surgery",
+      "kw-cardiothoracic-surgery-subspecialty-aortic-surgery",
+      "kw-cardiothoracic-surgery-subspecialty-thoracic-surgery",
+      "kw-cardiothoracic-surgery-subspecialty-minimally-invasive-heart-surgery",
+      "kw-cardiothoracic-surgery-related-heart-surgeon",
+      "kw-cardiothoracic-surgery-related-bypass-surgery",
+      "kw-cardiothoracic-surgery-related-valve-surgery",
+      "kw-cardiothoracic-surgery-related-chest-surgeon",
+      "kw-cardiothoracic-surgery-related-aortic-surgery",
+      "kw-cardiothoracic-surgery-related-thoracic-surgery"
+    ],
+    "description": "Provides surgical care for the heart, major chest vessels, lungs, and chest structures.",
+    "when_to_consult": "Consult after referral for cardiac, aortic, lung, or chest surgery assessment."
+  },
+  {
+    "id": "neurosurgery",
+    "name": "Neurosurgery",
+    "parent_category": "Surgery",
+    "subspecialty_ids": [
+      "sub-neurosurgery-brain-tumor-surgery",
+      "sub-neurosurgery-spine-neurosurgery",
+      "sub-neurosurgery-neurovascular-surgery",
+      "sub-neurosurgery-pediatric-neurosurgery"
+    ],
+    "common_symptom_ids": [
+      "sym-nerve-compression",
+      "sym-progressive-weakness",
+      "sym-spinal-pain-with-weakness",
+      "sym-brain-surgery-referral"
+    ],
+    "related_condition_ids": [
+      "cond-brain-tumor",
+      "cond-spinal-disc-disease",
+      "cond-hydrocephalus",
+      "cond-nerve-compression"
+    ],
+    "treatment_ids": [
+      "trt-neurosurgical-assessment",
+      "trt-spine-surgery-planning",
+      "trt-brain-imaging-review",
+      "trt-postoperative-follow-up"
+    ],
+    "keyword_ids": [
+      "kw-neurosurgery-specialty-neurosurgery",
+      "kw-neurosurgery-symptom-nerve-compression",
+      "kw-neurosurgery-symptom-progressive-weakness",
+      "kw-neurosurgery-symptom-spinal-pain-with-weakness",
+      "kw-neurosurgery-symptom-brain-surgery-referral",
+      "kw-neurosurgery-condition-brain-tumor",
+      "kw-neurosurgery-condition-spinal-disc-disease",
+      "kw-neurosurgery-condition-hydrocephalus",
+      "kw-neurosurgery-condition-nerve-compression",
+      "kw-neurosurgery-treatment-neurosurgical-assessment",
+      "kw-neurosurgery-treatment-spine-surgery-planning",
+      "kw-neurosurgery-treatment-brain-imaging-review",
+      "kw-neurosurgery-treatment-postoperative-follow-up",
+      "kw-neurosurgery-subspecialty-brain-tumor-surgery",
+      "kw-neurosurgery-subspecialty-spine-neurosurgery",
+      "kw-neurosurgery-subspecialty-neurovascular-surgery",
+      "kw-neurosurgery-subspecialty-pediatric-neurosurgery",
+      "kw-neurosurgery-related-brain-surgeon",
+      "kw-neurosurgery-related-spine-surgeon",
+      "kw-neurosurgery-related-neurosurgery",
+      "kw-neurosurgery-related-disc-surgery",
+      "kw-neurosurgery-related-nerve-compression",
+      "kw-neurosurgery-related-brain-operation"
+    ],
+    "description": "Provides surgical assessment for conditions affecting the brain, spine, and nervous system.",
+    "when_to_consult": "Consult after a neurology or emergency referral for a structural brain, spine, or nerve condition requiring surgical review."
+  },
+  {
+    "id": "plastic-reconstructive-surgery",
+    "name": "Plastic and Reconstructive Surgery",
+    "parent_category": "Surgery",
+    "subspecialty_ids": [
+      "sub-plastic-reconstructive-surgery-burn-reconstruction",
+      "sub-plastic-reconstructive-surgery-hand-reconstruction",
+      "sub-plastic-reconstructive-surgery-craniofacial-surgery",
+      "sub-plastic-reconstructive-surgery-microsurgery"
+    ],
+    "common_symptom_ids": [
+      "sym-complex-wound",
+      "sym-scar-concern",
+      "sym-burn-injury",
+      "sym-reconstruction-referral"
+    ],
+    "related_condition_ids": [
+      "cond-burn-injury",
+      "cond-complex-wound",
+      "cond-scar-contracture",
+      "cond-congenital-difference"
+    ],
+    "treatment_ids": [
+      "trt-wound-reconstruction",
+      "trt-scar-management",
+      "trt-burn-care-planning",
+      "trt-reconstructive-consultation"
+    ],
+    "keyword_ids": [
+      "kw-plastic-reconstructive-surgery-specialty-plastic-and-reconstructive-surgery",
+      "kw-plastic-reconstructive-surgery-symptom-complex-wound",
+      "kw-plastic-reconstructive-surgery-symptom-scar-concern",
+      "kw-plastic-reconstructive-surgery-symptom-burn-injury",
+      "kw-plastic-reconstructive-surgery-symptom-reconstruction-referral",
+      "kw-plastic-reconstructive-surgery-condition-burn-injury",
+      "kw-plastic-reconstructive-surgery-condition-complex-wound",
+      "kw-plastic-reconstructive-surgery-condition-scar-contracture",
+      "kw-plastic-reconstructive-surgery-condition-congenital-difference",
+      "kw-plastic-reconstructive-surgery-treatment-wound-reconstruction",
+      "kw-plastic-reconstructive-surgery-treatment-scar-management",
+      "kw-plastic-reconstructive-surgery-treatment-burn-care-planning",
+      "kw-plastic-reconstructive-surgery-treatment-reconstructive-consultation",
+      "kw-plastic-reconstructive-surgery-subspecialty-burn-reconstruction",
+      "kw-plastic-reconstructive-surgery-subspecialty-hand-reconstruction",
+      "kw-plastic-reconstructive-surgery-subspecialty-craniofacial-surgery",
+      "kw-plastic-reconstructive-surgery-subspecialty-microsurgery",
+      "kw-plastic-reconstructive-surgery-related-plastic-surgeon",
+      "kw-plastic-reconstructive-surgery-related-reconstruction",
+      "kw-plastic-reconstructive-surgery-related-burn-care",
+      "kw-plastic-reconstructive-surgery-related-scar",
+      "kw-plastic-reconstructive-surgery-related-wound-repair",
+      "kw-plastic-reconstructive-surgery-related-hand-reconstruction"
+    ],
+    "description": "Restores form and function after injury, burns, surgery, or congenital differences.",
+    "when_to_consult": "Consult for complex wounds, burns, reconstructive needs, or referral after trauma or cancer surgery."
+  },
+  {
+    "id": "urology",
+    "name": "Urology",
+    "parent_category": "Surgery",
+    "subspecialty_ids": [
+      "sub-urology-endourology",
+      "sub-urology-andrology",
+      "sub-urology-female-urology",
+      "sub-urology-urologic-oncology"
+    ],
+    "common_symptom_ids": [
+      "sym-painful-urination",
+      "sym-blood-in-urine",
+      "sym-urinary-frequency",
+      "sym-flank-pain"
+    ],
+    "related_condition_ids": [
+      "cond-urinary-tract-stone",
+      "cond-prostate-enlargement",
+      "cond-urinary-infection",
+      "cond-incontinence"
+    ],
+    "treatment_ids": [
+      "trt-urine-evaluation",
+      "trt-stone-assessment",
+      "trt-prostate-review",
+      "trt-bladder-function-testing"
+    ],
+    "keyword_ids": [
+      "kw-urology-specialty-urology",
+      "kw-urology-symptom-painful-urination",
+      "kw-urology-symptom-blood-in-urine",
+      "kw-urology-symptom-urinary-frequency",
+      "kw-urology-symptom-flank-pain",
+      "kw-urology-condition-urinary-tract-stone",
+      "kw-urology-condition-prostate-enlargement",
+      "kw-urology-condition-urinary-infection",
+      "kw-urology-condition-incontinence",
+      "kw-urology-treatment-urine-evaluation",
+      "kw-urology-treatment-stone-assessment",
+      "kw-urology-treatment-prostate-review",
+      "kw-urology-treatment-bladder-function-testing",
+      "kw-urology-subspecialty-endourology",
+      "kw-urology-subspecialty-andrology",
+      "kw-urology-subspecialty-female-urology",
+      "kw-urology-subspecialty-urologic-oncology",
+      "kw-urology-related-urine-doctor",
+      "kw-urology-related-urologist",
+      "kw-urology-related-kidney-stone",
+      "kw-urology-related-prostate",
+      "kw-urology-related-urination",
+      "kw-urology-related-bladder"
+    ],
+    "description": "Cares for the urinary tract, bladder, kidneys, prostate, and male reproductive system.",
+    "when_to_consult": "Consult for recurring urinary symptoms, visible blood in urine, stone concerns, prostate symptoms, or urology referral."
+  },
+  {
+    "id": "ophthalmology",
+    "name": "Ophthalmology",
+    "parent_category": "Sensory health",
+    "subspecialty_ids": [
+      "sub-ophthalmology-retina-care",
+      "sub-ophthalmology-glaucoma-care",
+      "sub-ophthalmology-cornea-care",
+      "sub-ophthalmology-pediatric-ophthalmology"
+    ],
+    "common_symptom_ids": [
+      "sym-blurred-vision",
+      "sym-eye-redness",
+      "sym-eye-pain",
+      "sym-floaters"
+    ],
+    "related_condition_ids": [
+      "cond-cataract",
+      "cond-glaucoma",
+      "cond-dry-eye",
+      "cond-retinal-disorder"
+    ],
+    "treatment_ids": [
+      "trt-eye-examination",
+      "trt-vision-testing",
+      "trt-retinal-assessment",
+      "trt-cataract-counseling"
+    ],
+    "keyword_ids": [
+      "kw-ophthalmology-specialty-ophthalmology",
+      "kw-ophthalmology-symptom-blurred-vision",
+      "kw-ophthalmology-symptom-eye-redness",
+      "kw-ophthalmology-symptom-eye-pain",
+      "kw-ophthalmology-symptom-floaters",
+      "kw-ophthalmology-condition-cataract",
+      "kw-ophthalmology-condition-glaucoma",
+      "kw-ophthalmology-condition-dry-eye",
+      "kw-ophthalmology-condition-retinal-disorder",
+      "kw-ophthalmology-treatment-eye-examination",
+      "kw-ophthalmology-treatment-vision-testing",
+      "kw-ophthalmology-treatment-retinal-assessment",
+      "kw-ophthalmology-treatment-cataract-counseling",
+      "kw-ophthalmology-subspecialty-retina-care",
+      "kw-ophthalmology-subspecialty-glaucoma-care",
+      "kw-ophthalmology-subspecialty-cornea-care",
+      "kw-ophthalmology-subspecialty-pediatric-ophthalmology",
+      "kw-ophthalmology-related-eye-doctor",
+      "kw-ophthalmology-related-vision",
+      "kw-ophthalmology-related-cataract",
+      "kw-ophthalmology-related-glaucoma",
+      "kw-ophthalmology-related-red-eye",
+      "kw-ophthalmology-related-retina"
+    ],
+    "description": "Cares for eye health, vision, and conditions affecting the eye and visual pathways.",
+    "when_to_consult": "Consult for persistent visual change, eye pain, redness, injury, or a scheduled eye health review."
+  },
+  {
+    "id": "otolaryngology",
+    "name": "Otolaryngology",
+    "parent_category": "Sensory health",
+    "subspecialty_ids": [
+      "sub-otolaryngology-rhinology",
+      "sub-otolaryngology-otology",
+      "sub-otolaryngology-laryngology",
+      "sub-otolaryngology-head-and-neck-surgery"
+    ],
+    "common_symptom_ids": [
+      "sym-ear-pain",
+      "sym-hearing-change",
+      "sym-sore-throat",
+      "sym-nasal-blockage"
+    ],
+    "related_condition_ids": [
+      "cond-sinusitis",
+      "cond-tonsil-disorder",
+      "cond-ear-infection",
+      "cond-voice-disorder"
+    ],
+    "treatment_ids": [
+      "trt-ear-examination",
+      "trt-hearing-evaluation",
+      "trt-sinus-assessment",
+      "trt-voice-assessment"
+    ],
+    "keyword_ids": [
+      "kw-otolaryngology-specialty-otolaryngology",
+      "kw-otolaryngology-symptom-ear-pain",
+      "kw-otolaryngology-symptom-hearing-change",
+      "kw-otolaryngology-symptom-sore-throat",
+      "kw-otolaryngology-symptom-nasal-blockage",
+      "kw-otolaryngology-condition-sinusitis",
+      "kw-otolaryngology-condition-tonsil-disorder",
+      "kw-otolaryngology-condition-ear-infection",
+      "kw-otolaryngology-condition-voice-disorder",
+      "kw-otolaryngology-treatment-ear-examination",
+      "kw-otolaryngology-treatment-hearing-evaluation",
+      "kw-otolaryngology-treatment-sinus-assessment",
+      "kw-otolaryngology-treatment-voice-assessment",
+      "kw-otolaryngology-subspecialty-rhinology",
+      "kw-otolaryngology-subspecialty-otology",
+      "kw-otolaryngology-subspecialty-laryngology",
+      "kw-otolaryngology-subspecialty-head-and-neck-surgery",
+      "kw-otolaryngology-related-ent-doctor",
+      "kw-otolaryngology-related-ear-nose-throat",
+      "kw-otolaryngology-related-sinus",
+      "kw-otolaryngology-related-tonsil",
+      "kw-otolaryngology-related-hearing",
+      "kw-otolaryngology-related-voice-problem"
+    ],
+    "description": "Cares for conditions affecting the ear, nose, throat, voice, and related head and neck structures.",
+    "when_to_consult": "Consult for lasting ear, nose, throat, sinus, voice, or hearing symptoms."
+  },
+  {
+    "id": "dentistry",
+    "name": "Dentistry",
+    "parent_category": "Oral health",
+    "subspecialty_ids": [
+      "sub-dentistry-orthodontics",
+      "sub-dentistry-endodontics",
+      "sub-dentistry-periodontics",
+      "sub-dentistry-oral-and-maxillofacial-surgery"
+    ],
+    "common_symptom_ids": [
+      "sym-toothache",
+      "sym-gum-bleeding",
+      "sym-jaw-pain",
+      "sym-tooth-sensitivity"
+    ],
+    "related_condition_ids": [
+      "cond-dental-caries",
+      "cond-gum-disease",
+      "cond-tooth-infection",
+      "cond-jaw-joint-disorder"
+    ],
+    "treatment_ids": [
+      "trt-dental-examination",
+      "trt-oral-hygiene-planning",
+      "trt-restorative-care-planning",
+      "trt-jaw-assessment"
+    ],
+    "keyword_ids": [
+      "kw-dentistry-specialty-dentistry",
+      "kw-dentistry-symptom-toothache",
+      "kw-dentistry-symptom-gum-bleeding",
+      "kw-dentistry-symptom-jaw-pain",
+      "kw-dentistry-symptom-tooth-sensitivity",
+      "kw-dentistry-condition-dental-caries",
+      "kw-dentistry-condition-gum-disease",
+      "kw-dentistry-condition-tooth-infection",
+      "kw-dentistry-condition-jaw-joint-disorder",
+      "kw-dentistry-treatment-dental-examination",
+      "kw-dentistry-treatment-oral-hygiene-planning",
+      "kw-dentistry-treatment-restorative-care-planning",
+      "kw-dentistry-treatment-jaw-assessment",
+      "kw-dentistry-subspecialty-orthodontics",
+      "kw-dentistry-subspecialty-endodontics",
+      "kw-dentistry-subspecialty-periodontics",
+      "kw-dentistry-subspecialty-oral-and-maxillofacial-surgery",
+      "kw-dentistry-related-dentist",
+      "kw-dentistry-related-tooth-pain",
+      "kw-dentistry-related-gums",
+      "kw-dentistry-related-cavity",
+      "kw-dentistry-related-oral-health",
+      "kw-dentistry-related-jaw-pain"
+    ],
+    "description": "Cares for teeth, gums, oral hygiene, bite function, and oral health conditions.",
+    "when_to_consult": "Consult for tooth or gum pain, swelling, sensitivity, oral injury, or preventive dental care."
+  },
+  {
+    "id": "psychiatry",
+    "name": "Psychiatry",
+    "parent_category": "Mental health",
+    "subspecialty_ids": [
+      "sub-psychiatry-addiction-psychiatry",
+      "sub-psychiatry-child-and-adolescent-psychiatry",
+      "sub-psychiatry-geriatric-psychiatry",
+      "sub-psychiatry-consultation-liaison-psychiatry"
+    ],
+    "common_symptom_ids": [
+      "sym-persistent-low-mood",
+      "sym-anxiety",
+      "sym-sleep-change",
+      "sym-loss-of-interest"
+    ],
+    "related_condition_ids": [
+      "cond-depression",
+      "cond-anxiety-disorder",
+      "cond-bipolar-disorder",
+      "cond-substance-use-disorder"
+    ],
+    "treatment_ids": [
+      "trt-mental-health-assessment",
+      "trt-medication-review",
+      "trt-therapy-coordination",
+      "trt-sleep-review"
+    ],
+    "keyword_ids": [
+      "kw-psychiatry-specialty-psychiatry",
+      "kw-psychiatry-symptom-persistent-low-mood",
+      "kw-psychiatry-symptom-anxiety",
+      "kw-psychiatry-symptom-sleep-change",
+      "kw-psychiatry-symptom-loss-of-interest",
+      "kw-psychiatry-condition-depression",
+      "kw-psychiatry-condition-anxiety-disorder",
+      "kw-psychiatry-condition-bipolar-disorder",
+      "kw-psychiatry-condition-substance-use-disorder",
+      "kw-psychiatry-treatment-mental-health-assessment",
+      "kw-psychiatry-treatment-medication-review",
+      "kw-psychiatry-treatment-therapy-coordination",
+      "kw-psychiatry-treatment-sleep-review",
+      "kw-psychiatry-subspecialty-addiction-psychiatry",
+      "kw-psychiatry-subspecialty-child-and-adolescent-psychiatry",
+      "kw-psychiatry-subspecialty-geriatric-psychiatry",
+      "kw-psychiatry-subspecialty-consultation-liaison-psychiatry",
+      "kw-psychiatry-related-mental-health-doctor",
+      "kw-psychiatry-related-psychiatrist",
+      "kw-psychiatry-related-anxiety",
+      "kw-psychiatry-related-depression",
+      "kw-psychiatry-related-mood",
+      "kw-psychiatry-related-sleep-problem"
+    ],
+    "description": "Provides medical assessment and treatment for mental health conditions and related symptoms.",
+    "when_to_consult": "Consult for persistent changes in mood, anxiety, sleep, thought patterns, substance use, or clinician-referred mental health care."
+  },
+  {
+    "id": "clinical-psychology",
+    "name": "Clinical Psychology",
+    "parent_category": "Mental health",
+    "subspecialty_ids": [
+      "sub-clinical-psychology-cognitive-behavioral-therapy",
+      "sub-clinical-psychology-trauma-focused-care",
+      "sub-clinical-psychology-health-psychology",
+      "sub-clinical-psychology-child-psychology"
+    ],
+    "common_symptom_ids": [
+      "sym-stress",
+      "sym-panic-symptoms",
+      "sym-difficulty-coping",
+      "sym-relationship-distress"
+    ],
+    "related_condition_ids": [
+      "cond-anxiety-disorder",
+      "cond-depression",
+      "cond-trauma-related-stress",
+      "cond-behavioral-concern"
+    ],
+    "treatment_ids": [
+      "trt-psychological-assessment",
+      "trt-talk-therapy",
+      "trt-coping-skills-plan",
+      "trt-behavioral-support"
+    ],
+    "keyword_ids": [
+      "kw-clinical-psychology-specialty-clinical-psychology",
+      "kw-clinical-psychology-symptom-stress",
+      "kw-clinical-psychology-symptom-panic-symptoms",
+      "kw-clinical-psychology-symptom-difficulty-coping",
+      "kw-clinical-psychology-symptom-relationship-distress",
+      "kw-clinical-psychology-condition-anxiety-disorder",
+      "kw-clinical-psychology-condition-depression",
+      "kw-clinical-psychology-condition-trauma-related-stress",
+      "kw-clinical-psychology-condition-behavioral-concern",
+      "kw-clinical-psychology-treatment-psychological-assessment",
+      "kw-clinical-psychology-treatment-talk-therapy",
+      "kw-clinical-psychology-treatment-coping-skills-plan",
+      "kw-clinical-psychology-treatment-behavioral-support",
+      "kw-clinical-psychology-subspecialty-cognitive-behavioral-therapy",
+      "kw-clinical-psychology-subspecialty-trauma-focused-care",
+      "kw-clinical-psychology-subspecialty-health-psychology",
+      "kw-clinical-psychology-subspecialty-child-psychology",
+      "kw-clinical-psychology-related-psychologist",
+      "kw-clinical-psychology-related-therapy",
+      "kw-clinical-psychology-related-stress",
+      "kw-clinical-psychology-related-counseling",
+      "kw-clinical-psychology-related-panic",
+      "kw-clinical-psychology-related-coping-skills"
+    ],
+    "description": "Uses structured psychological assessment and evidence-informed talking therapies.",
+    "when_to_consult": "Consult for stress, emotional distress, coping difficulties, behavior concerns, or therapy support."
+  },
+  {
+    "id": "sleep-medicine",
+    "name": "Sleep Medicine",
+    "parent_category": "Mental health",
+    "subspecialty_ids": [
+      "sub-sleep-medicine-sleep-apnea-care",
+      "sub-sleep-medicine-insomnia-care",
+      "sub-sleep-medicine-circadian-medicine",
+      "sub-sleep-medicine-pediatric-sleep-care"
+    ],
+    "common_symptom_ids": [
+      "sym-loud-snoring",
+      "sym-daytime-sleepiness",
+      "sym-insomnia",
+      "sym-restless-sleep"
+    ],
+    "related_condition_ids": [
+      "cond-sleep-apnea",
+      "cond-insomnia",
+      "cond-restless-legs-syndrome",
+      "cond-circadian-rhythm-disorder"
+    ],
+    "treatment_ids": [
+      "trt-sleep-assessment",
+      "trt-sleep-study-planning",
+      "trt-sleep-hygiene-coaching",
+      "trt-device-therapy-review"
+    ],
+    "keyword_ids": [
+      "kw-sleep-medicine-specialty-sleep-medicine",
+      "kw-sleep-medicine-symptom-loud-snoring",
+      "kw-sleep-medicine-symptom-daytime-sleepiness",
+      "kw-sleep-medicine-symptom-insomnia",
+      "kw-sleep-medicine-symptom-restless-sleep",
+      "kw-sleep-medicine-condition-sleep-apnea",
+      "kw-sleep-medicine-condition-insomnia",
+      "kw-sleep-medicine-condition-restless-legs-syndrome",
+      "kw-sleep-medicine-condition-circadian-rhythm-disorder",
+      "kw-sleep-medicine-treatment-sleep-assessment",
+      "kw-sleep-medicine-treatment-sleep-study-planning",
+      "kw-sleep-medicine-treatment-sleep-hygiene-coaching",
+      "kw-sleep-medicine-treatment-device-therapy-review",
+      "kw-sleep-medicine-subspecialty-sleep-apnea-care",
+      "kw-sleep-medicine-subspecialty-insomnia-care",
+      "kw-sleep-medicine-subspecialty-circadian-medicine",
+      "kw-sleep-medicine-subspecialty-pediatric-sleep-care",
+      "kw-sleep-medicine-related-sleep-doctor",
+      "kw-sleep-medicine-related-snoring",
+      "kw-sleep-medicine-related-insomnia",
+      "kw-sleep-medicine-related-sleep-apnea",
+      "kw-sleep-medicine-related-daytime-sleepiness",
+      "kw-sleep-medicine-related-sleep-study"
+    ],
+    "description": "Assesses and manages sleep disorders that affect rest, breathing, alertness, and daily functioning.",
+    "when_to_consult": "Consult for persistent insomnia, loud snoring, witnessed breathing pauses, or severe daytime sleepiness."
+  },
+  {
+    "id": "radiology",
+    "name": "Radiology",
+    "parent_category": "Diagnostics",
+    "subspecialty_ids": [
+      "sub-radiology-neuroradiology",
+      "sub-radiology-musculoskeletal-imaging",
+      "sub-radiology-breast-imaging",
+      "sub-radiology-interventional-radiology"
+    ],
+    "common_symptom_ids": [
+      "sym-imaging-referral",
+      "sym-unexplained-pain-imaging",
+      "sym-screening-imaging",
+      "sym-injury-imaging"
+    ],
+    "related_condition_ids": [
+      "cond-imaging-abnormality",
+      "cond-fracture-evaluation",
+      "cond-tumor-imaging",
+      "cond-vascular-imaging"
+    ],
+    "treatment_ids": [
+      "trt-x-ray-interpretation",
+      "trt-ultrasound",
+      "trt-ct-planning",
+      "trt-mri-planning"
+    ],
+    "keyword_ids": [
+      "kw-radiology-specialty-radiology",
+      "kw-radiology-symptom-imaging-referral",
+      "kw-radiology-symptom-unexplained-pain-imaging",
+      "kw-radiology-symptom-screening-imaging",
+      "kw-radiology-symptom-injury-imaging",
+      "kw-radiology-condition-imaging-abnormality",
+      "kw-radiology-condition-fracture-evaluation",
+      "kw-radiology-condition-tumor-imaging",
+      "kw-radiology-condition-vascular-imaging",
+      "kw-radiology-treatment-x-ray-interpretation",
+      "kw-radiology-treatment-ultrasound",
+      "kw-radiology-treatment-ct-planning",
+      "kw-radiology-treatment-mri-planning",
+      "kw-radiology-subspecialty-neuroradiology",
+      "kw-radiology-subspecialty-musculoskeletal-imaging",
+      "kw-radiology-subspecialty-breast-imaging",
+      "kw-radiology-subspecialty-interventional-radiology",
+      "kw-radiology-related-scan-doctor",
+      "kw-radiology-related-x-ray",
+      "kw-radiology-related-ultrasound",
+      "kw-radiology-related-ct-scan",
+      "kw-radiology-related-mri",
+      "kw-radiology-related-imaging"
+    ],
+    "description": "Uses medical imaging to support diagnosis, monitoring, and image-guided treatment planning.",
+    "when_to_consult": "Consult through a referring clinician when imaging is needed or an image-guided procedure is planned."
+  },
+  {
+    "id": "pathology",
+    "name": "Pathology",
+    "parent_category": "Diagnostics",
+    "subspecialty_ids": [
+      "sub-pathology-anatomic-pathology",
+      "sub-pathology-clinical-pathology",
+      "sub-pathology-molecular-pathology",
+      "sub-pathology-hematopathology"
+    ],
+    "common_symptom_ids": [
+      "sym-abnormal-lab-result",
+      "sym-biopsy-referral",
+      "sym-blood-test-concern",
+      "sym-tissue-sample-review"
+    ],
+    "related_condition_ids": [
+      "cond-abnormal-blood-count",
+      "cond-biopsy-finding",
+      "cond-infection-testing",
+      "cond-tumor-pathology"
+    ],
+    "treatment_ids": [
+      "trt-laboratory-testing",
+      "trt-tissue-analysis",
+      "trt-blood-testing",
+      "trt-diagnostic-interpretation"
+    ],
+    "keyword_ids": [
+      "kw-pathology-specialty-pathology",
+      "kw-pathology-symptom-abnormal-lab-result",
+      "kw-pathology-symptom-biopsy-referral",
+      "kw-pathology-symptom-blood-test-concern",
+      "kw-pathology-symptom-tissue-sample-review",
+      "kw-pathology-condition-abnormal-blood-count",
+      "kw-pathology-condition-biopsy-finding",
+      "kw-pathology-condition-infection-testing",
+      "kw-pathology-condition-tumor-pathology",
+      "kw-pathology-treatment-laboratory-testing",
+      "kw-pathology-treatment-tissue-analysis",
+      "kw-pathology-treatment-blood-testing",
+      "kw-pathology-treatment-diagnostic-interpretation",
+      "kw-pathology-subspecialty-anatomic-pathology",
+      "kw-pathology-subspecialty-clinical-pathology",
+      "kw-pathology-subspecialty-molecular-pathology",
+      "kw-pathology-subspecialty-hematopathology",
+      "kw-pathology-related-lab-doctor",
+      "kw-pathology-related-pathology",
+      "kw-pathology-related-biopsy",
+      "kw-pathology-related-blood-test",
+      "kw-pathology-related-tissue-test",
+      "kw-pathology-related-laboratory"
+    ],
+    "description": "Analyzes blood, tissue, and other samples to support accurate clinical diagnosis.",
+    "when_to_consult": "Usually accessed through a referring clinician when laboratory tests or biopsy analysis are needed."
+  },
+  {
+    "id": "emergency-medicine",
+    "name": "Emergency Medicine",
+    "parent_category": "Urgent care",
+    "subspecialty_ids": [
+      "sub-emergency-medicine-trauma-care",
+      "sub-emergency-medicine-resuscitation",
+      "sub-emergency-medicine-emergency-ultrasound",
+      "sub-emergency-medicine-acute-toxicology"
+    ],
+    "common_symptom_ids": [
+      "sym-severe-chest-pain",
+      "sym-sudden-weakness",
+      "sym-trouble-breathing",
+      "sym-heavy-bleeding"
+    ],
+    "related_condition_ids": [
+      "cond-acute-injury",
+      "cond-severe-infection",
+      "cond-allergic-emergency",
+      "cond-stroke-warning"
+    ],
+    "treatment_ids": [
+      "trt-emergency-assessment",
+      "trt-stabilization",
+      "trt-urgent-imaging",
+      "trt-rapid-referral"
+    ],
+    "keyword_ids": [
+      "kw-emergency-medicine-specialty-emergency-medicine",
+      "kw-emergency-medicine-symptom-severe-chest-pain",
+      "kw-emergency-medicine-symptom-sudden-weakness",
+      "kw-emergency-medicine-symptom-trouble-breathing",
+      "kw-emergency-medicine-symptom-heavy-bleeding",
+      "kw-emergency-medicine-condition-acute-injury",
+      "kw-emergency-medicine-condition-severe-infection",
+      "kw-emergency-medicine-condition-allergic-emergency",
+      "kw-emergency-medicine-condition-stroke-warning",
+      "kw-emergency-medicine-treatment-emergency-assessment",
+      "kw-emergency-medicine-treatment-stabilization",
+      "kw-emergency-medicine-treatment-urgent-imaging",
+      "kw-emergency-medicine-treatment-rapid-referral",
+      "kw-emergency-medicine-subspecialty-trauma-care",
+      "kw-emergency-medicine-subspecialty-resuscitation",
+      "kw-emergency-medicine-subspecialty-emergency-ultrasound",
+      "kw-emergency-medicine-subspecialty-acute-toxicology",
+      "kw-emergency-medicine-related-emergency-doctor",
+      "kw-emergency-medicine-related-accident",
+      "kw-emergency-medicine-related-severe-pain",
+      "kw-emergency-medicine-related-cannot-breathe",
+      "kw-emergency-medicine-related-bleeding",
+      "kw-emergency-medicine-related-urgent-care"
+    ],
+    "description": "Provides immediate assessment and stabilization for acute illness, injury, and emergency warning signs.",
+    "when_to_consult": "Seek emergency care now for severe or sudden symptoms, trouble breathing, major bleeding, loss of consciousness, or possible stroke symptoms."
+  },
+  {
+    "id": "critical-care",
+    "name": "Critical Care Medicine",
+    "parent_category": "Urgent care",
+    "subspecialty_ids": [
+      "sub-critical-care-medical-icu",
+      "sub-critical-care-surgical-icu",
+      "sub-critical-care-neurocritical-care",
+      "sub-critical-care-cardiac-critical-care"
+    ],
+    "common_symptom_ids": [
+      "sym-organ-support-need",
+      "sym-severe-infection",
+      "sym-critical-illness",
+      "sym-ventilator-care"
+    ],
+    "related_condition_ids": [
+      "cond-sepsis",
+      "cond-respiratory-failure",
+      "cond-multi-organ-failure",
+      "cond-shock"
+    ],
+    "treatment_ids": [
+      "trt-icu-assessment",
+      "trt-organ-support",
+      "trt-critical-monitoring",
+      "trt-family-care-planning"
+    ],
+    "keyword_ids": [
+      "kw-critical-care-specialty-critical-care-medicine",
+      "kw-critical-care-symptom-organ-support-need",
+      "kw-critical-care-symptom-severe-infection",
+      "kw-critical-care-symptom-critical-illness",
+      "kw-critical-care-symptom-ventilator-care",
+      "kw-critical-care-condition-sepsis",
+      "kw-critical-care-condition-respiratory-failure",
+      "kw-critical-care-condition-multi-organ-failure",
+      "kw-critical-care-condition-shock",
+      "kw-critical-care-treatment-icu-assessment",
+      "kw-critical-care-treatment-organ-support",
+      "kw-critical-care-treatment-critical-monitoring",
+      "kw-critical-care-treatment-family-care-planning",
+      "kw-critical-care-subspecialty-medical-icu",
+      "kw-critical-care-subspecialty-surgical-icu",
+      "kw-critical-care-subspecialty-neurocritical-care",
+      "kw-critical-care-subspecialty-cardiac-critical-care",
+      "kw-critical-care-related-icu-doctor",
+      "kw-critical-care-related-critical-care",
+      "kw-critical-care-related-intensive-care",
+      "kw-critical-care-related-sepsis",
+      "kw-critical-care-related-ventilator",
+      "kw-critical-care-related-critical-illness"
+    ],
+    "description": "Coordinates intensive monitoring and organ support for critically ill patients.",
+    "when_to_consult": "Accessed through emergency or hospital teams when a person needs intensive or high-dependency hospital care."
+  },
+  {
+    "id": "anesthesiology",
+    "name": "Anesthesiology",
+    "parent_category": "Perioperative care",
+    "subspecialty_ids": [
+      "sub-anesthesiology-cardiac-anesthesia",
+      "sub-anesthesiology-pediatric-anesthesia",
+      "sub-anesthesiology-obstetric-anesthesia",
+      "sub-anesthesiology-regional-anesthesia"
+    ],
+    "common_symptom_ids": [
+      "sym-surgery-preparation",
+      "sym-anesthesia-concern",
+      "sym-postoperative-pain",
+      "sym-airway-concern"
+    ],
+    "related_condition_ids": [
+      "cond-perioperative-risk",
+      "cond-anesthesia-reaction-history",
+      "cond-postoperative-nausea",
+      "cond-acute-pain"
+    ],
+    "treatment_ids": [
+      "trt-pre-anesthesia-evaluation",
+      "trt-anesthesia-planning",
+      "trt-perioperative-monitoring",
+      "trt-acute-pain-plan"
+    ],
+    "keyword_ids": [
+      "kw-anesthesiology-specialty-anesthesiology",
+      "kw-anesthesiology-symptom-surgery-preparation",
+      "kw-anesthesiology-symptom-anesthesia-concern",
+      "kw-anesthesiology-symptom-postoperative-pain",
+      "kw-anesthesiology-symptom-airway-concern",
+      "kw-anesthesiology-condition-perioperative-risk",
+      "kw-anesthesiology-condition-anesthesia-reaction-history",
+      "kw-anesthesiology-condition-postoperative-nausea",
+      "kw-anesthesiology-condition-acute-pain",
+      "kw-anesthesiology-treatment-pre-anesthesia-evaluation",
+      "kw-anesthesiology-treatment-anesthesia-planning",
+      "kw-anesthesiology-treatment-perioperative-monitoring",
+      "kw-anesthesiology-treatment-acute-pain-plan",
+      "kw-anesthesiology-subspecialty-cardiac-anesthesia",
+      "kw-anesthesiology-subspecialty-pediatric-anesthesia",
+      "kw-anesthesiology-subspecialty-obstetric-anesthesia",
+      "kw-anesthesiology-subspecialty-regional-anesthesia",
+      "kw-anesthesiology-related-anesthesia-doctor",
+      "kw-anesthesiology-related-operation-preparation",
+      "kw-anesthesiology-related-surgery-anesthesia",
+      "kw-anesthesiology-related-postoperative-pain",
+      "kw-anesthesiology-related-pre-anesthesia",
+      "kw-anesthesiology-related-anesthetist"
+    ],
+    "description": "Plans safe anesthesia, monitoring, and perioperative pain support around procedures and surgery.",
+    "when_to_consult": "Consult before a planned procedure when directed by a surgical or hospital team, especially with health or anesthesia concerns."
+  },
+  {
+    "id": "family-medicine",
+    "name": "Family Medicine",
+    "parent_category": "Primary care",
+    "subspecialty_ids": [
+      "sub-family-medicine-community-family-care",
+      "sub-family-medicine-women-s-primary-care",
+      "sub-family-medicine-child-and-family-care",
+      "sub-family-medicine-chronic-disease-care"
+    ],
+    "common_symptom_ids": [
+      "sym-common-illness",
+      "sym-preventive-care",
+      "sym-chronic-condition-follow-up",
+      "sym-family-health-concern"
+    ],
+    "related_condition_ids": [
+      "cond-hypertension",
+      "cond-diabetes",
+      "cond-common-infection",
+      "cond-preventive-health-need"
+    ],
+    "treatment_ids": [
+      "trt-family-health-assessment",
+      "trt-vaccination-counseling",
+      "trt-chronic-disease-review",
+      "trt-preventive-screening"
+    ],
+    "keyword_ids": [
+      "kw-family-medicine-specialty-family-medicine",
+      "kw-family-medicine-symptom-common-illness",
+      "kw-family-medicine-symptom-preventive-care",
+      "kw-family-medicine-symptom-chronic-condition-follow-up",
+      "kw-family-medicine-symptom-family-health-concern",
+      "kw-family-medicine-condition-hypertension",
+      "kw-family-medicine-condition-diabetes",
+      "kw-family-medicine-condition-common-infection",
+      "kw-family-medicine-condition-preventive-health-need",
+      "kw-family-medicine-treatment-family-health-assessment",
+      "kw-family-medicine-treatment-vaccination-counseling",
+      "kw-family-medicine-treatment-chronic-disease-review",
+      "kw-family-medicine-treatment-preventive-screening",
+      "kw-family-medicine-subspecialty-community-family-care",
+      "kw-family-medicine-subspecialty-women-s-primary-care",
+      "kw-family-medicine-subspecialty-child-and-family-care",
+      "kw-family-medicine-subspecialty-chronic-disease-care",
+      "kw-family-medicine-related-family-doctor",
+      "kw-family-medicine-related-primary-care",
+      "kw-family-medicine-related-health-check",
+      "kw-family-medicine-related-common-illness",
+      "kw-family-medicine-related-preventive-care",
+      "kw-family-medicine-related-family-health"
+    ],
+    "description": "Provides ongoing, whole-person primary health care for people and families across life stages.",
+    "when_to_consult": "Consult for routine care, prevention, common health problems, or coordination of longer-term health needs."
+  },
+  {
+    "id": "public-health-preventive-medicine",
+    "name": "Public Health and Preventive Medicine",
+    "parent_category": "Population health",
+    "subspecialty_ids": [
+      "sub-public-health-preventive-medicine-occupational-health",
+      "sub-public-health-preventive-medicine-travel-health",
+      "sub-public-health-preventive-medicine-epidemiology",
+      "sub-public-health-preventive-medicine-community-medicine"
+    ],
+    "common_symptom_ids": [
+      "sym-vaccination-question",
+      "sym-screening-need",
+      "sym-workplace-health-concern",
+      "sym-travel-prevention-need"
+    ],
+    "related_condition_ids": [
+      "cond-vaccine-preventable-illness",
+      "cond-occupational-health-risk",
+      "cond-screening-need",
+      "cond-community-health-concern"
+    ],
+    "treatment_ids": [
+      "trt-preventive-counseling",
+      "trt-health-screening",
+      "trt-vaccination-planning",
+      "trt-risk-assessment"
+    ],
+    "keyword_ids": [
+      "kw-public-health-preventive-medicine-specialty-public-health-and-preventive-medicine",
+      "kw-public-health-preventive-medicine-symptom-vaccination-question",
+      "kw-public-health-preventive-medicine-symptom-screening-need",
+      "kw-public-health-preventive-medicine-symptom-workplace-health-concern",
+      "kw-public-health-preventive-medicine-symptom-travel-prevention-need",
+      "kw-public-health-preventive-medicine-condition-vaccine-preventable-illness",
+      "kw-public-health-preventive-medicine-condition-occupational-health-risk",
+      "kw-public-health-preventive-medicine-condition-screening-need",
+      "kw-public-health-preventive-medicine-condition-community-health-concern",
+      "kw-public-health-preventive-medicine-treatment-preventive-counseling",
+      "kw-public-health-preventive-medicine-treatment-health-screening",
+      "kw-public-health-preventive-medicine-treatment-vaccination-planning",
+      "kw-public-health-preventive-medicine-treatment-risk-assessment",
+      "kw-public-health-preventive-medicine-subspecialty-occupational-health",
+      "kw-public-health-preventive-medicine-subspecialty-travel-health",
+      "kw-public-health-preventive-medicine-subspecialty-epidemiology",
+      "kw-public-health-preventive-medicine-subspecialty-community-medicine",
+      "kw-public-health-preventive-medicine-related-preventive-medicine",
+      "kw-public-health-preventive-medicine-related-public-health",
+      "kw-public-health-preventive-medicine-related-screening",
+      "kw-public-health-preventive-medicine-related-vaccine",
+      "kw-public-health-preventive-medicine-related-occupational-health",
+      "kw-public-health-preventive-medicine-related-health-promotion"
+    ],
+    "description": "Focuses on prevention, screening, population health, occupational health, and health promotion.",
+    "when_to_consult": "Consult for preventive screening, vaccination planning, workplace health questions, or community-health guidance."
+  },
+  {
+    "id": "nutrition-dietetics",
+    "name": "Nutrition and Dietetics",
+    "parent_category": "Allied health",
+    "subspecialty_ids": [
+      "sub-nutrition-dietetics-clinical-nutrition",
+      "sub-nutrition-dietetics-sports-nutrition",
+      "sub-nutrition-dietetics-pediatric-nutrition",
+      "sub-nutrition-dietetics-renal-nutrition"
+    ],
+    "common_symptom_ids": [
+      "sym-diet-concern",
+      "sym-unintended-weight-change",
+      "sym-poor-appetite",
+      "sym-food-intolerance-question"
+    ],
+    "related_condition_ids": [
+      "cond-nutrition-deficiency",
+      "cond-obesity",
+      "cond-diabetes-nutrition-care",
+      "cond-malnutrition-risk"
+    ],
+    "treatment_ids": [
+      "trt-nutrition-assessment",
+      "trt-meal-planning",
+      "trt-weight-management-plan",
+      "trt-therapeutic-diet-counseling"
+    ],
+    "keyword_ids": [
+      "kw-nutrition-dietetics-specialty-nutrition-and-dietetics",
+      "kw-nutrition-dietetics-symptom-diet-concern",
+      "kw-nutrition-dietetics-symptom-unintended-weight-change",
+      "kw-nutrition-dietetics-symptom-poor-appetite",
+      "kw-nutrition-dietetics-symptom-food-intolerance-question",
+      "kw-nutrition-dietetics-condition-nutrition-deficiency",
+      "kw-nutrition-dietetics-condition-obesity",
+      "kw-nutrition-dietetics-condition-diabetes-nutrition-care",
+      "kw-nutrition-dietetics-condition-malnutrition-risk",
+      "kw-nutrition-dietetics-treatment-nutrition-assessment",
+      "kw-nutrition-dietetics-treatment-meal-planning",
+      "kw-nutrition-dietetics-treatment-weight-management-plan",
+      "kw-nutrition-dietetics-treatment-therapeutic-diet-counseling",
+      "kw-nutrition-dietetics-subspecialty-clinical-nutrition",
+      "kw-nutrition-dietetics-subspecialty-sports-nutrition",
+      "kw-nutrition-dietetics-subspecialty-pediatric-nutrition",
+      "kw-nutrition-dietetics-subspecialty-renal-nutrition",
+      "kw-nutrition-dietetics-related-dietitian",
+      "kw-nutrition-dietetics-related-nutritionist",
+      "kw-nutrition-dietetics-related-meal-plan",
+      "kw-nutrition-dietetics-related-weight-management",
+      "kw-nutrition-dietetics-related-healthy-eating",
+      "kw-nutrition-dietetics-related-diet-advice"
+    ],
+    "description": "Provides nutrition assessment and practical food plans that support health conditions and goals.",
+    "when_to_consult": "Consult for nutrition support, diet planning, weight changes, or a therapeutic diet recommended by a clinician."
+  },
+  {
+    "id": "physiotherapy",
+    "name": "Physiotherapy",
+    "parent_category": "Allied health",
+    "subspecialty_ids": [
+      "sub-physiotherapy-musculoskeletal-physiotherapy",
+      "sub-physiotherapy-neuro-physiotherapy",
+      "sub-physiotherapy-cardiorespiratory-physiotherapy",
+      "sub-physiotherapy-pelvic-health-physiotherapy"
+    ],
+    "common_symptom_ids": [
+      "sym-muscle-weakness",
+      "sym-stiffness",
+      "sym-movement-pain",
+      "sym-balance-difficulty"
+    ],
+    "related_condition_ids": [
+      "cond-back-pain",
+      "cond-postoperative-recovery",
+      "cond-sports-injury",
+      "cond-stroke-recovery"
+    ],
+    "treatment_ids": [
+      "trt-movement-assessment",
+      "trt-exercise-therapy",
+      "trt-manual-therapy",
+      "trt-balance-training"
+    ],
+    "keyword_ids": [
+      "kw-physiotherapy-specialty-physiotherapy",
+      "kw-physiotherapy-symptom-muscle-weakness",
+      "kw-physiotherapy-symptom-stiffness",
+      "kw-physiotherapy-symptom-movement-pain",
+      "kw-physiotherapy-symptom-balance-difficulty",
+      "kw-physiotherapy-condition-back-pain",
+      "kw-physiotherapy-condition-postoperative-recovery",
+      "kw-physiotherapy-condition-sports-injury",
+      "kw-physiotherapy-condition-stroke-recovery",
+      "kw-physiotherapy-treatment-movement-assessment",
+      "kw-physiotherapy-treatment-exercise-therapy",
+      "kw-physiotherapy-treatment-manual-therapy",
+      "kw-physiotherapy-treatment-balance-training",
+      "kw-physiotherapy-subspecialty-musculoskeletal-physiotherapy",
+      "kw-physiotherapy-subspecialty-neuro-physiotherapy",
+      "kw-physiotherapy-subspecialty-cardiorespiratory-physiotherapy",
+      "kw-physiotherapy-subspecialty-pelvic-health-physiotherapy",
+      "kw-physiotherapy-related-physiotherapist",
+      "kw-physiotherapy-related-physical-therapy",
+      "kw-physiotherapy-related-exercise-rehab",
+      "kw-physiotherapy-related-mobility",
+      "kw-physiotherapy-related-back-exercise",
+      "kw-physiotherapy-related-pain-movement"
+    ],
+    "description": "Uses movement, exercise, and rehabilitation techniques to support recovery, function, and mobility.",
+    "when_to_consult": "Consult for pain with movement, recovery after injury or surgery, weakness, balance concerns, or rehabilitation planning."
+  },
+  {
+    "id": "occupational-therapy",
+    "name": "Occupational Therapy",
+    "parent_category": "Allied health",
+    "subspecialty_ids": [
+      "sub-occupational-therapy-hand-therapy",
+      "sub-occupational-therapy-pediatric-occupational-therapy",
+      "sub-occupational-therapy-neurological-occupational-therapy",
+      "sub-occupational-therapy-work-rehabilitation"
+    ],
+    "common_symptom_ids": [
+      "sym-difficulty-with-daily-activities",
+      "sym-hand-function-problem",
+      "sym-sensory-difficulty",
+      "sym-work-related-limitation"
+    ],
+    "related_condition_ids": [
+      "cond-functional-limitation",
+      "cond-developmental-disability-support",
+      "cond-stroke-recovery",
+      "cond-hand-injury-recovery"
+    ],
+    "treatment_ids": [
+      "trt-daily-living-assessment",
+      "trt-adaptive-equipment-planning",
+      "trt-hand-function-training",
+      "trt-workplace-adaptation"
+    ],
+    "keyword_ids": [
+      "kw-occupational-therapy-specialty-occupational-therapy",
+      "kw-occupational-therapy-symptom-difficulty-with-daily-activities",
+      "kw-occupational-therapy-symptom-hand-function-problem",
+      "kw-occupational-therapy-symptom-sensory-difficulty",
+      "kw-occupational-therapy-symptom-work-related-limitation",
+      "kw-occupational-therapy-condition-functional-limitation",
+      "kw-occupational-therapy-condition-developmental-disability-support",
+      "kw-occupational-therapy-condition-stroke-recovery",
+      "kw-occupational-therapy-condition-hand-injury-recovery",
+      "kw-occupational-therapy-treatment-daily-living-assessment",
+      "kw-occupational-therapy-treatment-adaptive-equipment-planning",
+      "kw-occupational-therapy-treatment-hand-function-training",
+      "kw-occupational-therapy-treatment-workplace-adaptation",
+      "kw-occupational-therapy-subspecialty-hand-therapy",
+      "kw-occupational-therapy-subspecialty-pediatric-occupational-therapy",
+      "kw-occupational-therapy-subspecialty-neurological-occupational-therapy",
+      "kw-occupational-therapy-subspecialty-work-rehabilitation",
+      "kw-occupational-therapy-related-occupational-therapist",
+      "kw-occupational-therapy-related-daily-activities",
+      "kw-occupational-therapy-related-hand-function",
+      "kw-occupational-therapy-related-adaptive-equipment",
+      "kw-occupational-therapy-related-work-rehab",
+      "kw-occupational-therapy-related-independence"
+    ],
+    "description": "Helps people build or regain independence in daily activities, work, school, and home routines.",
+    "when_to_consult": "Consult for lasting difficulty with self-care, hand use, work tasks, sensory needs, or functional independence."
+  },
+  {
+    "id": "speech-language-therapy",
+    "name": "Speech and Language Therapy",
+    "parent_category": "Allied health",
+    "subspecialty_ids": [
+      "sub-speech-language-therapy-pediatric-speech-therapy",
+      "sub-speech-language-therapy-voice-therapy",
+      "sub-speech-language-therapy-swallowing-therapy",
+      "sub-speech-language-therapy-neurogenic-communication-care"
+    ],
+    "common_symptom_ids": [
+      "sym-speech-delay",
+      "sym-voice-change",
+      "sym-swallowing-difficulty",
+      "sym-communication-difficulty"
+    ],
+    "related_condition_ids": [
+      "cond-language-delay",
+      "cond-stuttering",
+      "cond-voice-disorder",
+      "cond-dysphagia"
+    ],
+    "treatment_ids": [
+      "trt-communication-assessment",
+      "trt-speech-therapy",
+      "trt-voice-therapy",
+      "trt-swallowing-assessment"
+    ],
+    "keyword_ids": [
+      "kw-speech-language-therapy-specialty-speech-and-language-therapy",
+      "kw-speech-language-therapy-symptom-speech-delay",
+      "kw-speech-language-therapy-symptom-voice-change",
+      "kw-speech-language-therapy-symptom-swallowing-difficulty",
+      "kw-speech-language-therapy-symptom-communication-difficulty",
+      "kw-speech-language-therapy-condition-language-delay",
+      "kw-speech-language-therapy-condition-stuttering",
+      "kw-speech-language-therapy-condition-voice-disorder",
+      "kw-speech-language-therapy-condition-dysphagia",
+      "kw-speech-language-therapy-treatment-communication-assessment",
+      "kw-speech-language-therapy-treatment-speech-therapy",
+      "kw-speech-language-therapy-treatment-voice-therapy",
+      "kw-speech-language-therapy-treatment-swallowing-assessment",
+      "kw-speech-language-therapy-subspecialty-pediatric-speech-therapy",
+      "kw-speech-language-therapy-subspecialty-voice-therapy",
+      "kw-speech-language-therapy-subspecialty-swallowing-therapy",
+      "kw-speech-language-therapy-subspecialty-neurogenic-communication-care",
+      "kw-speech-language-therapy-related-speech-therapist",
+      "kw-speech-language-therapy-related-speech-delay",
+      "kw-speech-language-therapy-related-stuttering",
+      "kw-speech-language-therapy-related-voice-therapy",
+      "kw-speech-language-therapy-related-swallowing",
+      "kw-speech-language-therapy-related-language-development"
+    ],
+    "description": "Assesses and treats communication, speech, language, voice, and swallowing difficulties.",
+    "when_to_consult": "Consult for speech or language delay, voice changes, stuttering, communication difficulties, or swallowing concerns."
+  },
+  {
+    "id": "audiology",
+    "name": "Audiology",
+    "parent_category": "Allied health",
+    "subspecialty_ids": [
+      "sub-audiology-pediatric-audiology",
+      "sub-audiology-vestibular-audiology",
+      "sub-audiology-hearing-device-care",
+      "sub-audiology-occupational-audiology"
+    ],
+    "common_symptom_ids": [
+      "sym-hearing-difficulty",
+      "sym-ringing-in-ears",
+      "sym-balance-concern",
+      "sym-hearing-aid-question"
+    ],
+    "related_condition_ids": [
+      "cond-hearing-loss",
+      "cond-tinnitus",
+      "cond-vestibular-disorder",
+      "cond-noise-related-hearing-loss"
+    ],
+    "treatment_ids": [
+      "trt-hearing-test",
+      "trt-hearing-aid-assessment",
+      "trt-balance-testing",
+      "trt-hearing-protection-counseling"
+    ],
+    "keyword_ids": [
+      "kw-audiology-specialty-audiology",
+      "kw-audiology-symptom-hearing-difficulty",
+      "kw-audiology-symptom-ringing-in-ears",
+      "kw-audiology-symptom-balance-concern",
+      "kw-audiology-symptom-hearing-aid-question",
+      "kw-audiology-condition-hearing-loss",
+      "kw-audiology-condition-tinnitus",
+      "kw-audiology-condition-vestibular-disorder",
+      "kw-audiology-condition-noise-related-hearing-loss",
+      "kw-audiology-treatment-hearing-test",
+      "kw-audiology-treatment-hearing-aid-assessment",
+      "kw-audiology-treatment-balance-testing",
+      "kw-audiology-treatment-hearing-protection-counseling",
+      "kw-audiology-subspecialty-pediatric-audiology",
+      "kw-audiology-subspecialty-vestibular-audiology",
+      "kw-audiology-subspecialty-hearing-device-care",
+      "kw-audiology-subspecialty-occupational-audiology",
+      "kw-audiology-related-audiologist",
+      "kw-audiology-related-hearing-test",
+      "kw-audiology-related-hearing-aid",
+      "kw-audiology-related-tinnitus",
+      "kw-audiology-related-ear-ringing",
+      "kw-audiology-related-balance-test"
+    ],
+    "description": "Assesses hearing, balance-related inner-ear concerns, and hearing-device needs.",
+    "when_to_consult": "Consult for hearing changes, tinnitus, balance symptoms, hearing-aid support, or a child\u2019s hearing assessment."
+  },
+  {
+    "id": "palliative-medicine",
+    "name": "Palliative Medicine",
+    "parent_category": "Supportive care",
+    "subspecialty_ids": [
+      "sub-palliative-medicine-cancer-supportive-care",
+      "sub-palliative-medicine-home-based-palliative-care",
+      "sub-palliative-medicine-pediatric-palliative-care",
+      "sub-palliative-medicine-pain-and-symptom-support"
+    ],
+    "common_symptom_ids": [
+      "sym-serious-illness-symptoms",
+      "sym-complex-pain",
+      "sym-breathlessness-in-serious-illness",
+      "sym-caregiver-strain"
+    ],
+    "related_condition_ids": [
+      "cond-advanced-illness-support",
+      "cond-cancer-symptom-support",
+      "cond-complex-symptom-burden",
+      "cond-goals-of-care-planning"
+    ],
+    "treatment_ids": [
+      "trt-symptom-support",
+      "trt-care-planning",
+      "trt-family-support",
+      "trt-quality-of-life-assessment"
+    ],
+    "keyword_ids": [
+      "kw-palliative-medicine-specialty-palliative-medicine",
+      "kw-palliative-medicine-symptom-serious-illness-symptoms",
+      "kw-palliative-medicine-symptom-complex-pain",
+      "kw-palliative-medicine-symptom-breathlessness-in-serious-illness",
+      "kw-palliative-medicine-symptom-caregiver-strain",
+      "kw-palliative-medicine-condition-advanced-illness-support",
+      "kw-palliative-medicine-condition-cancer-symptom-support",
+      "kw-palliative-medicine-condition-complex-symptom-burden",
+      "kw-palliative-medicine-condition-goals-of-care-planning",
+      "kw-palliative-medicine-treatment-symptom-support",
+      "kw-palliative-medicine-treatment-care-planning",
+      "kw-palliative-medicine-treatment-family-support",
+      "kw-palliative-medicine-treatment-quality-of-life-assessment",
+      "kw-palliative-medicine-subspecialty-cancer-supportive-care",
+      "kw-palliative-medicine-subspecialty-home-based-palliative-care",
+      "kw-palliative-medicine-subspecialty-pediatric-palliative-care",
+      "kw-palliative-medicine-subspecialty-pain-and-symptom-support",
+      "kw-palliative-medicine-related-palliative-care",
+      "kw-palliative-medicine-related-serious-illness-support",
+      "kw-palliative-medicine-related-comfort-care",
+      "kw-palliative-medicine-related-caregiver-support",
+      "kw-palliative-medicine-related-quality-of-life",
+      "kw-palliative-medicine-related-symptom-support"
+    ],
+    "description": "Supports comfort, symptom control, communication, and quality of life alongside treatment for serious illness.",
+    "when_to_consult": "Consult when a serious illness causes burdensome symptoms, complex decisions, or family and caregiver support needs."
+  }
+]

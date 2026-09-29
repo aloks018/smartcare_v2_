@@ -25,16 +25,13 @@ Open PowerShell in this folder:
 
 ```powershell
 cd C:\Users\alok\OneDrive\Desktop\SMARTcareAI
-python -m venv .venv
-.\.venv\Scripts\Activate.ps1
-pip install -r requirements.txt
-python -m uvicorn backend.app.main:app --reload --host 127.0.0.1 --port 8000
+ .\run_all.ps1
 ```
 
 Then open Chrome:
 
 ```powershell
-start chrome http://127.0.0.1:8000
+start chrome http://127.0.0.1:8000/
 ```
 
 Chrome microphone access works on `localhost` / `127.0.0.1`. Click **Allow** when Chrome asks for microphone permission.
@@ -102,3 +99,33 @@ python scripts\import_data_gov_hospitals.py --csv path\to\national_hospital_dire
 - Fine-tune/evaluate XLS-R, IndicConformer, IndicBERT, XLM-R, or IndicTrans before using them for medical production decisions.
 - Add authentication before storing appointments or patient history.
 - Keep patient health data private and avoid exposing sensitive medical information in public logs or URLs.
+
+## One-command Windows run
+
+```powershell
+cd "C:\Users\alok\OneDrive\Desktop\SMARTcareAI"
+.\run_all.ps1
+```
+
+SmartCare AI: `http://127.0.0.1:8000/`  |  API docs: `http://127.0.0.1:8000/docs`
+
+Train/retrain the ML baseline: `python backend\scripts\train_model.py`
+
+The included training dataset is a small project baseline, not a clinical-grade dataset. Metrics must be generated with the evaluation module before being reported.
+
+## Medical navigation catalog
+
+The website now searches a modular local medical catalog through FastAPI:
+
+- `GET /api/medical/search?query=persistent%20cough`
+- `GET /api/medical/specialties`
+- `GET /api/medical/specialties/{specialty_id}`
+- `GET /api/medical/catalog/stats`
+
+Catalog data lives in `backend/data/*.json` and is generated from
+`scripts/build_medical_catalog.py`. Edit the seed taxonomy, then run the script
+to regenerate consistent IDs and relationships:
+
+```powershell
+python scripts\build_medical_catalog.py
+```

@@ -93,10 +93,13 @@ def normalize_text(text: str) -> str:
 
         # Fever
         "bukhar": "fever",
+        "बुखार": "fever",
 
         # Cough
         "khansi": "cough",
         "khaansi": "cough",
+        "खांसी": "cough",
+        "खाँसी": "cough",
 
         # Breathing
         "saans ki takleef":
@@ -104,6 +107,12 @@ def normalize_text(text: str) -> str:
 
         "saans lene mein dikkat":
             "breathing difficulty",
+        "सांस लेने में दिक्कत":
+            "breathing difficulty",
+        "सांस लेने में कठिनाई":
+            "breathing difficulty",
+        "सांस फूलना":
+            "shortness of breath",
 
         "saans lene me dikkat":
             "breathing difficulty",
@@ -114,6 +123,10 @@ def normalize_text(text: str) -> str:
         # Pain
         "sir dard":
             "headache",
+        "सिर दर्द":
+            "headache",
+        "सिर में दर्द":
+            "headache",
 
         "seene mein dard":
             "chest pain",
@@ -123,18 +136,32 @@ def normalize_text(text: str) -> str:
 
         "seene ka dard":
             "chest pain",
+        "सीने में दर्द":
+            "chest pain",
+        "सीने का दर्द":
+            "chest pain",
 
         "pet dard":
+            "abdominal pain",
+        "पेट दर्द":
+            "abdominal pain",
+        "पेट में दर्द":
             "abdominal pain",
 
         # Other
         "ulti":
             "vomiting",
+        "उल्टी":
+            "vomiting",
 
         "chakkar":
             "dizziness",
+        "चक्कर":
+            "dizziness",
 
         "jodon ka dard":
+            "joint pain",
+        "जोड़ों का दर्द":
             "joint pain",
 
         # Healthcare search

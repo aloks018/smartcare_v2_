@@ -177,6 +177,12 @@ def classify_intent(
 
     lower = text.lower()
 
+    child_terms = ["child", "baby", "bacche", "bache", "बच्चे", "बच्चा", "बच्चे को"]
+    if any(term in lower for term in child_terms) and "fever" in lower:
+        return "child_fever"
+    if any(term in lower for term in child_terms) and "cough" in lower:
+        return "child_cough"
+
     emergency_terms = [
 
         "emergency",
