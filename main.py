@@ -36,6 +36,7 @@ from backend.app.schemas import (
     MedicalSearchResponse,
     Provider,
     SearchResponse,
+    TriageAssessment,
     VoiceAnalysisRequest,
     VoiceAnalysisResponse,
 )
@@ -553,21 +554,24 @@ def analyze_voice(
         "emergency_navigation": "Hospital",
     }
     suggested_facility_type = facility_type_by_intent.get(intent)
+    if suggested_facility_type and not symptoms:
+        medical_matches = []
 
 
     # --------------------------------------------------------
     # 7. Explain recommendation
     # --------------------------------------------------------
 
-    reasons = (
-        recommendation_reasons(
-            symptoms,
-            suggested_specialty,
+    if suggested_facility_type and not symptoms:
+        reasons = [
+            f"You asked to find a {suggested_facility_type.lower()}.",
+            "Facility listings are mapped data and are not clinically verified by SmartCare.",
+        ]
+    else:
+        reasons = recommendation_reasons(symptoms, suggested_specialty)
+        reasons.append(
+            "Care-area routing uses SmartCare's structured navigation catalog; it is not a clinical diagnosis."
         )
-    )
-    reasons.append(
-        "Care-area routing uses SmartCare's structured navigation catalog; it is not a clinical diagnosis."
-    )
 
 
     # --------------------------------------------------------
@@ -580,6 +584,12 @@ def analyze_voice(
             symptoms
         )
     )
+    if suggested_facility_type and not symptoms:
+        assessment = TriageAssessment(
+            urgency="routine",
+            message="Facility search requested. No symptom triage was performed.",
+            reasons=["A facility type was requested without a symptom report."],
+        )
     if assessment.urgency == "emergency":
         suggested_specialty = "Emergency Medicine"
         suggested_facility_type = "Hospital"
@@ -595,19 +605,7 @@ def analyze_voice(
 
 
     # --------------------------------------------------------
-    # 9. Next action
-    # --------------------------------------------------------
-
-    recommended_action = (
-        next_action(
-            assessment,
-            suggested_specialty,
-        )
-    )
-
-
-    # --------------------------------------------------------
-    # 10. Emergency specialty override
+    # 9. Emergency specialty override
     # --------------------------------------------------------
 
     search_specialty = (
@@ -622,7 +620,7 @@ def analyze_voice(
 
 
     # --------------------------------------------------------
-    # 11. Provider search
+    # 10. Provider search
     # --------------------------------------------------------
 
     providers = search_providers(
@@ -646,9 +644,19 @@ def analyze_voice(
             limit=6,
         )
 
+    if suggested_facility_type and not symptoms and assessment.urgency != "emergency":
+        if not request.location:
+            recommended_action = "Share your city or district to find nearby mapped facilities."
+        elif providers:
+            recommended_action = "Confirm services, contact details, and availability with the facility before visiting."
+        else:
+            recommended_action = f"No mapped {suggested_facility_type.lower()} listings were found for this area. Try a nearby city or district."
+    else:
+        recommended_action = next_action(assessment, suggested_specialty)
+
 
     # --------------------------------------------------------
-    # 12. Area of care
+    # 11. Area of care
     # --------------------------------------------------------
 
     if symptoms:
@@ -682,7 +690,7 @@ def analyze_voice(
 
 
     # --------------------------------------------------------
-    # 13. Voice response
+    # 12. Voice response
     # --------------------------------------------------------
 
     symptom_summary = ", ".join(
@@ -751,7 +759,7 @@ def analyze_voice(
 
 
     # --------------------------------------------------------
-    # 14. Final response
+    # 13. Final response
     # --------------------------------------------------------
 
     return VoiceAnalysisResponse(
