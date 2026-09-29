@@ -1,6 +1,21 @@
 from __future__ import annotations
 
+import re
+
 from backend.app.schemas import Symptom
+
+
+NEGATION_BEFORE = re.compile(
+    r"\b(?:no|not|don't|dont|doesn't|doesnt|without|denies|denied|nahi|nahin)\b(?:\W+\w+){0,3}\W*$",
+    re.IGNORECASE,
+)
+NEGATION_AFTER = re.compile(r"^\W*(?:nahi|nahin)\b", re.IGNORECASE)
+
+
+def is_negated_mention(text: str, start: int, end: int) -> bool:
+    prefix = text[max(0, start - 48):start]
+    suffix = text[end:end + 24]
+    return bool(NEGATION_BEFORE.search(prefix) or NEGATION_AFTER.match(suffix))
 
 
 # ============================================================
@@ -145,7 +160,9 @@ def extract_symptoms(
 
         for alias in aliases:
 
-            if alias in lower:
+            match = re.search(rf"(?<!\w){re.escape(alias)}(?!\w)", lower)
+
+            if match and not is_negated_mention(lower, match.start(), match.end()):
 
                 confidence = (
                     0.95

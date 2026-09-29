@@ -43,6 +43,8 @@ const elements = {
 
 let recognition = null;
 let isListening = false;
+let isStarting = false;
+let isAnalyzing = false;
 let latestAnalysis = null;
 let latestSpokenResponse = "";
 let providerCount = 0;
@@ -183,6 +185,7 @@ function renderAnalysis(data) {
 }
 
 async function analyzeTranscript() {
+  if (isAnalyzing) return;
   const transcript = elements.transcript?.value.trim();
   if (!transcript) {
     setStatus("Add a patient message before analysis.", "error");
@@ -190,6 +193,7 @@ async function analyzeTranscript() {
     elements.transcript?.focus();
     return;
   }
+  isAnalyzing = true;
   setProcessing(true);
   setStatus("Understanding your message", "listening");
   setText(elements.analysisStatus, "Detecting language, symptoms, care area, and suitable providers.");
@@ -209,6 +213,7 @@ async function analyzeTranscript() {
     setStatus("AI analysis is unavailable right now.", "error");
     setText(elements.analysisStatus, error.message || "Please check the SmartCare service and try again.");
   } finally {
+    isAnalyzing = false;
     setProcessing(false);
   }
 }
@@ -219,17 +224,20 @@ function startListening() {
     setText(elements.analysisStatus, "Use the latest Chrome version, allow microphone access, or type your message instead.");
     return;
   }
-  if (isListening) return;
+  if (isListening || isStarting) return;
+  isStarting = true;
   capturedTranscript = "";
   recognitionError = false;
   analysisStartedFromVoice = false;
   if (elements.transcript) elements.transcript.value = "";
+  setStatus("Starting voice recognition", "listening");
+  setText(elements.analysisStatus, "Connecting to your microphone...");
   recognition = new SpeechRecognition();
   recognition.lang = elements.patientLanguage?.value || "en-IN";
   recognition.interimResults = true;
   recognition.continuous = false;
   recognition.maxAlternatives = 1;
-  recognition.onstart = () => { isListening = true; document.body.classList.add("is-listening"); setText(elements.speakButtonText, "Listening now"); setStatus("Listening to your message", "listening"); setText(elements.analysisStatus, "Speak clearly, then pause when you are finished."); };
+  recognition.onstart = () => { isStarting = false; isListening = true; document.body.classList.add("is-listening"); setText(elements.speakButtonText, "Listening now"); setStatus("Listening to your message", "listening"); setText(elements.analysisStatus, "Speak clearly, then pause when you are finished."); };
   recognition.onresult = (event) => {
     let interimTranscript = "";
     for (let index = event.resultIndex; index < event.results.length; index += 1) {
@@ -241,6 +249,7 @@ function startListening() {
     if (capturedTranscript || interimTranscript) setText(elements.analysisStatus, "I heard you. Keep speaking or pause to create your care brief.");
   };
   recognition.onerror = (event) => {
+    isStarting = false;
     recognitionError = true;
     console.error("Speech recognition error:", event.error);
     const messages = { "not-allowed": "Microphone permission was denied. Allow it in Chrome site settings and try again.", "service-not-allowed": "Chrome blocked the speech service. Check your browser permissions and internet connection.", "no-speech": "No speech was detected. Tap the microphone and speak after the listening tone.", network: "Voice service network error. Check your internet connection and try again.", aborted: "Voice capture stopped. Tap the microphone to try again." };
@@ -248,6 +257,7 @@ function startListening() {
     setText(elements.analysisStatus, messages[event.error] || "Voice input did not complete. Please try again.");
   };
   recognition.onend = () => {
+    isStarting = false;
     isListening = false;
     document.body.classList.remove("is-listening");
     setText(elements.speakButtonText, "Tap to speak");
@@ -262,7 +272,7 @@ function startListening() {
       setText(elements.analysisStatus, "No speech was captured. Speak after the listening state appears.");
     }
   };
-  try { recognition.start(); } catch (error) { recognitionError = true; setStatus("Microphone could not start. Check Chrome permissions and try again.", "error"); console.error("Could not start voice recognition:", error); }
+  try { recognition.start(); } catch (error) { isStarting = false; recognitionError = true; setStatus("Microphone could not start. Check Chrome permissions and try again.", "error"); setText(elements.analysisStatus, "Microphone could not start. Check Chrome permissions and try again."); console.error("Could not start voice recognition:", error); }
 }
 
 function stopListening() {

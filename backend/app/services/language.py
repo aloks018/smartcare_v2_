@@ -123,6 +123,10 @@ def normalize_text(text: str) -> str:
         # Pain
         "sir dard":
             "headache",
+        "sir mein dard":
+            "headache",
+        "sir me dard":
+            "headache",
         "सिर दर्द":
             "headache",
         "सिर में दर्द":
@@ -142,6 +146,14 @@ def normalize_text(text: str) -> str:
             "chest pain",
 
         "pet dard":
+            "abdominal pain",
+        "pet mein dard":
+            "abdominal pain",
+        "pet me dard":
+            "abdominal pain",
+        "pait mein dard":
+            "abdominal pain",
+        "pait me dard":
             "abdominal pain",
         "पेट दर्द":
             "abdominal pain",

@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: smartcare-v2-as
+    runtime: python
+    branch: main
+    autoDeployTrigger: commit
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn main:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /api/health
+    envVars:
+      - key: SMARTCARE_SECRET_KEY
+        generateValue: true

@@ -4,6 +4,9 @@ from backend.app.schemas import (
     Symptom,
     TriageAssessment,
 )
+from backend.app.services.nlp import is_negated_mention
+
+import re
 
 
 # ============================================================
@@ -44,6 +47,10 @@ URGENT_PATTERNS = (
 
     "repeated vomiting",
 
+    "chest pain",
+
+    "chest pressure",
+
 )
 
 
@@ -58,11 +65,17 @@ def assess_urgency(
 
     lower = text.lower()
 
+    def contains_active_pattern(pattern: str) -> bool:
+        for match in re.finditer(re.escape(pattern), lower):
+            if not is_negated_mention(lower, match.start(), match.end()):
+                return True
+        return False
+
 
     # Emergency
-    combined_breathing_chest = "chest pain" in lower and "breathing difficulty" in lower
+    combined_breathing_chest = contains_active_pattern("chest pain") and contains_active_pattern("breathing difficulty")
     if combined_breathing_chest or any(
-        pattern in lower
+        contains_active_pattern(pattern)
         for pattern in EMERGENCY_PATTERNS
     ):
 
@@ -84,7 +97,7 @@ def assess_urgency(
 
     # Urgent
     if any(
-        pattern in lower
+        contains_active_pattern(pattern)
         for pattern in URGENT_PATTERNS
     ):
 

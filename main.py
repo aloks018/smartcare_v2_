@@ -662,6 +662,11 @@ def analyze_voice(
     # 13. Voice response
     # --------------------------------------------------------
 
+    symptom_summary = ", ".join(
+        symptom.name
+        for symptom in symptoms
+    )
+
     if detected_language in {"Hindi", "Hinglish"}:
         if assessment.urgency == "emergency":
             safety_message = "Aapke message mein emergency warning mili hai. Abhi turant emergency medical care lein aur zarurat ho to local emergency services ko call karein."
@@ -669,14 +674,24 @@ def analyze_voice(
             safety_message = "Aapko jaldi medical evaluation karani chahiye."
         else:
             safety_message = "Agar symptoms bane rahein ya badhein, doctor se consultation lein."
+        understanding = (
+            f"Aapne {symptom_summary} ke baare mein bataya."
+            if symptom_summary
+            else f"Maine aapki baat ko {intent.replace('_', ' ')} ke roop mein samjha."
+        )
         spoken_response = (
-            f"Maine aapki baat ko {intent.replace('_', ' ')} ke roop mein samjha. "
+            f"{understanding} "
             f"Possible care area {suggested_specialty} hai. {safety_message} "
             "Yeh medical diagnosis nahi hai."
         )
     else:
+        understanding = (
+            f"You mentioned {symptom_summary}."
+            if symptom_summary
+            else f"I understood your request as {intent.replace('_', ' ')}."
+        )
         spoken_response = (
-            f"I understood your request as {intent.replace('_', ' ')}. "
+            f"{understanding} "
             f"The possible care area is {suggested_specialty}. "
             f"{assessment.message} {recommended_action} "
             "This is not a medical diagnosis."
