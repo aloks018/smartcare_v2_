@@ -3,8 +3,8 @@ from __future__ import annotations
 from copy import deepcopy
 from math import asin, cos, radians, sin, sqrt
 
-from backend.app.data.providers import PROVIDERS
 from backend.app.schemas import Provider
+from backend.app.services.provider_directory import facilities_near
 
 
 LOCATION_POINTS: dict[str, tuple[float, float]] = {
@@ -129,129 +129,49 @@ def search_providers(
 ) -> list[Provider]:
 
     query = (query or "").strip()
+    try:
+        candidates = facilities_near(location or "")
+    except Exception:
+        return []
 
-    candidates = []
+    requested_type = _requested_facility_type(query)
+    if requested_type:
+        candidates = [provider for provider in candidates if provider.provider_type == requested_type]
 
-    user_point = _location_point(location)
+    requested_specialty = (specialty or "").strip().lower()
+    for provider in candidates:
+        provider.match_score = None
+        reasons = ["Listed by OpenStreetMap contributors"]
+        if provider.distance_km is not None:
+            reasons.append(f"Approximately {provider.distance_km:.1f} km from the searched location")
+        if requested_specialty and provider.specialty and requested_specialty in provider.specialty.lower():
+            reasons.append(f"OpenStreetMap tags this listing for {specialty}")
+        provider.match_reasons = reasons
 
-    # ========================================================
-    # IMPORTANT:
-    # When AI already detected a specialty, don't require
-    # the provider's name to match the entire patient sentence.
-    #
-    # Example:
-    # "Mujhe fever aur khansi hai"
-    #
-    # should NOT be required to match:
-    # "GSVM Medical College"
-    # ========================================================
+    candidates = [
+        provider for provider in candidates
+        if not ownership or provider.ownership.lower() == ownership.lower()
+    ]
 
-    for original in PROVIDERS:
+    if requested_specialty:
+        tagged = [
+            provider for provider in candidates
+            if provider.specialty and requested_specialty in provider.specialty.lower()
+        ]
+        if tagged:
+            candidates = tagged
 
-        provider = deepcopy(original)
+    if max_distance_km is not None:
+        candidates = [
+            provider for provider in candidates
+            if provider.distance_km is not None and provider.distance_km <= max_distance_km
+        ]
 
-        # ----------------------------------------------------
-        # Ownership filter
-        # ----------------------------------------------------
-
-        if ownership:
-
-            if (
-                provider.ownership.lower()
-                != ownership.lower()
-            ):
-                continue
-
-        # ----------------------------------------------------
-        # Location
-        # ----------------------------------------------------
-
-        if user_point:
-
-            provider.distance_km = _distance_km(
-                user_point[0],
-                user_point[1],
-                provider.latitude,
-                provider.longitude,
-            )
-
-        # ----------------------------------------------------
-        # Distance filter
-        # ----------------------------------------------------
-
-        if (
-            max_distance_km is not None
-            and provider.distance_km is not None
-        ):
-
-            if provider.distance_km > max_distance_km:
-                continue
-
-        # ----------------------------------------------------
-        # Specialty filter
-        # ----------------------------------------------------
-
-        if specialty:
-
-            requested = specialty.lower().strip()
-
-            provider_specialty = (
-                provider.specialty or ""
-            ).lower()
-
-            # Multi-specialty hospital can satisfy
-            # any specialist request.
-            if (
-                requested not in provider_specialty
-                and
-                provider_specialty not in requested
-                and
-                "multi-specialty" not in provider_specialty
-                and
-                not (
-                    requested == "emergency medicine"
-                    and provider.emergency_available
-                )
-            ):
-                continue
-
-        # ----------------------------------------------------
-        # Budget
-        # ----------------------------------------------------
-
-        if (
-            budget_max_inr is not None
-            and provider.consultation_fee_inr is not None
-        ):
-
-            if provider.consultation_fee_inr > budget_max_inr:
-                continue
-
-        # ----------------------------------------------------
-        # Calculate AI score
-        # ----------------------------------------------------
-
-        (
-            provider.match_score,
-            provider.match_reasons
-        ) = _score_provider(
-
-            provider,
-
-            query,
-
-            location,
-
-            specialty,
-
-            ownership,
-
-            budget_max_inr,
-
-            max_distance_km,
-        )
-
-        candidates.append(provider)
+    if budget_max_inr is not None:
+        candidates = [
+            provider for provider in candidates
+            if provider.consultation_fee_inr is None or provider.consultation_fee_inr <= budget_max_inr
+        ]
 
     # ========================================================
     # SORT
@@ -279,12 +199,6 @@ def search_providers(
 
         candidates.sort(
             key=lambda provider: (
-                provider.match_score
-                if provider.match_score is not None
-                else 0,
-
-                provider.verified,
-
                 -(
                     provider.distance_km
                     if provider.distance_km is not None
@@ -295,3 +209,21 @@ def search_providers(
         )
 
     return candidates[:limit]
+
+
+def _requested_facility_type(query: str) -> str | None:
+    normalized = query.lower()
+    facility_terms = (
+        ("Ambulance service", ("ambulance", "paramedic")),
+        ("Diagnostic laboratory", ("diagnostic lab", "laboratory", "blood test", "pathology lab", "test centre", "test center")),
+        ("Pharmacy", ("pharmacy", "chemist", "medical store", "medicine shop", "dawai ki dukan")),
+        ("Dental clinic", ("dentist", "dental clinic")),
+        ("Hospital", ("hospital", "aspatal")),
+            ("Hospital", ("hospital", "aspatal", "emergency room", "emergency department", "urgent care")),
+        ("Clinic", ("clinic", "dispensary")),
+        ("Doctor's office", ("doctor near", "doctor in", "doctor chahiye", "find a doctor")),
+    )
+    for facility_type, terms in facility_terms:
+        if any(term in normalized for term in terms):
+            return facility_type
+    return None

@@ -166,6 +166,8 @@ class VoiceAnalysisResponse(BaseModel):
 
     suggested_specialty: str
 
+    suggested_facility_type: Optional[str] = None
+
     possible_area_of_care: str
 
     why_this_recommendation: list[str]

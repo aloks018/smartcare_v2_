@@ -3,6 +3,7 @@ from __future__ import annotations
 import re
 
 from backend.app.schemas import Symptom
+from backend.app.services.medical_catalog import load_catalog, search_medical_catalog
 
 
 NEGATION_BEFORE = re.compile(
@@ -38,7 +39,7 @@ SYMPTOM_ALIASES = {
         "head pain",
     ),
 
-    "chest pain": (
+    "chest discomfort": (
         "chest pain",
         "chest discomfort",
     ),
@@ -48,6 +49,10 @@ SYMPTOM_ALIASES = {
         "difficulty breathing",
         "shortness of breath",
         "breathlessness",
+        "cannot breathe",
+        "can't breathe",
+        "trouble breathing",
+        "unable to breathe",
     ),
 
     "abdominal pain": (
@@ -154,9 +159,17 @@ def extract_symptoms(
 
     lower = text.lower()
 
+    aliases_by_name = {name: list(aliases) for name, aliases in SYMPTOM_ALIASES.items()}
+    for catalog_symptom in load_catalog()["symptoms"]:
+        canonical = catalog_symptom["name"]
+        aliases = aliases_by_name.setdefault(canonical, [])
+        for alias in catalog_symptom.get("aliases", []):
+            if alias not in aliases:
+                aliases.append(alias)
+
     found: dict[str, Symptom] = {}
 
-    for canonical, aliases in SYMPTOM_ALIASES.items():
+    for canonical, aliases in aliases_by_name.items():
 
         for alias in aliases:
 
@@ -164,18 +177,10 @@ def extract_symptoms(
 
             if match and not is_negated_mention(lower, match.start(), match.end()):
 
-                confidence = (
-                    0.95
-                    if alias == canonical
-                    else 0.80
-                )
-
                 found[canonical] = Symptom(
                     name=canonical,
 
                     evidence=alias,
-
-                    confidence=confidence,
                 )
 
                 break
@@ -200,78 +205,44 @@ def classify_intent(
     if any(term in lower for term in child_terms) and "cough" in lower:
         return "child_cough"
 
+    ambulance_terms = ["ambulance", "paramedic", "108", "112"]
+    if any(term in lower for term in ambulance_terms):
+        return "ambulance_search"
+
     emergency_terms = [
-
         "emergency",
-
-        "ambulance",
-
         "unconscious",
-
         "cannot breathe",
-
         "can't breathe",
-
         "severe chest pain",
-
     ]
-
-    if any(
-        term in lower
-        for term in emergency_terms
-    ):
-
+    if any(term in lower for term in emergency_terms):
         return "emergency_navigation"
 
+    pharmacy_terms = ["pharmacy", "chemist", "medical store", "medicine shop", "dawai ki dukan"]
+    if any(term in lower for term in pharmacy_terms):
+        return "pharmacy_search"
+
+    diagnostic_terms = ["diagnostic lab", "laboratory", "blood test centre", "blood test center", "pathology lab", "test centre", "test center"]
+    if any(term in lower for term in diagnostic_terms):
+        return "diagnostic_service_search"
 
     doctor_terms = [
-
         "find doctor",
-
         "doctor near",
-
         "doctor in",
-
         "doctor chahiye",
-
         "cardiologist near",
-
     ]
-
-    if any(
-        term in lower
-        for term in doctor_terms
-    ):
-
+    if any(term in lower for term in doctor_terms):
         return "doctor_search"
 
-
-    facility_terms = [
-
-        "hospital",
-
-        "clinic",
-
-        "government hospital",
-
-        "private hospital",
-
-        "facility",
-
-    ]
-
-    if any(
-        term in lower
-        for term in facility_terms
-    ):
-
+    facility_terms = ["hospital", "clinic", "government hospital", "private hospital", "facility"]
+    if any(term in lower for term in facility_terms):
         return "facility_search"
 
-
     if symptoms:
-
         return "symptom_help"
-
 
     return "general_health_search"
 
@@ -283,21 +254,14 @@ def classify_intent(
 def predict_specialty(
     symptoms: list[Symptom]
 ) -> str:
+    if not symptoms:
+        return "General Medicine"
 
-    symptom_names = {
-        symptom.name
-        for symptom in symptoms
-    }
-
-    for specialty, required in SPECIALTY_RULES:
-
-        if symptom_names.intersection(
-            required
-        ):
-
-            return specialty
-
-    return "General Medicine"
+    matches = search_medical_catalog(
+        " ".join(symptom.name for symptom in symptoms),
+        limit=1,
+    )
+    return matches[0]["specialty_name"] if matches else "General Medicine"
 
 
 # ============================================================

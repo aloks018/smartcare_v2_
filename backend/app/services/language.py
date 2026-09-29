@@ -23,9 +23,9 @@ def detect_language(text: str) -> str:
 
     text = text.strip()
 
-    # Hindi script
+    # Distinguish Hindi-only from Hindi mixed with English terms.
     if DEVANAGARI_PATTERN.search(text):
-        return "Hindi"
+        return "Hinglish" if re.search(r"[A-Za-z]", text) else "Hindi"
 
     lower = text.lower()
 
@@ -94,6 +94,7 @@ def normalize_text(text: str) -> str:
         # Fever
         "bukhar": "fever",
         "बुखार": "fever",
+        "लगातार तेज बुखार": "persistent high fever",
 
         # Cough
         "khansi": "cough",
@@ -111,6 +112,16 @@ def normalize_text(text: str) -> str:
             "breathing difficulty",
         "सांस लेने में कठिनाई":
             "breathing difficulty",
+        "सांस लेने में मुश्किल":
+            "breathing difficulty",
+        "सांस लेने में तकलीफ":
+            "breathing difficulty",
+        "सांस नहीं आ रही":
+            "cannot breathe",
+        "सांस नहीं ले पा रहा":
+            "cannot breathe",
+        "सांस नहीं ले पा रही":
+            "cannot breathe",
         "सांस फूलना":
             "shortness of breath",
 
@@ -144,6 +155,10 @@ def normalize_text(text: str) -> str:
             "chest pain",
         "सीने का दर्द":
             "chest pain",
+        "छाती में दर्द":
+            "chest pain",
+        "सीने में दबाव":
+            "chest pressure",
 
         "pet dard":
             "abdominal pain",
@@ -159,17 +174,49 @@ def normalize_text(text: str) -> str:
             "abdominal pain",
         "पेट में दर्द":
             "abdominal pain",
+        "पेट में ऐंठन":
+            "abdominal pain",
 
         # Other
         "ulti":
             "vomiting",
         "उल्टी":
             "vomiting",
+        "बार बार उल्टी":
+            "repeated vomiting",
+        "लगातार उल्टी":
+            "repeated vomiting",
+        "दस्त":
+            "diarrhea",
 
         "chakkar":
             "dizziness",
         "चक्कर":
             "dizziness",
+        "थकान":
+            "fatigue",
+        "कमजोरी":
+            "weakness",
+        "जकड़न":
+            "stiffness",
+        "दाने":
+            "rash",
+        "खुजली":
+            "itching",
+        "धड़कन तेज":
+            "palpitations",
+        "दिल तेजी से धड़क":
+            "palpitations",
+        "बेहोश":
+            "unconscious",
+        "बेहोशी":
+            "unconscious",
+        "दौरा":
+            "seizure",
+        "बहुत ज्यादा खून बहना":
+            "heavy bleeding",
+        "खून बहुत बह रहा":
+            "heavy bleeding",
 
         "jodon ka dard":
             "joint pain",
@@ -188,6 +235,14 @@ def normalize_text(text: str) -> str:
 
         "private hospital":
             "private hospital",
+        "दवा की दुकान":
+            "pharmacy",
+        "दवाई की दुकान":
+            "pharmacy",
+        "जांच लैब":
+            "diagnostic laboratory",
+        "पैथोलॉजी लैब":
+            "diagnostic laboratory",
     }
 
     # Longest phrases first

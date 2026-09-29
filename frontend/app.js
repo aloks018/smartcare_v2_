@@ -10,9 +10,10 @@ const elements = {
   disclaimer: $("#disclaimerText"),
   distance: $("#distanceInput"),
   hearButton: $("#hearButton"),
+  directoryLocation: $("#locationInput"),
   languageModel: $("#languageModel"),
   languageValue: $("#languageValue"),
-  location: $("#locationInput"),
+  location: $("#assistantLocationInput"),
   medicalMatchList: $("#medicalMatchList"),
   medicalMatchStatus: $("#medicalMatchStatus"),
   menuToggle: $("#menuToggle"),
@@ -39,6 +40,11 @@ const elements = {
   urgencyLabel: $("#urgencyLabel"),
   urgencyMessage: $("#urgencyMessage"),
   analysisStatus: $("#analysisStatus"),
+  providerProfileAddress: $("#providerProfileAddress"),
+  providerProfileKind: $("#providerProfileKind"),
+  providerProfileLink: $("#providerProfileLink"),
+  providerProfileName: $("#providerProfileName"),
+  providerProfileSpecialty: $("#providerProfileSpecialty"),
 };
 
 let recognition = null;
@@ -48,6 +54,7 @@ let isAnalyzing = false;
 let latestAnalysis = null;
 let latestSpokenResponse = "";
 let providerCount = 0;
+let visibleProviders = [];
 let capturedTranscript = "";
 let recognitionError = false;
 let analysisStartedFromVoice = false;
@@ -71,6 +78,31 @@ function setStatus(message, state = "normal") {
   if (elements.statusDot) elements.statusDot.className = `status-dot ${state}`;
   setText(elements.assistantStatusText, message);
   if (elements.assistantStatusDot) elements.assistantStatusDot.className = `status-dot ${state}`;
+}
+
+function setupAssistantLocation() {
+  const modelRow = document.querySelector(".voice-workspace .model-row");
+  if (!modelRow || document.querySelector("#assistantLocationInput")) return;
+  const field = document.createElement("div");
+  field.className = "assistant-location-field";
+  field.innerHTML = '<label class="field-label" for="assistantLocationInput">City for nearby care options</label><input id="assistantLocationInput" type="text" placeholder="City or district" autocomplete="address-level2" />';
+  modelRow.before(field);
+  elements.location = document.querySelector("#assistantLocationInput");
+}
+
+function configureActivePipeline() {
+  const activeLabels = [
+    [elements.speechModel, "Browser voice recognition"],
+    [elements.languageModel, "Structured care catalog"],
+  ];
+  activeLabels.forEach(([select, value]) => {
+    const label = select?.closest("label");
+    if (!label || !select) return;
+    const output = document.createElement("strong");
+    output.className = "pipeline-value";
+    output.textContent = value;
+    select.replaceWith(output);
+  });
 }
 
 function setProcessing(active) {
@@ -98,21 +130,22 @@ async function getJSON(path) {
   return response.json();
 }
 
-function providerCard(provider) {
+function providerCard(provider, index) {
   const address = provider.address || [provider.city, provider.state].filter(Boolean).join(", ") || "Address not listed";
   const fee = provider.consultation_fee_inr != null ? `From Rs. ${Number(provider.consultation_fee_inr).toLocaleString("en-IN")}` : "Fee on request";
   const distance = provider.distance_km != null ? `${Number(provider.distance_km).toFixed(1)} km away` : "Distance not listed";
-  const score = provider.match_score != null ? `${Math.round(provider.match_score)}% match` : "Directory match";
-  const source = provider.verified_source || (provider.verified ? "Verified public source" : "Directory listing");
+  const score = provider.match_score != null ? `${Math.round(provider.match_score)}% match` : "Mapped listing";
+  const source = provider.verified_source || "Source not listed";
   const reasons = Array.isArray(provider.match_reasons) ? provider.match_reasons.slice(0, 2) : [];
   const actions = [
     provider.phone ? `<a class="provider-action" href="tel:${escapeHTML(provider.phone)}">Call</a>` : "",
-    provider.website ? `<a class="provider-action primary-action" href="${escapeHTML(provider.website)}" target="_blank" rel="noopener noreferrer">Visit source <span aria-hidden="true">↗</span></a>` : "",
+    `<button class="provider-action" type="button" data-provider-index="${index}">Details</button>`,
+    provider.website ? `<a class="provider-action primary-action" href="${escapeHTML(provider.website)}" target="_blank" rel="noopener noreferrer">Source <span aria-hidden="true">↗</span></a>` : "",
   ].filter(Boolean).join("");
   return `<article class="provider-card">
     <div class="provider-card-top"><span class="provider-kind">${escapeHTML(provider.provider_type || "Healthcare")}</span><span class="match-score">${escapeHTML(score)}</span></div>
     <h3>${escapeHTML(provider.name || "Healthcare provider")}</h3>
-    <div class="provider-tags"><span>${escapeHTML(provider.ownership || "Public")}</span><span>${escapeHTML(provider.specialty || "General Medicine")}</span>${provider.emergency_available ? '<span class="emergency-tag">Emergency</span>' : ""}</div>
+    <div class="provider-tags"><span>${escapeHTML(provider.ownership || "Unknown ownership")}</span><span>${escapeHTML(provider.specialty || "Specialty not listed")}</span>${provider.emergency_available ? '<span class="emergency-tag">Emergency tag listed</span>' : ""}</div>
     <p class="provider-address">${escapeHTML(address)}</p>
     <div class="provider-meta"><span>${escapeHTML(fee)}</span><span>${escapeHTML(distance)}</span></div>
     ${provider.availability ? `<p class="availability">${escapeHTML(provider.availability)}</p>` : ""}
@@ -123,11 +156,97 @@ function providerCard(provider) {
 
 function renderProviders(providers) {
   if (!elements.providerList) return;
-  if (!Array.isArray(providers) || providers.length === 0) {
-    elements.providerList.innerHTML = '<div class="empty-state"><strong>No matching care providers found.</strong><span>Try a different care need, specialty, or location.</span></div>';
+  visibleProviders = Array.isArray(providers) ? providers : [];
+  if (visibleProviders.length === 0) {
+    elements.providerList.innerHTML = '<div class="empty-state"><strong>No mapped facility listings found.</strong><span>Enter a city and try a nearby area. Map coverage may be incomplete.</span></div>';
     return;
   }
-  elements.providerList.innerHTML = providers.map(providerCard).join("");
+  elements.providerList.innerHTML = visibleProviders.map(providerCard).join("");
+}
+
+function renderProviderProfile(provider) {
+  if (!provider) return;
+  const profile = document.querySelector(".doctor-profile-layout");
+  if (!profile) return;
+  const address = provider.address || [provider.city, provider.district, provider.state].filter(Boolean).join(", ") || "Address not listed in map data";
+  profile.innerHTML = `<section class="surface-card doctor-hero-card"><span class="status-pill">${escapeHTML(provider.provider_type || "Healthcare facility")}</span><h2>${escapeHTML(provider.name || "Unnamed facility")}</h2><p>${escapeHTML(address)}</p><p>${escapeHTML(provider.specialty || "Specialty not listed in map data")}</p><p class="source-stamp">Source: ${escapeHTML(provider.verified_source || "Source not listed")}. Map data is not facility verification.</p></section><aside class="surface-card doctor-details-card"><span class="panel-kicker">Mapped details</span><h3>Confirm before visiting</h3><p>Facility services, contacts, opening hours, and suitability are not clinically verified by SmartCare.</p>${provider.phone ? `<a class="button button-outline" href="tel:${escapeHTML(provider.phone)}">Call listed number</a>` : ""}${provider.website ? `<a class="button button-outline" href="${escapeHTML(provider.website)}" target="_blank" rel="noopener noreferrer">Open source record</a>` : ""}<a class="subtle-link" href="#find-doctors">Back to facility search</a></aside>`;
+}
+
+function clearUnlinkedDemoContent() {
+  const profileName = document.querySelector(".profile-chip-name");
+  const profileAvatar = document.querySelector(".profile-chip .avatar");
+  setText(profileName, "Patient");
+  setText(profileAvatar, "?");
+  const notificationCount = document.querySelector(".nav-count");
+  setText(notificationCount, "0");
+  if (notificationCount) notificationCount.hidden = true;
+
+  const dashboard = document.querySelector('[data-view="dashboard"]');
+  setText(dashboard?.querySelector(".page-heading h1"), "SmartCare dashboard");
+  setText(dashboard?.querySelector(".page-heading .eyebrow"), "Your care workspace");
+  dashboard?.querySelectorAll(".metric-grid .metric-card strong").forEach((value, index) => {
+    if (index !== 2) value.textContent = "0";
+  });
+  const upcoming = dashboard?.querySelector(".appointment-preview");
+  if (upcoming) upcoming.innerHTML = '<div class="empty-state"><strong>No appointment data is connected.</strong><span>Search mapped facilities to find care options.</span></div>';
+
+  const appointmentList = document.querySelector(".appointment-list");
+  if (appointmentList) appointmentList.innerHTML = '<div class="empty-state"><strong>No appointments are recorded.</strong><span>Appointments are not connected to a scheduling service.</span></div>';
+  setText(document.querySelector(".tabs .tab b"), "0");
+  const recordList = document.querySelector(".record-list");
+  if (recordList) recordList.innerHTML = '<div class="empty-state"><strong>No medical records are stored here.</strong><span>Record storage is not connected to this workspace.</span></div>';
+  document.querySelectorAll(".record-summary strong").forEach((value) => { value.textContent = "0"; });
+  const timeline = document.querySelector(".timeline");
+  if (timeline) timeline.innerHTML = '<div class="empty-state"><strong>No care history is connected.</strong><span>Past visits will appear when a scheduling source is connected.</span></div>';
+  const notifications = document.querySelector(".notification-list");
+  if (notifications) notifications.innerHTML = '<div class="empty-state"><strong>No notifications.</strong><span>Updates will appear here when connected services provide them.</span></div>';
+
+  const profileBanner = document.querySelector(".profile-banner");
+  if (profileBanner) {
+    profileBanner.querySelector(".avatar")?.replaceChildren(document.createTextNode("?"));
+    setText(profileBanner.querySelector("h2"), "Patient");
+    setText(profileBanner.querySelector("p"), "Location not provided");
+    setText(profileBanner.querySelector(".verified-label"), "Account not connected");
+  }
+  const profileValues = document.querySelectorAll(".profile-details .details-grid strong");
+  if (profileValues.length >= 4) {
+    profileValues[0].textContent = "Not set";
+    profileValues[1].textContent = "Not set";
+    profileValues[2].textContent = "Not provided";
+    profileValues[3].textContent = "Not signed in";
+  }
+
+  setText(document.querySelector(".doctor-profile-layout .doctor-hero-top h2"), "Select a mapped facility");
+  setText(document.querySelector(".doctor-profile-layout .doctor-hero-top p"), "Choose Details on a directory result to view its mapped information.");
+  setText(document.querySelector(".doctor-profile-layout .status-pill"), "No listing selected");
+  setText(document.querySelector(".doctor-profile-layout .doctor-location"), "Facility location not listed");
+  const doctorStats = document.querySelector(".doctor-profile-layout .doctor-stats");
+  doctorStats?.remove();
+  document.querySelectorAll(".doctor-profile-layout .detail-line").forEach((line) => line.remove());
+  setText(document.querySelector(".doctor-profile-layout .doctor-details-card h3"), "Facility details");
+  setText(document.querySelector(".doctor-profile-layout .doctor-details-card > p"), "Select a mapped facility to view source-backed details. Hours, services, and availability may be incomplete.");
+  document.querySelector(".doctor-profile-layout .doctor-details-card .button")?.remove();
+}
+
+async function loadPatientProfile() {
+  const token = localStorage.getItem("smartcare_access_token");
+  if (!token) return;
+  try {
+    const response = await fetch(`${API}/auth/me`, { headers: { Authorization: `Bearer ${token}` } });
+    if (!response.ok) return;
+    const user = await response.json();
+    const name = user.full_name || "Patient";
+    setText(document.querySelector(".profile-chip-name"), name);
+    setText(document.querySelector(".profile-chip .avatar"), name.trim().charAt(0).toUpperCase() || "?");
+    setText(document.querySelector(".profile-banner h2"), name);
+    const profileValues = document.querySelectorAll(".profile-details .details-grid strong");
+    if (profileValues.length >= 4) {
+      profileValues[2].textContent = user.phone || "Not provided";
+      profileValues[3].textContent = user.email || "Not provided";
+    }
+  } catch (error) {
+    console.error("Patient profile loading failed:", error);
+  }
 }
 
 function renderReasons(reasons) {
@@ -143,7 +262,7 @@ function medicalMatchCard(match) {
   const signalTerms = [...(match.matching_symptoms || []), ...(match.matching_conditions || []), ...(match.matching_keywords || [])].slice(0, 5);
   const subspecialties = (match.related_subspecialties || []).slice(0, 3);
   return `<article class="medical-match-card">
-    <div class="medical-card-top"><span>${escapeHTML(match.parent_category)}</span><strong>${escapeHTML(match.relevance)}% relevant</strong></div>
+    <div class="medical-card-top"><span>${escapeHTML(match.parent_category)}</span><strong>Catalog match</strong></div>
     <h4>${escapeHTML(match.specialty_name)}</h4>
     <p>${escapeHTML(match.description)}</p>
     ${signalTerms.length ? `<div class="match-chip-row">${signalTerms.map((term) => `<span>${escapeHTML(term)}</span>`).join("")}</div>` : ""}
@@ -170,7 +289,11 @@ function renderAnalysis(data) {
   const urgency = assessment.urgency || "routine";
   setText(elements.languageValue, data.detected_language || "Language detected");
   setText(elements.symptomsValue, symptoms.length ? symptoms.map((item) => item.name).join(", ") : "No clear symptom detected");
-  setText(elements.specialtyValue, data.suggested_specialty || "General Medicine");
+  setText(elements.specialtyValue?.previousElementSibling, "Care direction");
+  const careDirection = data.assessment?.urgency === "emergency" && data.suggested_facility_type
+    ? `${data.suggested_specialty} · ${data.suggested_facility_type}`
+    : data.suggested_facility_type || data.suggested_specialty || "General Medicine";
+  setText(elements.specialtyValue, careDirection);
   setText(elements.modelValue, `${stack.speech || elements.speechModel?.value || "Web Speech"} + ${stack.language || elements.languageModel?.value || "Smart hybrid"}`);
   setText(elements.urgencyLabel, formatText(urgency));
   setText(elements.urgencyMessage, [assessment.message, data.recommended_next_action].filter(Boolean).join(" "));
@@ -178,7 +301,7 @@ function renderAnalysis(data) {
   if (elements.urgencyBlock) elements.urgencyBlock.dataset.level = urgency;
   latestSpokenResponse = data.spoken_response || data.recommended_next_action || "";
   renderReasons(data.why_this_recommendation);
-  renderMedicalMatches(data.medical_matches, "Matches are based on symptoms, conditions, treatments, and specialty keywords in the local catalog.");
+  renderMedicalMatches(data.medical_matches, "Catalog-based care navigation only. Not a diagnosis or a clinician-validated decision-support system.");
   renderProviders(data.providers);
   setText(elements.analysisStatus, "Your AI care brief is ready. Review the care priority, specialty matches, and local provider options below.");
   setStatus("AI care brief ready", "success");
@@ -226,6 +349,9 @@ function startListening() {
   }
   if (isListening || isStarting) return;
   isStarting = true;
+  elements.speakButton?.setAttribute("aria-pressed", "true");
+  elements.speakButton?.setAttribute("aria-label", "Stop voice recording");
+  document.body.classList.add("is-voice-starting");
   capturedTranscript = "";
   recognitionError = false;
   analysisStartedFromVoice = false;
@@ -237,7 +363,7 @@ function startListening() {
   recognition.interimResults = true;
   recognition.continuous = false;
   recognition.maxAlternatives = 1;
-  recognition.onstart = () => { isStarting = false; isListening = true; document.body.classList.add("is-listening"); setText(elements.speakButtonText, "Listening now"); setStatus("Listening to your message", "listening"); setText(elements.analysisStatus, "Speak clearly, then pause when you are finished."); };
+  recognition.onstart = () => { isStarting = false; isListening = true; document.body.classList.remove("is-voice-starting"); document.body.classList.add("is-listening"); setText(elements.speakButtonText, "Listening now"); setStatus("Listening to your message", "listening"); setText(elements.analysisStatus, "Speak clearly, then pause when you are finished."); };
   recognition.onresult = (event) => {
     let interimTranscript = "";
     for (let index = event.resultIndex; index < event.results.length; index += 1) {
@@ -250,6 +376,9 @@ function startListening() {
   };
   recognition.onerror = (event) => {
     isStarting = false;
+    document.body.classList.remove("is-voice-starting");
+    elements.speakButton?.setAttribute("aria-pressed", "false");
+    elements.speakButton?.setAttribute("aria-label", "Start voice recording");
     recognitionError = true;
     console.error("Speech recognition error:", event.error);
     const messages = { "not-allowed": "Microphone permission was denied. Allow it in Chrome site settings and try again.", "service-not-allowed": "Chrome blocked the speech service. Check your browser permissions and internet connection.", "no-speech": "No speech was detected. Tap the microphone and speak after the listening tone.", network: "Voice service network error. Check your internet connection and try again.", aborted: "Voice capture stopped. Tap the microphone to try again." };
@@ -259,6 +388,9 @@ function startListening() {
   recognition.onend = () => {
     isStarting = false;
     isListening = false;
+    elements.speakButton?.setAttribute("aria-pressed", "false");
+    elements.speakButton?.setAttribute("aria-label", "Start voice recording");
+    document.body.classList.remove("is-voice-starting");
     document.body.classList.remove("is-listening");
     setText(elements.speakButtonText, "Tap to speak");
     const transcript = capturedTranscript.trim();
@@ -272,7 +404,7 @@ function startListening() {
       setText(elements.analysisStatus, "No speech was captured. Speak after the listening state appears.");
     }
   };
-  try { recognition.start(); } catch (error) { isStarting = false; recognitionError = true; setStatus("Microphone could not start. Check Chrome permissions and try again.", "error"); setText(elements.analysisStatus, "Microphone could not start. Check Chrome permissions and try again."); console.error("Could not start voice recognition:", error); }
+  try { recognition.start(); } catch (error) { isStarting = false; document.body.classList.remove("is-voice-starting"); elements.speakButton?.setAttribute("aria-pressed", "false"); elements.speakButton?.setAttribute("aria-label", "Start voice recording"); recognitionError = true; setStatus("Microphone could not start. Check Chrome permissions and try again.", "error"); setText(elements.analysisStatus, "Microphone could not start. Check Chrome permissions and try again."); console.error("Could not start voice recognition:", error); }
 }
 
 function stopListening() {
@@ -305,7 +437,7 @@ async function searchMedicalMatches(query) {
 async function searchCare(event) {
   event?.preventDefault();
   const query = elements.searchInput?.value.trim() || "";
-  const location = elements.location?.value.trim() || "";
+  const location = elements.directoryLocation?.value.trim() || elements.location?.value.trim() || "";
   const ownership = elements.ownership?.value || "";
   const specialty = elements.specialty?.value || "";
   if (!query && !location && !ownership && !specialty) { setStatus("Enter a care need, location, ownership, or specialty.", "error"); return; }
@@ -334,7 +466,7 @@ async function loadProviders() {
     const providers = await getJSON("/providers");
     providerCount = Array.isArray(providers) ? providers.length : 0;
     renderProviders(providers);
-    setText(elements.searchStatus, `${providerCount} providers in the directory`);
+    setText(elements.searchStatus, "Enter a care need and city to search mapped facilities.");
   } catch (error) {
     console.error("Provider loading failed:", error);
     setText(elements.searchStatus, "Unable to load the provider directory.");
@@ -395,10 +527,19 @@ elements.searchForm?.addEventListener("submit", searchCare);
 elements.transcript?.addEventListener("keydown", (event) => { if ((event.ctrlKey || event.metaKey) && event.key === "Enter") analyzeTranscript(); });
 
 async function initializeApp() {
+  setupAssistantLocation();
+  configureActivePipeline();
+  clearUnlinkedDemoContent();
   setupRevealAnimations();
   setupMobileMenu();
   await checkBackend();
-  await Promise.all([loadProviders(), loadSources(), loadSpecialties()]);
+  await Promise.all([loadProviders(), loadSources(), loadSpecialties(), loadPatientProfile()]);
+  elements.providerList?.addEventListener("click", (event) => {
+    const detailsButton = event.target.closest("[data-provider-index]");
+    if (!detailsButton) return;
+    renderProviderProfile(visibleProviders[Number(detailsButton.dataset.providerIndex)]);
+    window.location.hash = "#doctor-profile";
+  });
   if (providerCount) setStatus(`SmartCare AI is ready with ${providerCount} providers`, "success");
 }
 
@@ -428,11 +569,11 @@ window.addEventListener("hashchange", routeToView);
 window.addEventListener("load", routeToView);
 document.querySelectorAll("[data-demo-action]").forEach((button) => button.addEventListener("click", () => {
   const messages = {
-    appointment: "Appointment booking will open when provider scheduling is connected.",
-    details: "Appointment details are ready for your next connected care session.",
+    appointment: "Appointment booking is not connected. No appointment has been created.",
+    details: "No appointment details are connected to this account.",
     question: "Your question draft is ready to review.",
-    upload: "Record upload is ready for the connected patient account.",
-    read: "All notifications are marked as read.",
+    upload: "Medical-record storage is not connected. No file has been uploaded.",
+    read: "Notifications are not connected to this account.",
   };
   showToast(messages[button.dataset.demoAction] || "SmartCare action ready.");
 }));

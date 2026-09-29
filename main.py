@@ -46,8 +46,7 @@ from backend.app.schemas import (
 # ============================================================
 
 from backend.app.data.providers import (
-    PROVIDERS,
-    OFFICIAL_DATA_SOURCES,
+    DATA_SOURCES,
 )
 
 
@@ -82,8 +81,6 @@ from backend.app.services.medical_catalog import (
     search_medical_catalog,
     specialty_detail,
 )
-
-from backend.ml.pipeline import CareRouter
 
 from backend.app.services.ml_models import (
     model_catalog,
@@ -168,10 +165,6 @@ if FRONTEND_DIR.exists():
 # DISCLAIMER
 # ============================================================
 
-ML_DATA = ROOT_DIR / "backend" / "data" / "symptom_training_data.csv"
-MODEL_PATH = ROOT_DIR / "backend" / "models" / "symptom_router.joblib"
-care_router = CareRouter(ML_DATA, MODEL_PATH)
-
 DISCLAIMER = (
 
     "SmartCareAI provides healthcare "
@@ -210,10 +203,8 @@ def health():
 
         "version": "1.0.0",
 
-        "providers_loaded": len(PROVIDERS),
-        "model": care_router.model_name,
-        "model_source": care_router.model_source,
-        "training_examples": care_router.training_examples,
+        "provider_directory": "OpenStreetMap location search",
+        "care_routing": "Deterministic medical-catalog navigation",
         "medical_catalog": catalog_stats(),
     }
 
@@ -287,9 +278,12 @@ def database_health():
     "/api/providers",
     response_model=list[Provider],
 )
-def get_providers():
-
-    return PROVIDERS
+def get_providers(
+    location: str | None = Query(default=None, max_length=120),
+    query: str = Query(default="", max_length=200),
+    limit: int = Query(default=12, ge=1, le=50),
+):
+    return search_providers(query=query, location=location, limit=limit)
 
 
 # ============================================================
@@ -315,7 +309,7 @@ def get_professions():
 )
 def get_data_sources():
 
-    return OFFICIAL_DATA_SOURCES
+    return DATA_SOURCES
 
 
 # ============================================================
@@ -420,7 +414,7 @@ def search(
 
     results = search_providers(
 
-        query=query,
+        query=normalize_text(query),
 
         location=location,
 
@@ -533,10 +527,7 @@ def analyze_voice(
     # 5. Intent
     # --------------------------------------------------------
 
-    rule_intent = classify_intent(f"{transcript} {normalized_text}", symptoms)
-    ml_result = care_router.analyze(normalized_text)
-    intent = rule_intent or ml_result["intent"]
-    ml_confidence = float(ml_result.get("confidence", 0.0))
+    intent = classify_intent(f"{transcript} {normalized_text}", symptoms)
 
 
     # --------------------------------------------------------
@@ -546,12 +537,22 @@ def analyze_voice(
     suggested_specialty = predict_specialty(symptoms)
     if intent in {"child_fever", "child_cough"}:
         suggested_specialty = "Pediatrics"
+    elif intent == "emergency_navigation":
+        suggested_specialty = "Emergency Medicine"
 
     medical_matches = search_medical_catalog(
         transcript,
         limit=3,
         fallback_specialty=suggested_specialty,
     )
+
+    facility_type_by_intent = {
+        "ambulance_search": "Ambulance service",
+        "pharmacy_search": "Pharmacy",
+        "diagnostic_service_search": "Diagnostic laboratory",
+        "emergency_navigation": "Hospital",
+    }
+    suggested_facility_type = facility_type_by_intent.get(intent)
 
 
     # --------------------------------------------------------
@@ -563,6 +564,9 @@ def analyze_voice(
             symptoms,
             suggested_specialty,
         )
+    )
+    reasons.append(
+        "Care-area routing uses SmartCare's structured navigation catalog; it is not a clinical diagnosis."
     )
 
 
@@ -576,6 +580,18 @@ def analyze_voice(
             symptoms
         )
     )
+    if assessment.urgency == "emergency":
+        suggested_specialty = "Emergency Medicine"
+        suggested_facility_type = "Hospital"
+        medical_matches = search_medical_catalog(
+            transcript,
+            limit=3,
+            fallback_specialty=suggested_specialty,
+        )
+        reasons = recommendation_reasons(symptoms, suggested_specialty)
+        reasons.append(
+            "Care-area routing uses SmartCare's structured navigation catalog; it is not a clinical diagnosis."
+        )
 
 
     # --------------------------------------------------------
@@ -611,7 +627,7 @@ def analyze_voice(
 
     providers = search_providers(
 
-        query=transcript,
+        query=" ".join(filter(None, [suggested_facility_type, normalized_text])),
     
             location=request.location,
     
@@ -657,6 +673,13 @@ def analyze_voice(
             "an initial clinical review"
         )
 
+    if suggested_facility_type:
+        possible_area = (
+            f"{suggested_facility_type} listings near {request.location}"
+            if request.location
+            else f"{suggested_facility_type} listings (share a city to search nearby)"
+        )
+
 
     # --------------------------------------------------------
     # 13. Voice response
@@ -666,8 +689,35 @@ def analyze_voice(
         symptom.name
         for symptom in symptoms
     )
+    facility_note = (
+        "Paas ke mapped facility results neeche diye gaye hain; details confirm karein. "
+        if providers
+        else "Apna shehar batayein to paas ki facilities dekh sakein. "
+        if not request.location
+        else ""
+    )
 
-    if detected_language in {"Hindi", "Hinglish"}:
+    if suggested_facility_type and assessment.urgency != "emergency":
+        if not request.location:
+            spoken_response = (
+                "Paas ki facility dhoondhne ke liye apna shehar batayein."
+                if detected_language in {"Hindi", "Hinglish"}
+                else "Share your city to find nearby mapped facilities."
+            )
+        elif providers:
+            spoken_response = (
+                f"{len(providers)} OpenStreetMap par listed {suggested_facility_type} milin. "
+                "Jaane se pehle facility se details confirm karein."
+                if detected_language in {"Hindi", "Hinglish"}
+                else f"Found {len(providers)} OpenStreetMap-listed {suggested_facility_type} options. Confirm services and availability before visiting."
+            )
+        else:
+            spoken_response = (
+                f"{request.location} ke liye koi mapped {suggested_facility_type} listing nahi mili."
+                if detected_language in {"Hindi", "Hinglish"}
+                else f"No mapped {suggested_facility_type} listings were found for {request.location}. Try a nearby area."
+            )
+    elif detected_language in {"Hindi", "Hinglish"}:
         if assessment.urgency == "emergency":
             safety_message = "Aapke message mein emergency warning mili hai. Abhi turant emergency medical care lein aur zarurat ho to local emergency services ko call karein."
         elif assessment.urgency == "urgent":
@@ -682,6 +732,7 @@ def analyze_voice(
         spoken_response = (
             f"{understanding} "
             f"Possible care area {suggested_specialty} hai. {safety_message} "
+            f"{facility_note}"
             "Yeh medical diagnosis nahi hai."
         )
     else:
@@ -694,6 +745,7 @@ def analyze_voice(
             f"{understanding} "
             f"The possible care area is {suggested_specialty}. "
             f"{assessment.message} {recommended_action} "
+            f"{facility_note}"
             "This is not a medical diagnosis."
         )
 
@@ -722,6 +774,8 @@ def analyze_voice(
         suggested_specialty=
             suggested_specialty,
 
+        suggested_facility_type=suggested_facility_type,
+
         possible_area_of_care=
             possible_area,
 
@@ -732,9 +786,12 @@ def analyze_voice(
             medical_matches,
 
         model_stack={
-            **resolve_model_stack(request.speech_model, request.language_model),
-            "nlp": care_router.model_name,
-            "model_source": care_router.model_source,
+            "speech": "Browser Web Speech",
+            "language": "Structured care catalog",
+            "nlp": "deterministic medical-catalog navigation",
+            "model_source": "structured-catalog",
+            "ranking": "source-tagged facilities ordered by distance",
+            "safety": "rule-based emergency warning checks",
         },
 
         assessment=
@@ -749,8 +806,8 @@ def analyze_voice(
         spoken_response=
             spoken_response,
 
-        confidence=round(ml_confidence, 3),
-        model_source=care_router.model_source,
+        confidence=None,
+        model_source="structured-catalog",
 
         disclaimer=
             DISCLAIMER,
